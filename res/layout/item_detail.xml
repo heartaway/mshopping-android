@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/tb_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/head"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tb_back"
+            android:layout_width="75.0dip"
+            android:layout_height="25.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8.0dip"
+            android:background="@drawable/mytaobao"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/user_work_back"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/tb_web_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/tb_mytb"
+            android:layout_width="75.0dip"
+            android:layout_height="25.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8.0dip"
+            android:background="@drawable/mytaobao"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/my_tb"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout     
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tb_top"
+         >
+        <WebView
+            android:id="@+id/tb_webview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
