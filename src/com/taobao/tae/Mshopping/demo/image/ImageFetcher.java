@@ -21,8 +21,12 @@ import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.taobao.tae.Mshopping.demo.BuildConfig;
+import com.taobao.tae.Mshopping.demo.R;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -35,6 +39,7 @@ public class ImageFetcher extends ImageResizer {
     private static final String TAG = "ImageFetcher";
     private static final int HTTP_CACHE_SIZE = 10 * 1024 * 1024; // 10MB
     public static final String HTTP_CACHE_DIR = "http";
+    private Context context;
 
     /**
      * Initialize providing a target image width and height for the processing images.
@@ -60,6 +65,7 @@ public class ImageFetcher extends ImageResizer {
     }
 
     private void init(Context context) {
+        this.context = context;
         checkConnection(context);
     }
 
@@ -73,9 +79,23 @@ public class ImageFetcher extends ImageResizer {
                 (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         final NetworkInfo networkInfo = cm.getActiveNetworkInfo();
         if (networkInfo == null || !networkInfo.isConnectedOrConnecting()) {
-            Toast.makeText(context, "No network connection found.", Toast.LENGTH_LONG).show();
+            toast("请检查网络连接");
             Log.e(TAG, "checkConnection - no connection found");
         }
+    }
+
+    /**
+     * 展示一个粉色的Toast
+     *
+     * @param message
+     */
+    public void toast(String message) {
+        View toastRoot = LayoutInflater.from(context).inflate(R.layout.toast, null);
+        Toast toast = new Toast(context);
+        toast.setView(toastRoot);
+        TextView tv = (TextView) toastRoot.findViewById(R.id.pink_toast_notice);
+        tv.setText(message);
+        toast.show();
     }
 
     /**
@@ -110,7 +130,7 @@ public class ImageFetcher extends ImageResizer {
      * Download a bitmap from a URL, write it to a disk and return the File pointer. This
      * implementation uses a simple disk cache.
      *
-     * @param context The context to use
+     * @param context   The context to use
      * @param urlString The URL to fetch
      * @return A File pointing to the fetched bitmap
      */

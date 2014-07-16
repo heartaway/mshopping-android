@@ -28,8 +28,8 @@
         <item name="android:textSize">10sp</item>
         <item name="android:background">@drawable/home_btn_bg_s</item>
     </style>
-    
-        <style name="index_tab_top">
+
+    <style name="index_tab_top">
         <item name="android:gravity">center</item>
         <item name="android:paddingLeft">16dip</item>
         <item name="android:paddingRight">16dip</item>
@@ -38,6 +38,13 @@
         <item name="android:button">@null</item>
         <item name="android:textColor">@drawable/tab_textcolor</item>
         <item name="android:layout_weight">1.0</item>
-        <item name="android:textSize">12sp</item>      
+        <item name="android:textSize">12sp</item>
     </style>
+
+    <!-- 展示 商品SKU 属性时的淡入淡出效果动画-->
+    <style name="item_sku_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
 </resources>

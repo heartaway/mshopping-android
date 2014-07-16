@@ -4,17 +4,20 @@
     <string name="app_name">TAE无线Demo</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_base">BaseActivity</string>
     <string name="title_activity_index">IndexActivity</string>
     <string name="title_activity_search">SearchActivity</string>
-    <string name="title_activity_category">CategoryActivity</string>
-    <string name="title_activity_cart">CartActivity</string>
+    <string name="title_activity_item_detail">ItemDetailActivity</string>
+    <string name="title_activity_confirm_order">ConfirmOrderActivity</string>
     <string name="title_activity_personal">PersonalActivity</string>
+    <string name="title_activity_pay_order">PayOrderActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
     <string name="title_cart">购物车</string>
     <string name="title_category">分类</string>
     <string name="title_index">爱逛</string>
     <string name="title_stars">搜货</string>
     <string name="title_my">我的</string>
-    <string name="title_activity_tabao">TabaoActivity</string>
     <string name="todo">TODO</string>
     <string name="user_work_back">返回</string>
     <string name="my_tb">我的淘宝</string>
@@ -28,5 +31,7 @@
     <string name="xlistview_header_last_time">最后更新：</string>
     <string name="xlistview_footer_hint_normal">查看更多</string>
     <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="login_expired_relogin" >您取消的订单过多，请稍后再试</string>
 
 </resources>

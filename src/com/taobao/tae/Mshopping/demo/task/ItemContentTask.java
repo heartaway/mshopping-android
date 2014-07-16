@@ -5,7 +5,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
 import com.taobao.tae.Mshopping.demo.fegment.ItemsListFragment;
-import com.taobao.tae.Mshopping.demo.model.TaobaoItemBasicInformation;
+import com.taobao.tae.Mshopping.demo.model.TaobaoItemBasicInfo;
 import com.taobao.tae.Mshopping.demo.util.Helper;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -20,7 +20,7 @@ import java.util.List;
 /**
  * Created by xinyuan on 14/6/25.
  */
-public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemBasicInformation>> {
+public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemBasicInfo>> {
 
     private Context context;
     private int type = Constants.PULL_REFRESH_ACTION;
@@ -34,7 +34,7 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
     }
 
     @Override
-    protected List<TaobaoItemBasicInformation> doInBackground(String... params) {
+    protected List<TaobaoItemBasicInfo> doInBackground(String... params) {
         try {
             return parseItemsJSON(params[0]);
         } catch (IOException e) {
@@ -44,7 +44,7 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
     }
 
     @Override
-    protected void onPostExecute(List<TaobaoItemBasicInformation> result) {
+    protected void onPostExecute(List<TaobaoItemBasicInfo> result) {
         if (type == Constants.PULL_REFRESH_ACTION) {
             itemsListFragment.staggeredAdapter.addItemTop(result);
             itemsListFragment.staggeredAdapter.notifyDataSetChanged();
@@ -68,6 +68,7 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
             itemsListFragment.refreshableListView.stopLoadMore();
             itemsListFragment.staggeredAdapter.addItemLast(result);
             itemsListFragment.staggeredAdapter.notifyDataSetChanged();
+        }else if(type == Constants.OTHER_ACTION){
         }
 
     }
@@ -76,8 +77,8 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
     protected void onPreExecute() {
     }
 
-    public List<TaobaoItemBasicInformation> parseItemsJSON(String url) throws IOException {
-        List<TaobaoItemBasicInformation> taobaoItemBasicInformations = new ArrayList<TaobaoItemBasicInformation>();
+    public List<TaobaoItemBasicInfo> parseItemsJSON(String url) throws IOException {
+        List<TaobaoItemBasicInfo> taobaoItemBasicInfos = new ArrayList<TaobaoItemBasicInfo>();
         String json = "";
         if (Helper.checkConnection(context)) {
             try {
@@ -85,7 +86,7 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
             } catch (IOException e) {
                 Log.e("IOException is : ", e.toString());
                 e.printStackTrace();
-                return taobaoItemBasicInformations;
+                return taobaoItemBasicInfos;
             }
         }
         try {
@@ -94,18 +95,18 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
 
                 for (int i = 0; i < jsonArray.length(); i++) {
                     JSONObject jsonArrayJSONObject = jsonArray.getJSONObject(i);
-                    TaobaoItemBasicInformation taobaoItemBasicInformation = new TaobaoItemBasicInformation();
-                    taobaoItemBasicInformation.setItemId(jsonArrayJSONObject.isNull("itemId") ? 0 : jsonArrayJSONObject.getLong("itemId"));
-                    taobaoItemBasicInformation.setPicUrl(jsonArrayJSONObject.isNull("picUrl") ? "" : jsonArrayJSONObject.getString("picUrl"));
-                    taobaoItemBasicInformation.setTitle(jsonArrayJSONObject.isNull("title") ? "" : jsonArrayJSONObject.getString("title"));
-                    taobaoItemBasicInformation.setPrice(jsonArrayJSONObject.isNull("price") ? "" : jsonArrayJSONObject.getString("price"));
-                    taobaoItemBasicInformation.setPushTime(jsonArrayJSONObject.isNull("pushTime") ? null : new Date(jsonArrayJSONObject.getLong("pushTime")));
-                    taobaoItemBasicInformations.add(taobaoItemBasicInformation);
+                    TaobaoItemBasicInfo taobaoItemBasicInfo = new TaobaoItemBasicInfo();
+                    taobaoItemBasicInfo.setItemId(jsonArrayJSONObject.isNull("itemId") ? 0 : jsonArrayJSONObject.getLong("itemId"));
+                    taobaoItemBasicInfo.setPicUrl(jsonArrayJSONObject.isNull("picUrl") ? "" : jsonArrayJSONObject.getString("picUrl"));
+                    taobaoItemBasicInfo.setTitle(jsonArrayJSONObject.isNull("title") ? "" : jsonArrayJSONObject.getString("title"));
+                    taobaoItemBasicInfo.setPrice(jsonArrayJSONObject.isNull("price") ? "" : jsonArrayJSONObject.getString("price"));
+                    taobaoItemBasicInfo.setPushTime(jsonArrayJSONObject.isNull("pushTime") ? null : new Date(jsonArrayJSONObject.getLong("pushTime")));
+                    taobaoItemBasicInfos.add(taobaoItemBasicInfo);
                 }
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return taobaoItemBasicInformations;
+        return taobaoItemBasicInfos;
     }
 }

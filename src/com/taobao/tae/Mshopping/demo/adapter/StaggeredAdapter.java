@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.image.ImageFetcher;
-import com.taobao.tae.Mshopping.demo.model.TaobaoItemBasicInformation;
+import com.taobao.tae.Mshopping.demo.model.TaobaoItemBasicInfo;
 import com.taobao.tae.Mshopping.demo.view.RefreshableListView;
 import com.taobao.tae.Mshopping.demo.widget.ScaleImageView;
 
@@ -20,13 +20,13 @@ import java.util.List;
  */
 public class StaggeredAdapter extends BaseAdapter {
     private Context context;
-    private LinkedList<TaobaoItemBasicInformation> taobaoItemBasicInformations;
+    private LinkedList<TaobaoItemBasicInfo> taobaoItemBasicInfos;
     private RefreshableListView refreshableListView;
     private ImageFetcher imageFetcher;
 
     public StaggeredAdapter(Context context, RefreshableListView refreshableListView, ImageFetcher imageFetcher) {
         this.context = context;
-        taobaoItemBasicInformations = new LinkedList<TaobaoItemBasicInformation>();
+        taobaoItemBasicInfos = new LinkedList<TaobaoItemBasicInfo>();
         this.refreshableListView = refreshableListView;
         this.imageFetcher = imageFetcher;
     }
@@ -35,7 +35,7 @@ public class StaggeredAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
 
         ViewHolder holder;
-        TaobaoItemBasicInformation taobaoItemBasicInformation = taobaoItemBasicInformations.get(position);
+        TaobaoItemBasicInfo taobaoItemBasicInfo = taobaoItemBasicInfos.get(position);
         if (convertView == null) {
             LayoutInflater layoutInflator = LayoutInflater.from(parent.getContext());
             convertView = layoutInflator.inflate(R.layout.item_list, null);
@@ -46,15 +46,15 @@ public class StaggeredAdapter extends BaseAdapter {
             convertView.setTag(holder);
         }
         holder = (ViewHolder) convertView.getTag();
-        holder.imageView.setImageWidth(taobaoItemBasicInformation.getWidth());
-        holder.imageView.setImageHeight(taobaoItemBasicInformation.getHeight());
-        if (taobaoItemBasicInformation.getTitle().length() > 20) {
-            holder.titleView.setText(taobaoItemBasicInformation.getTitle().substring(0, 20).concat("..."));
+        holder.imageView.setImageWidth(taobaoItemBasicInfo.getWidth());
+        holder.imageView.setImageHeight(taobaoItemBasicInfo.getHeight());
+        if (taobaoItemBasicInfo.getTitle().length() > 20) {
+            holder.titleView.setText(taobaoItemBasicInfo.getTitle().substring(0, 20).concat("..."));
         } else {
-            holder.titleView.setText(taobaoItemBasicInformation.getTitle());
+            holder.titleView.setText(taobaoItemBasicInfo.getTitle());
         }
-        holder.priceView.setText(taobaoItemBasicInformation.getPrice().toString());
-        imageFetcher.loadImage(taobaoItemBasicInformation.getPicUrl(), holder.imageView);
+        holder.priceView.setText("¥".concat(taobaoItemBasicInfo.getPrice().toString()));
+        imageFetcher.loadImage(taobaoItemBasicInfo.getPicUrl(), holder.imageView);
         return convertView;
     }
 
@@ -66,12 +66,12 @@ public class StaggeredAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return taobaoItemBasicInformations.size();
+        return taobaoItemBasicInfos.size();
     }
 
     @Override
     public Object getItem(int arg0) {
-        return taobaoItemBasicInformations.get(arg0);
+        return taobaoItemBasicInfos.get(arg0);
     }
 
     @Override
@@ -79,8 +79,8 @@ public class StaggeredAdapter extends BaseAdapter {
         return 0;
     }
 
-    public void addItemLast(List<TaobaoItemBasicInformation> datas) {
-        taobaoItemBasicInformations.addAll(datas);
+    public void addItemLast(List<TaobaoItemBasicInfo> datas) {
+        taobaoItemBasicInfos.addAll(datas);
     }
 
     /**
@@ -88,9 +88,9 @@ public class StaggeredAdapter extends BaseAdapter {
      *
      * @param datas
      */
-    public void addItemTop(List<TaobaoItemBasicInformation> datas) {
+    public void addItemTop(List<TaobaoItemBasicInfo> datas) {
         for (int i = datas.size() - 1; i >= 0; i--) {
-            taobaoItemBasicInformations.addFirst(datas.get(i));
+            taobaoItemBasicInfos.addFirst(datas.get(i));
         }
     }
 }

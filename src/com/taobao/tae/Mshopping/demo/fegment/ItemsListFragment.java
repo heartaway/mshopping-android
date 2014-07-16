@@ -1,17 +1,18 @@
 package com.taobao.tae.Mshopping.demo.fegment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.view.*;
 import com.taobao.tae.Mshopping.demo.R;
+import com.taobao.tae.Mshopping.demo.activity.ItemDetailActivity;
 import com.taobao.tae.Mshopping.demo.adapter.StaggeredAdapter;
 import com.taobao.tae.Mshopping.demo.image.ImageFetcher;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
-import com.taobao.tae.Mshopping.demo.model.TaobaoItemBasicInformation;
+import com.taobao.tae.Mshopping.demo.model.TaobaoItemBasicInfo;
 import com.taobao.tae.Mshopping.demo.task.ItemContentTask;
 import com.taobao.tae.Mshopping.demo.view.RefreshableListView;
 import com.taobao.tae.Mshopping.demo.view.pinterest.PinterestAdapterView;
@@ -30,6 +31,7 @@ public class ItemsListFragment extends Fragment implements RefreshableListView.I
     private int currentPage = 0;
     private ItemContentTask task = null;
     private FragmentManager fragmentManager;
+    private Boolean onPause = false;
 
 
     private String categoryId;
@@ -78,11 +80,14 @@ public class ItemsListFragment extends Fragment implements RefreshableListView.I
             public void onItemClick(PinterestAdapterView<?> parent, View view,
                                     int position, long id) {
                 RefreshableListView gv = (RefreshableListView) parent;
-                TaobaoItemBasicInformation taobaoItemBasicInformation = (TaobaoItemBasicInformation) gv.getItemAtPosition(position);
-
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.index_activity_layout_id, new ItemDetailFragment());
-                fragmentTransaction.commit();
+                TaobaoItemBasicInfo taobaoItemBasicInfo = (TaobaoItemBasicInfo) gv.getItemAtPosition(position);
+                Intent intent = new Intent(getActivity(), ItemDetailActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("itemId", taobaoItemBasicInfo.getItemId().toString());
+                bundle.putInt("ACTIVITY_NAME_KEY", R.string.title_activity_index);
+                intent.putExtras(bundle);
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(intent);
             }
 
         });
@@ -107,6 +112,9 @@ public class ItemsListFragment extends Fragment implements RefreshableListView.I
             if (type == Constants.VIEW_MORE_ITEMS_ACTION) {
                 url = Constants.SERVER_DOMAIN.concat("/api/itemlist/more/" + categoryId + "/" + pageindex);
             }
+            if (type == Constants.OTHER_ACTION) {
+                return;
+            }
             ItemContentTask task = new ItemContentTask(context, type, this);
             task.execute(url);
         }
@@ -121,14 +129,22 @@ public class ItemsListFragment extends Fragment implements RefreshableListView.I
     public void onResume() {
         super.onResume();
         imageFetcher.setExitTasksEarly(false);
-        refreshableListView.setAdapter(staggeredAdapter);
-        addItemToContainer(currentPage, Constants.PULL_REFRESH_ACTION);
+        if (!onPause) {
+            refreshableListView.setAdapter(staggeredAdapter);
+            addItemToContainer(currentPage, Constants.PULL_REFRESH_ACTION);
+        }
+        onPause = false;
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        onPause = true;
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-
     }
 
     /**

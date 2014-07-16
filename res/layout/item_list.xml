@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/item_list"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/news_item_bg"
-    android:orientation="vertical" >
+              android:id="@+id/item_list"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/news_item_bg"
+              android:orientation="vertical">
 
     <com.taobao.tae.Mshopping.demo.widget.ScaleImageView
-        android:id="@+id/item_pic"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@null" />
+            android:id="@+id/item_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@null"/>
 
     <TextView
-        android:id="@+id/item_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:singleLine="false"
-        android:textColor="#656565" />
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textColor="#656565"/>
 
     <TextView
             android:id="@+id/item_line"
@@ -58,24 +58,5 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/lightRed"
                 android:textSize="14sp"/>
-
-        <TextView
-                android:id="@+id/item_love"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_alignParentRight="true"
-                android:text="201"
-                android:textColor="@color/lightRed"
-                android:textSize="14dip"
-                />
-        <ImageView
-                android:id="@+id/item_fav_img"
-                android:layout_width="16dip"
-                android:layout_height="16dip"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/item_love"
-                android:background="@drawable/item_image_unfav"
-                />
     </RelativeLayout>
 </LinearLayout>

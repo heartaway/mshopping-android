@@ -40,11 +40,6 @@
                 android:checked="true"
                 android:drawableTop="@drawable/index_indicator_bg" />
 
-              <RadioButton
-                android:id="@+id/home_tab_category"
-                style="@style/home_tab_bottom"
-                android:text="@string/title_category"
-                android:drawableTop="@drawable/category_indicator_bg" />
 
             <RadioButton
                 android:id="@+id/home_tab_personal"

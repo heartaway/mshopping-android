@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -17,10 +18,11 @@ import com.taobao.tae.Mshopping.demo.fegment.ItemsListFragment;
 import java.util.ArrayList;
 
 public class IndexActivity extends FragmentActivity {
+    private static final String TAG = "IndexActivity";
     private ViewPager viewPager;
     private ArrayList<Fragment> fragmentsList;
     private RadioButton tvTabNew, tvTabSelect, tvTabFashion;
-
+    private int param = 1;
     private int currIndex = 0;
 
     @Override
@@ -151,6 +153,4 @@ public class IndexActivity extends FragmentActivity {
         public void onPageScrollStateChanged(int arg0) {
         }
     }
-
-
 }
