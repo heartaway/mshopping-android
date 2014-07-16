@@ -6,13 +6,17 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 import com.taobao.tae.Mshopping.demo.MshoppingApplication;
 import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.fegment.OAuthLoginFragment;
 import com.taobao.tae.Mshopping.demo.fegment.PersonCenterFragment;
+import com.taobao.tae.Mshopping.demo.util.NetWorkStateUtil;
 
 public class PersonalActivity extends FragmentActivity {
 
@@ -28,6 +32,10 @@ public class PersonalActivity extends FragmentActivity {
         setContentView(R.layout.personal_activity);
         fragmentManager = this.getSupportFragmentManager();
         Bundle bundle = getIntent().getExtras();
+        if (!NetWorkStateUtil.isConnected(this)) {
+            finish();
+            toast("请检查网络连接");
+        }
         if (((MshoppingApplication) this.getApplication()).oAuthIsExpire()) {
             oAuthLoginFragment.setBundle(bundle);
             taobaoOauthLogin();
@@ -94,6 +102,21 @@ public class PersonalActivity extends FragmentActivity {
             startActivity(intent);
         }
         finish();
+    }
+
+
+    /**
+     * 展示一个粉色的Toast
+     *
+     * @param message
+     */
+    public void toast(String message) {
+        View toastRoot = LayoutInflater.from(this).inflate(R.layout.toast, null);
+        Toast toast = new Toast(this);
+        toast.setView(toastRoot);
+        TextView tv = (TextView) toastRoot.findViewById(R.id.pink_toast_notice);
+        tv.setText(message);
+        toast.show();
     }
 
 }
