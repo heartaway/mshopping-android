@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.RelativeLayout;
@@ -37,17 +38,7 @@ public class PersonalActivity extends FragmentActivity {
         backBtnLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int fromActivity = getIntent().getIntExtra("ACTIVITY_NAME_KEY", 0);
-                if (fromActivity == 0) {
-                    Intent intent = new Intent();
-                    Bundle bundle = new Bundle();
-                    bundle.putInt("ACTIVITY_NAME_KEY", R.string.title_activity_personal);
-                    intent.putExtras(bundle);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    intent.setClass(PersonalActivity.this, HomeActivity.class);
-                    startActivity(intent);
-                }
-                finish();
+                goBack();
             }
         });
     }
@@ -70,5 +61,39 @@ public class PersonalActivity extends FragmentActivity {
         fragmentTransaction.commit();
     }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            goBack();
+        }
+        return false;
+    }
+
+    /**
+     * 用户触发回退后操作，包括顶部回退&物理键回退
+     */
+    public void goBack() {
+        //Activity栈无数据时
+        int fromActivity = getIntent().getIntExtra("ACTIVITY_NAME_KEY", 0);
+        //用户退出登录后 点击顶部返回
+        String action = getIntent().getStringExtra("action");
+        Boolean toHomePage = false;
+        if (fromActivity == 0) {
+            toHomePage = true;
+        }
+        if ("logout".equals(action) && fromActivity == R.string.title_activity_setting) {
+            toHomePage = true;
+        }
+        if (toHomePage) {
+            Intent intent = new Intent();
+            Bundle bundle = new Bundle();
+            bundle.putInt("ACTIVITY_NAME_KEY", R.string.title_activity_personal);
+            intent.putExtras(bundle);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            intent.setClass(PersonalActivity.this, HomeActivity.class);
+            startActivity(intent);
+        }
+        finish();
+    }
 
 }

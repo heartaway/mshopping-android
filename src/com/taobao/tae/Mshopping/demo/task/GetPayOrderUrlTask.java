@@ -6,24 +6,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.google.gson.Gson;
 import com.taobao.api.internal.util.WebUtils;
-import com.taobao.tae.Mshopping.demo.MshoppingApplication;
 import com.taobao.tae.Mshopping.demo.R;
-import com.taobao.tae.Mshopping.demo.activity.ConfirmOrderActivity;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
-import com.taobao.tae.Mshopping.demo.login.auth.AccessToken;
 import com.taobao.tae.Mshopping.demo.model.CreateOrderResp;
-import com.taobao.tae.Mshopping.demo.model.ItemModel;
-import com.taobao.tae.Mshopping.demo.model.ItemOrderModel;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 

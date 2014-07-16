@@ -3,6 +3,7 @@ package com.taobao.tae.Mshopping.demo.task;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,8 @@ import com.taobao.api.internal.util.WebUtils;
 import com.taobao.tae.Mshopping.demo.MshoppingApplication;
 import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.activity.ConfirmOrderActivity;
+import com.taobao.tae.Mshopping.demo.activity.HomeActivity;
+import com.taobao.tae.Mshopping.demo.activity.ItemDetailActivity;
 import com.taobao.tae.Mshopping.demo.activity.PayOrderActivity;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
 import com.taobao.tae.Mshopping.demo.login.auth.AccessToken;
@@ -78,10 +81,21 @@ public class CreateOrderTask extends AsyncTask<String, Integer, CreateOrderResp>
             if (itemModels != null && itemModels.size() > 0) {
                 intent.putExtra("itemId", itemModels.get(0).getItemId().toString());
             }
-            intent.putExtra("ACTIVITY_NAME_KEY",R.string.title_activity_confirm_order);
+            intent.putExtra("ACTIVITY_NAME_KEY", R.string.title_activity_confirm_order);
             intent.setClass(confirmOrderActivity, PayOrderActivity.class);
             confirmOrderActivity.startActivity(intent);
         } else {
+            int fromActivity = confirmOrderActivity.getIntent().getIntExtra("ACTIVITY_NAME_KEY", 0);
+            if (fromActivity == R.string.title_activity_personal) {
+                Intent intent = new Intent();
+                Bundle bundle = new Bundle();
+                bundle.putString("itemId", itemModels.get(0).getItemId().toString());
+                bundle.putInt("ACTIVITY_NAME_KEY", R.string.title_activity_confirm_order);
+                intent.putExtras(bundle);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.setClass(confirmOrderActivity, ItemDetailActivity.class);
+                confirmOrderActivity.startActivity(intent);
+            }
             confirmOrderActivity.finish();
             if (errorMessage == null) {
                 errorMessage = "提交订单失败";

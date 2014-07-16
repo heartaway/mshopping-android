@@ -37,6 +37,7 @@ public class MshoppingApplication extends Application {
      */
     public void makeOAuthExpire() {
         accessToken = null;
+        taobaoUser = null;
     }
 
     public void setAccessToken(AccessToken accessToken) {

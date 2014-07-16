@@ -35,10 +35,11 @@ public class SettingActivity extends BaseActivity {
         logoutRelativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MshoppingApplication) getApplication()).setAccessToken(null);
-                ((MshoppingApplication) getApplication()).setTaobaoUser(null);
+                ((MshoppingApplication) getApplication()).makeOAuthExpire();
                 Intent intent = new Intent(getApplication(), PersonalActivity.class);
-                intent.putExtra("ACTIVITY_NAME_KEY",R.string.title_activity_setting);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("ACTIVITY_NAME_KEY", R.string.title_activity_setting);
+                intent.putExtra("action", "logout");
                 startActivity(intent);
                 finish();
             }

@@ -61,7 +61,7 @@ public class PayOrderActivity extends BaseActivity {
                     intent.setClass(PayOrderActivity.this, ItemDetailActivity.class);
                     startActivity(intent);
                     finish();
-                    toast("您取消的订单过多，请稍后再试");
+                    toast("服务端异常，请稍后再试");
                 }
             }
         });
