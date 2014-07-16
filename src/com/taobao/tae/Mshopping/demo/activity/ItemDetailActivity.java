@@ -1,6 +1,5 @@
 package com.taobao.tae.Mshopping.demo.activity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -94,12 +93,17 @@ public class ItemDetailActivity extends BaseActivity {
             LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             popUpView = layoutInflater.inflate(R.layout.item_detail_sku_select, null);
             itemDetailSkuPanel = (RelativeLayout) popUpView.findViewById(R.id.item_detail_sku_panel);
+            //针对魅族手机的底部smartbar做兼容处理
+            if (android.os.Build.MANUFACTURER.equalsIgnoreCase("Meizu")) {
+                TextView autoHigtView = (TextView) popUpView.findViewById(R.id.item_detail_popup_auto_hight);
+                autoHigtView.getLayoutParams().height = 100;
+            }
             popupWindow = new PopupWindow(popUpView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT, true);
             popupWindow.setAnimationStyle(R.style.item_sku_animation);//设置淡入淡出动画效果
             popupWindow.setFocusable(true);// 使其聚集
             popupWindow.setOutsideTouchable(true);// 设置允许在外点击消失
             popupWindow.setBackgroundDrawable(new BitmapDrawable()); // 这个是为了点击“返回Back”也能使其消失，并且并不会影响你的背景
-            popupWindow.showAtLocation(v, Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
+            popupWindow.showAtLocation(v, Gravity.TOP, 0, 0);
             initItemThumbnail();
             initItemSKUProperties(popUpView);
             listenConfirmButton();

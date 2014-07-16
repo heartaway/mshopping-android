@@ -138,11 +138,16 @@
                     android:layout_height="40dip"
                     android:layout_margin="7dp"
                     android:gravity="center"
-                    android:layout_centerVertical="true"
                     android:layout_centerHorizontal="true"
                     android:text="确定"
                     android:textColor="@color/white"
                     android:background="@drawable/buy_btn_shape"
+                    />
+            <TextView
+                    android:id="@+id/item_detail_popup_auto_hight"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/item_detail_buy_confirm_btn"
                     />
             <View android:layout_below="@id/item_detail_buy_btn"
                   android:layout_height="0dp"
