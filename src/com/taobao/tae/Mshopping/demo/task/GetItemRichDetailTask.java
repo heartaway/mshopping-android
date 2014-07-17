@@ -93,6 +93,17 @@ public class GetItemRichDetailTask extends AsyncTask<String, Integer, TaobaoItem
             TextView invalidItemTextView = (TextView) itemDetailActivity.findViewById(R.id.item_detail_invaliditem_txt);
             invalidItemTextView.setText(itemUnitCotrol.getErrorMessage());
         }
+        SellerInfo sellerInfo = taobaoItemRichInfo.getBasicInformation().getSellerInfo();
+        ImageView itemFromImageView = (ImageView) itemDetailActivity.findViewById(R.id.item_detail_from_icon);
+        TextView itemFromTextView = (TextView) itemDetailActivity.findViewById(R.id.item_detail_from_txt);
+        if (sellerInfo != null && "B".equalsIgnoreCase(sellerInfo.getType())) {
+            itemFromImageView.setBackgroundResource(R.drawable.tmall_icon);
+            itemFromTextView.setText("天猫特供");
+        }
+        if (sellerInfo != null && "C".equalsIgnoreCase(sellerInfo.getType())) {
+            itemFromImageView.setBackgroundResource(R.drawable.tb_icon);
+            itemFromTextView.setText("淘宝特供");
+        }
         //动态加载图文信息
         LinearLayout dynamicFillContentLinearLayout = (LinearLayout) itemDetailActivity.findViewById(R.id.item_detail_dynamic_fill_content);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);

@@ -58,6 +58,24 @@
                 android:textColor="@color/slider_page"
                 android:layout_centerVertical="true"
                 />
+
+        <ImageView
+                android:id="@+id/item_detail_from_icon"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/item_detail_from_txt"
+                />
+        <TextView
+                android:id="@+id/item_detail_from_txt"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dip"
+                android:layout_marginLeft="2dip"
+                android:textSize="10dp"
+                android:layout_centerVertical="true"
+                />
     </RelativeLayout>
 
 
