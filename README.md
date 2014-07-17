@@ -12,4 +12,24 @@ Android手机扫描二维码下载App   xxxxxx
 2. 客户端设计
 客户端整体实现基本全部采用Native的实现方式，包括商品列表展示、商品详情展示、商品购买SKU选择、商品订单创建与确认等等。
 
+### 商品列表页
+* 通过两栏纵向布局和三栏横向布局，展示出更丰富的商品：
+![商品首页](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/index.png)
+
+### 商品详情页
 ![商品详情](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/detail.png)
+
+### 商品SKU选择页
+![商品SKU选择](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/sku.png)
+
+### 用户购买后确认订单页
+![订单确认](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/order.png)
+
+### 支付宝支付页
+![订单支付](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/pay.png)
+
+### 淘宝OAuth授权登录页
+![买家登录](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/login.png)
+
+### 淘宝授权页
+![买家授权](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/oauth.png)
