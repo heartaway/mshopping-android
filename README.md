@@ -6,9 +6,13 @@ TAE Android Demo 主要是为开发者提供一套TAE在无线端开放的代码
 
 ## Demo下载与试用：
 手机扫码下载
+
 ![二维码](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/apk/1.0.0/tae-android-demo.png)
+
 点击下载：
+
 [APK下载](https://raw.github.com/heartaway/gitimagerepo/master/mshoping-android/apk/1.0.0/mshopping-android.apk)
+
 ## Demo设计说明：
 1. 服务端设计
 基于TAE开放的商品获取接口进行商品的手工录入和推送，目前可以添加淘宝和天猫的大部分商品，后续可能会开放处基于全站的智能化选品组件，方便独立开发者快捷高效地从海量商品中选择出更优质的商品。目前服务端托管在TAE平台之上。
