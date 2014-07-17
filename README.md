@@ -5,7 +5,9 @@ Android Demo 使用文档
 TAE Android Demo 主要是为开发者提供一套TAE在无线端开放的代码实例，主要完成使用Native的方式实现淘宝商品的选择、购买和支付等交易链路环节，解决了之前导购类App只能通过H5的方式跳转到淘宝无线端的H5页面，打通了在一个App中购买商品的整个流程，让用户的购物体验更加完整和流程；其次，TAE作为阿里巴巴无线开放平台，还为开发者提供了更丰富的数据接口。此Android Demo基于开放的原则，开放出源代码方便开发者参考使用。
 
 ## Demo下载与试用：
-Android手机扫描二维码下载App   xxxxxx  
+Android手机扫描二维码下载App   
+或点击连接下载：
+[APK下载](https://raw.github.com/heartaway/gitimagerepo/master/mshoping-android/apk/1.0.0/mshopping-android.apk)
 ## Demo设计说明：
 1. 服务端设计
 基于TAE开放的商品获取接口进行商品的手工录入和推送，目前可以添加淘宝和天猫的大部分商品，后续可能会开放处基于全站的智能化选品组件，方便独立开发者快捷高效地从海量商品中选择出更优质的商品。目前服务端托管在TAE平台之上。
