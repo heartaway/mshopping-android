@@ -10,7 +10,6 @@ TAE Android Demo 主要是为开发者提供一套TAE在无线端开放的代码
 ![二维码](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/apk/1.0.0/tae-android-demo.png)
 
 点击下载：
-
 [APK下载](https://raw.github.com/heartaway/gitimagerepo/master/mshoping-android/apk/1.0.0/mshopping-android.apk)
 
 ## Demo设计说明：
