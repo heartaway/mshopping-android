@@ -4,9 +4,9 @@ public class Constants {
 
     public final static String OFFICIAL_URL = "http://gw.api.taobao.com/router/rest";
 
-    public final static String APP_KEY = "21804361";
+    public final static String APP_KEY = "xxxxxxx";
 
-    public final static String APP_SECRET = "575f102ebb124dffe091139daedf8e7d";
+    public final static String APP_SECRET = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
     public final static String SERVER_DOMAIN = "http://mshopping-1.uz.jaeapp.com";
 
