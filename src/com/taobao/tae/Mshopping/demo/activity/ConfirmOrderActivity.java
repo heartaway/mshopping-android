@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import com.taobao.api.internal.util.StringUtils;
 import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.image.ImageFetcher;
 import com.taobao.tae.Mshopping.demo.model.*;
@@ -127,8 +128,6 @@ public class ConfirmOrderActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 TextView leaveMessage = (TextView) findViewById(R.id.confirm_order_leave_message);
-                itemOrderModel.getLeaveMessage().getFields().setName(leaveMessage.getText().toString());
-                itemOrderModel.getLeaveMessage().getFields().setPlaceholder(leaveMessage.getText().toString());
                 itemOrderModel.getLeaveMessage().getFields().setValue(leaveMessage.getText().toString());
                 CreateOrderTask createOrderTask = new CreateOrderTask(getApplicationContext(), itemModels, confirmOrdcerLayoutView, ConfirmOrderActivity.this);
                 createOrderTask.execute(itemOrderModel.getCreateOrderRequiredJson());
@@ -159,6 +158,17 @@ public class ConfirmOrderActivity extends BaseActivity {
                 skuPropString = skuPropString.substring(0, 20).concat("...");
             }
             skuTextView.setText(skuPropString);
+        }
+        SellerInfo sellerInfo = taobaoItemBasicInfo.getSellerInfo();
+        ImageView itemFromImageView = (ImageView)findViewById(R.id.confirm_order_item_from_icon);
+        TextView itemFromTextView = (TextView)findViewById(R.id.confirm_order_item_from_text);
+        if (sellerInfo != null && "B".equalsIgnoreCase(sellerInfo.getType())) {
+            itemFromImageView.setBackgroundResource(R.drawable.tmall_icon);
+            itemFromTextView.setText("天猫店铺");
+        }
+        if (sellerInfo != null && "C".equalsIgnoreCase(sellerInfo.getType())) {
+            itemFromImageView.setBackgroundResource(R.drawable.tb_icon);
+            itemFromTextView.setText("淘宝店铺");
         }
 
         TextView priceTextView = (TextView) findViewById(R.id.confirm_order_item_price_txt);

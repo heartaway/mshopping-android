@@ -59,6 +59,7 @@
                 android:layout_centerVertical="true"
                 />
 
+        <!--商品来源：淘宝 或 天猫-->
         <ImageView
                 android:id="@+id/item_detail_from_icon"
                 android:layout_width="16dip"
