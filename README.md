@@ -48,7 +48,7 @@ TAE Android Demo 主要是为开发者提供一套TAE在无线端开放的代码
 ## 客户端源代码使用说明
 #### 修改配置项
 如果期望本Demo代码能够在本地正常运行，需要首先在TAE平台申请开发者无线开放权限，平台会颁发给你一个appkey和secret，然后修改
- / src / com / taobao / tae / Mshopping / demo / constant / Constants.java 文件中 APP_KEY 和 APP_SECRET 参数。
+ /src/com/taobao/tae/Mshopping/demo/constant/Constants.java 文件中 APP_KEY 和 APP_SECRET 参数。
 
 ##服务端页面预览
 
@@ -60,3 +60,8 @@ TAE Android Demo 主要是为开发者提供一套TAE在无线端开放的代码
 ![推送商品](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-server/push-item.png)
 ###推送的商品历史：
 ![推送历史](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-server/history.png)
+
+## 服务端源代码使用说明
+#### 修改配置项
+如果期望本服务端代码能够在正常运行，同样需要拥有TAE平台申请的开发者无线开放权限(appkey和secret），然后修改
+ /src/main/java/com/taobao/mshopping/demo/constant/MshoppingConstant.java文件中 APP_KEY 和 APP_SECRET 参数。
