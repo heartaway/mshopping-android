@@ -20,6 +20,7 @@ import com.taobao.tae.Mshopping.demo.constant.Constants;
 import com.taobao.tae.Mshopping.demo.login.auth.AccessToken;
 import com.taobao.tae.Mshopping.demo.model.*;
 import com.taobao.tae.Mshopping.demo.util.RemoteImageHelper;
+import com.taobao.tae.Mshopping.demo.util.SecurityKey;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -97,6 +98,7 @@ public class BuildOrderTask extends AsyncTask<String, Integer, Boolean> {
         String buildOrderUrl = Constants.SERVER_DOMAIN + "/api/order/buildorder";
         int timeout = 30000;
         Map param = new HashMap<String, String>();
+        param.put("securityKey", SecurityKey.getKey());
         param.put("sessionKey", accessToken.getValue());
         param.put("itemsJson", convertItemModelListToJson(itemModels));
         try {

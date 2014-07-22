@@ -23,6 +23,7 @@ import com.taobao.tae.Mshopping.demo.login.auth.AccessToken;
 import com.taobao.tae.Mshopping.demo.model.CreateOrderResp;
 import com.taobao.tae.Mshopping.demo.model.ItemModel;
 import com.taobao.tae.Mshopping.demo.model.ItemOrderModel;
+import com.taobao.tae.Mshopping.demo.util.SecurityKey;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -115,6 +116,7 @@ public class CreateOrderTask extends AsyncTask<String, Integer, CreateOrderResp>
         String buildOrderUrl = Constants.SERVER_DOMAIN + "/api/order/createorder";
         int timeout = 30000;
         Map param = new HashMap<String, String>();
+        param.put("securityKey", SecurityKey.getKey());
         param.put("sessionKey", accessToken.getValue());
         param.put("submitJson", submitJson);
         try {

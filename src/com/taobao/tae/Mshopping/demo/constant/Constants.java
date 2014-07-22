@@ -8,7 +8,7 @@ public class Constants {
 
     public final static String APP_SECRET = "xxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
-    public final static String SERVER_DOMAIN = "http://mshopping-1.uz.jaeapp.com";
+    public final static String SERVER_DOMAIN = "http://mshopping.uz.jaeapp.com";
 
     public final static int HANDLER_WHAT = 1;
 

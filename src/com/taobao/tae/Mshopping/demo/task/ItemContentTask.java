@@ -3,19 +3,19 @@ package com.taobao.tae.Mshopping.demo.task;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import com.taobao.api.internal.util.WebUtils;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
 import com.taobao.tae.Mshopping.demo.fegment.ItemsListFragment;
 import com.taobao.tae.Mshopping.demo.model.TaobaoItemBasicInfo;
 import com.taobao.tae.Mshopping.demo.util.Helper;
+import com.taobao.tae.Mshopping.demo.util.SecurityKey;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by xinyuan on 14/6/25.
@@ -82,7 +82,10 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
         String json = "";
         if (Helper.checkConnection(context)) {
             try {
-                json = Helper.getStringFromUrl(url);
+                int timeout = 30000;
+                Map param = new HashMap<String, String>();
+                param.put("securityKey", SecurityKey.getKey());
+                json = WebUtils.doPost(url, param, timeout, timeout);
             } catch (IOException e) {
                 Log.e("IOException is : ", e.toString());
                 e.printStackTrace();

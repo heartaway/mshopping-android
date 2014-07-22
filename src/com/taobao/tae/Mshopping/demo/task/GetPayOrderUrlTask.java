@@ -12,6 +12,7 @@ import com.taobao.api.internal.util.WebUtils;
 import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
 import com.taobao.tae.Mshopping.demo.model.CreateOrderResp;
+import com.taobao.tae.Mshopping.demo.util.SecurityKey;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -73,6 +74,7 @@ public class GetPayOrderUrlTask extends AsyncTask<String, Integer, String> {
         String payOrderUrl = Constants.SERVER_DOMAIN + "/api/order/getpayurl";
         int timeout = 30000;
         Map param = new HashMap<String, String>();
+        param.put("securityKey", SecurityKey.getKey());
         param.put("tradeNos", createOrderResp.getPayOrderId());
         param.put("returnUrl", "http://m.taobao.com");
         try {
