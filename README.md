@@ -12,12 +12,17 @@ TAE Android Demo 主要是为开发者提供一套TAE在无线端开放的代码
 点击下载：
 [APK下载](https://raw.github.com/heartaway/gitimagerepo/master/mshoping-android/apk/1.0.0/mshopping-android.apk)
 
+## 源码地址：
+服务端：https://github.com/heartaway/mshopping-server.git
+客户端：https://github.com/heartaway/mshopping-android.git
+
 ## Demo设计说明：
 1. 服务端设计
 基于TAE开放的商品获取接口进行商品的手工录入和推送，目前可以添加淘宝和天猫的大部分商品，后续可能会开放处基于全站的智能化选品组件，方便独立开发者快捷高效地从海量商品中选择出更优质的商品。目前服务端托管在TAE平台之上。
 2. 客户端设计
 客户端整体实现基本全部采用Native的实现方式，包括商品列表展示、商品详情展示、商品购买SKU选择、商品订单创建与确认等等。
 
+##客户端页面预览
 ### 商品列表页
 * 通过两栏纵向布局和三栏横向布局，展示出更丰富的商品：
 ![商品首页](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/index.png)
@@ -40,8 +45,18 @@ TAE Android Demo 主要是为开发者提供一套TAE在无线端开放的代码
 ### 淘宝授权页
 ![买家授权](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-android/oauth.png)
 
-## 源代码使用说明
+## 客户端源代码使用说明
 #### 修改配置项
 如果期望本Demo代码能够在本地正常运行，需要首先在TAE平台申请开发者无线开放权限，平台会颁发给你一个appkey和secret，然后修改
  / src / com / taobao / tae / Mshopping / demo / constant / Constants.java 文件中 APP_KEY 和 APP_SECRET 参数。
 
+##服务端页面预览
+
+###添加商品：
+![添加商品](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-server/add-item.png)
+###选择商品向客户端推送：
+![选择商品](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-server/item-push-buffer.png)
+###推送商品到客户端分类：
+![推送商品](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-server/push-item.png)
+###推送的商品历史：
+![推送历史](https://raw.githubusercontent.com/heartaway/gitimagerepo/master/mshoping-server/history.png)
