@@ -3,7 +3,12 @@ package com.taobao.tae.Mshopping.demo.task;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 import com.taobao.api.internal.util.WebUtils;
+import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
 import com.taobao.tae.Mshopping.demo.fegment.ItemsListFragment;
 import com.taobao.tae.Mshopping.demo.model.TaobaoItemBasicInfo;
@@ -45,6 +50,11 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
 
     @Override
     protected void onPostExecute(List<TaobaoItemBasicInfo> result) {
+        if(result == null){
+            toast("获取商品失败");
+            return;
+        }
+
         if (type == Constants.PULL_REFRESH_ACTION) {
             itemsListFragment.staggeredAdapter.addItemTop(result);
             itemsListFragment.staggeredAdapter.notifyDataSetChanged();
@@ -89,7 +99,7 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
             } catch (IOException e) {
                 Log.e("IOException is : ", e.toString());
                 e.printStackTrace();
-                return taobaoItemBasicInfos;
+                return null;
             }
         }
         try {
@@ -111,5 +121,20 @@ public class ItemContentTask extends AsyncTask<String, Integer, List<TaobaoItemB
             e.printStackTrace();
         }
         return taobaoItemBasicInfos;
+    }
+
+
+    /**
+     * 展示一个粉色的Toast
+     *
+     * @param message
+     */
+    public void toast(String message) {
+        View toastRoot = LayoutInflater.from(context).inflate(R.layout.toast, null);
+        Toast toast = new Toast(context);
+        toast.setView(toastRoot);
+        TextView tv = (TextView) toastRoot.findViewById(R.id.pink_toast_notice);
+        tv.setText(message);
+        toast.show();
     }
 }

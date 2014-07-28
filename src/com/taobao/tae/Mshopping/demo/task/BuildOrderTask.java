@@ -60,6 +60,10 @@ public class BuildOrderTask extends AsyncTask<String, Integer, Boolean> {
     protected Boolean doInBackground(String... params) {
         try {
             String json = getBuildOrderResult();
+            if(json == null){
+                errorMessage = "订单创建超时";
+                return false;
+            }
             return parseBuildOrderJSON(json);
         } catch (IOException e) {
             e.printStackTrace();
@@ -94,7 +98,7 @@ public class BuildOrderTask extends AsyncTask<String, Integer, Boolean> {
      * @throws IOException
      */
     public String getBuildOrderResult() throws IOException {
-        String result = "";
+        String result = null;
         String buildOrderUrl = Constants.SERVER_DOMAIN + "/api/order/buildorder";
         int timeout = 30000;
         Map param = new HashMap<String, String>();
@@ -300,7 +304,7 @@ public class BuildOrderTask extends AsyncTask<String, Integer, Boolean> {
         if (itemOrderModel.getItemPromotion() != null) {
             TextView promotionTextView = (TextView) confirmOrdcerLayoutView.findViewById(R.id.confirm_order_promotion);
             String promotionPrice = itemOrderModel.getItemPromotion().getQuark();
-            if (promotionPrice == null || promotionPrice == "") {
+            if (promotionPrice == null || "".equals(promotionPrice)) {
                 promotionPrice = "0.00";
             }
             if (promotionPrice.startsWith("-")) {

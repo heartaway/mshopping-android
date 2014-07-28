@@ -85,6 +85,47 @@ public class Address implements Serializable {
     }
 
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Boolean getSubmit() {
+        return submit;
+    }
+
+    public void setSubmit(Boolean submit) {
+        this.submit = submit;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public AddressFields getFields() {
+        return fields;
+    }
+
+    public void setFields(AddressFields fields) {
+        this.fields = fields;
+    }
+
+
     public class AddressFields {
         private String agencyReceive;
         private String mdSellerId;
@@ -435,44 +476,5 @@ public class Address implements Serializable {
         }
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public Boolean getSubmit() {
-        return submit;
-    }
-
-    public void setSubmit(Boolean submit) {
-        this.submit = submit;
-    }
-
-    public String getTag() {
-        return tag;
-    }
-
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public AddressFields getFields() {
-        return fields;
-    }
-
-    public void setFields(AddressFields fields) {
-        this.fields = fields;
-    }
 
 }

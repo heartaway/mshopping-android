@@ -134,6 +134,7 @@ public class OAuthLoginFragment extends Fragment {
 
             } catch (Exception eg) {
                 Log.e("", "OAuth json perse exception." + eg.getMessage());
+                toast("授权登录失败");
             }
         }
 

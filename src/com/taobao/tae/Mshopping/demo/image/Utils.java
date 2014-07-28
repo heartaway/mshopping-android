@@ -29,7 +29,7 @@ import java.io.File;
 /**
  * Class containing some static utility methods.
  */
-public class Utils {
+public final class Utils {
     public static final int IO_BUFFER_SIZE = 8 * 1024;
 
     private Utils() {};

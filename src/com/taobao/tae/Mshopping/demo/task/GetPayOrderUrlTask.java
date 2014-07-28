@@ -46,6 +46,10 @@ public class GetPayOrderUrlTask extends AsyncTask<String, Integer, String> {
     protected String doInBackground(String... params) {
         try {
             String json = getAlipayOrderUrlResult();
+            if (json == null) {
+                toast("跳转付款页面失败");
+                return null;
+            }
             return parsePayOrderUrlJSON(json);
         } catch (IOException e) {
             e.printStackTrace();
@@ -59,7 +63,7 @@ public class GetPayOrderUrlTask extends AsyncTask<String, Integer, String> {
         if (url != null) {
             webView.loadUrl(url);
         } else {
-            toast("跳转支付宝失败");
+            toast("跳转付款页面失败");
         }
     }
 
@@ -70,7 +74,7 @@ public class GetPayOrderUrlTask extends AsyncTask<String, Integer, String> {
      * @throws java.io.IOException
      */
     public String getAlipayOrderUrlResult() throws IOException {
-        String result = "";
+        String result = null;
         String payOrderUrl = Constants.SERVER_DOMAIN + "/api/order/getpayurl";
         int timeout = 30000;
         Map param = new HashMap<String, String>();

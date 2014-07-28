@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -81,19 +82,43 @@ public class ConfirmOrderActivity extends BaseActivity {
             ShowItemSku showItemSku = taobaoItemBasicInfo.getSkuModel().getPriceUnitsByPpath(ppath);
             String ppathId = taobaoItemBasicInfo.getSkuModel().getPpathIdByPath(ppath);
             PriceUnit priceUnit = showItemSku.getPriceUnits().get(PriceDisplay.HIGHLIGHT.getCode());
+            if (priceUnit == null || priceUnit.getPrice() == null) {
+                finish();
+            }
             quantity = showItemSku.getQuantity();
-            price = Double.valueOf(priceUnit.getPrice());
+            try {
+                price = Double.valueOf(priceUnit.getPrice());
+            } catch (NumberFormatException e) {
+                Log.e("", e.getMessage());
+                finish();
+            }
             ItemModel item = new ItemModel();
             item.setItemId(taobaoItemBasicInfo.getItemId());
             item.setQuantity(count);
-            item.setSkuId(Long.valueOf(ppathId));
+            try {
+                item.setSkuId(Long.valueOf(ppathId));
+            } catch (NumberFormatException e) {
+                Log.e("", e.getMessage());
+                finish();
+            }
             itemModels = new ArrayList<ItemModel>();
             itemModels.add(item);
         } else {
             //商品 无 SKU 属性
             DefaultShowItemSku defaultShowItemSku = taobaoItemBasicInfo.getSkuModel().getDefaultShowItemSku();
+            if (defaultShowItemSku == null) {
+                finish();
+            }
             PriceUnit _priceUnit = defaultShowItemSku.getPriceUnits().get(PriceDisplay.HIGHLIGHT.getCode());
-            price = Double.valueOf(_priceUnit.getPrice());
+            if (_priceUnit == null || _priceUnit.getPrice() == null) {
+                finish();
+            }
+            try {
+                price = Double.valueOf(_priceUnit.getPrice());
+            } catch (NumberFormatException e) {
+                Log.e("", e.getMessage());
+                finish();
+            }
             quantity = defaultShowItemSku.getQuantity();
             ItemModel item = new ItemModel();
             item.setItemId(taobaoItemBasicInfo.getItemId());
@@ -146,7 +171,7 @@ public class ConfirmOrderActivity extends BaseActivity {
         ImageFetcher imageFetcher = new ImageFetcher(this, 200);
         imageFetcher.loadImage(taobaoItemBasicInfo.getPicsPath().get(0), imageView);
         TextView titleTextView = (TextView) findViewById(R.id.confirm_order_item_title_txt);
-        if (taobaoItemBasicInfo.getTitle().length() > 15) {
+        if (taobaoItemBasicInfo.getTitle() != null && taobaoItemBasicInfo.getTitle().length() > 15) {
             titleTextView.setText(taobaoItemBasicInfo.getTitle().substring(0, 15).concat("..."));
         } else {
             titleTextView.setText(taobaoItemBasicInfo.getTitle());
@@ -154,14 +179,14 @@ public class ConfirmOrderActivity extends BaseActivity {
         if (skuSelect != null) {
             TextView skuTextView = (TextView) findViewById(R.id.confirm_order_item_sku_txt);
             String skuPropString = skuSelect.getUserSelectSkuPropNameString();
-            if (skuPropString.length() > 20) {
+            if (skuPropString != null && skuPropString.length() > 20) {
                 skuPropString = skuPropString.substring(0, 20).concat("...");
             }
             skuTextView.setText(skuPropString);
         }
         SellerInfo sellerInfo = taobaoItemBasicInfo.getSellerInfo();
-        ImageView itemFromImageView = (ImageView)findViewById(R.id.confirm_order_item_from_icon);
-        TextView itemFromTextView = (TextView)findViewById(R.id.confirm_order_item_from_text);
+        ImageView itemFromImageView = (ImageView) findViewById(R.id.confirm_order_item_from_icon);
+        TextView itemFromTextView = (TextView) findViewById(R.id.confirm_order_item_from_text);
         if (sellerInfo != null && "B".equalsIgnoreCase(sellerInfo.getType())) {
             itemFromImageView.setBackgroundResource(R.drawable.tmall_icon);
             itemFromTextView.setText("天猫店铺");

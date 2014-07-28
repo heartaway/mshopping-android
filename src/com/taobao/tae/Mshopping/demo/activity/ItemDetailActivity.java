@@ -262,7 +262,7 @@ public class ItemDetailActivity extends BaseActivity {
                                         public void onClick(View v) {
                                             TextView itemCountTextView = (TextView) popUpView.findViewById(R.id.item_buy_count);
                                             Integer itemCount = Integer.valueOf(itemCountTextView.getText().toString());
-                                            if (itemCount == quantity) {
+                                            if (itemCount != null && itemCount.equals(quantity)) {
                                                 return;
                                             }
                                             itemCount = itemCount + 1;
@@ -329,7 +329,7 @@ public class ItemDetailActivity extends BaseActivity {
                     public void onClick(View v) {
                         TextView itemCountTextView = (TextView) popUpView.findViewById(R.id.item_buy_count);
                         Integer itemCount = Integer.valueOf(itemCountTextView.getText().toString());
-                        if (itemCount == quantity) {
+                        if (itemCount != null && itemCount.equals(quantity)) {
                             return;
                         }
                         itemCount = itemCount + 1;

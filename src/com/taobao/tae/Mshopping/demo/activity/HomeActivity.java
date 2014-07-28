@@ -8,60 +8,64 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
 import com.taobao.tae.Mshopping.demo.R;
+import com.taobao.tae.Mshopping.demo.update.UpdateManager;
 
 
 public class HomeActivity extends TabActivity {
-	
-	public static final String TAG = HomeActivity.class.getSimpleName();
 
-	private RadioGroup mTabButtonGroup;
-	private TabHost mTabHost;
+    public static final String TAG = HomeActivity.class.getSimpleName();
 
-	public static final String TAB_MAIN = "MAIN_ACTIVITY";
-	public static final String TAB_PERSONAL = "PERSONAL_ACTIVITY";
+    private RadioGroup mTabButtonGroup;
+    private TabHost mTabHost;
+
+    public static final String TAB_MAIN = "MAIN_ACTIVITY";
+    public static final String TAB_PERSONAL = "PERSONAL_ACTIVITY";
 
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.home_activity);
-		findViewById();
-		initView();
-	}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.home_activity);
+        // 版本更新检查
+        UpdateManager um = new UpdateManager(HomeActivity.this);
+        um.checkUpdate();
+        findViewById();
+        initView();
+    }
 
-	private void findViewById() {
-		mTabButtonGroup = (RadioGroup) findViewById(R.id.home_radio_button_group);
-	}
-	
-	private void initView() {
+    private void findViewById() {
+        mTabButtonGroup = (RadioGroup) findViewById(R.id.home_radio_button_group);
+    }
 
-		mTabHost = getTabHost();
+    private void initView() {
 
-		Intent i_main = new Intent(this, IndexActivity.class);
-		Intent i_personal = new Intent(this, PersonalActivity.class);
+        mTabHost = getTabHost();
 
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_MAIN).setIndicator(TAB_MAIN).setContent(i_main));
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_PERSONAL).setIndicator(TAB_PERSONAL).setContent(i_personal));
+        Intent i_main = new Intent(this, IndexActivity.class);
+        Intent i_personal = new Intent(this, PersonalActivity.class);
 
-		mTabHost.setCurrentTabByTag(TAB_MAIN);
+        mTabHost.addTab(mTabHost.newTabSpec(TAB_MAIN).setIndicator(TAB_MAIN).setContent(i_main));
+        mTabHost.addTab(mTabHost.newTabSpec(TAB_PERSONAL).setIndicator(TAB_PERSONAL).setContent(i_personal));
 
-		mTabButtonGroup
-				.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-					public void onCheckedChanged(RadioGroup group, int checkedId) {
-						switch (checkedId) {
-						case R.id.home_tab_main:
-							mTabHost.setCurrentTabByTag(TAB_MAIN);
-							break;
+        mTabHost.setCurrentTabByTag(TAB_MAIN);
 
-						case R.id.home_tab_personal:
-							mTabHost.setCurrentTabByTag(TAB_PERSONAL);
-							break;
+        mTabButtonGroup
+                .setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+                        switch (checkedId) {
+                            case R.id.home_tab_main:
+                                mTabHost.setCurrentTabByTag(TAB_MAIN);
+                                break;
 
-						default:
-							break;
-						}
-					}
-				});
-	}
+                            case R.id.home_tab_personal:
+                                mTabHost.setCurrentTabByTag(TAB_PERSONAL);
+                                break;
+
+                            default:
+                                break;
+                        }
+                    }
+                });
+    }
 }

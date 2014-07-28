@@ -7,11 +7,11 @@ import java.io.Serializable;
  */
 public class CreateOrderResp implements Serializable{
 
-    public boolean isSuccess;
+    private boolean isSuccess;
 
-    public String payOrderId;
+    private String payOrderId;
 
-    public String bizOrderId;
+    private String bizOrderId;
 
     public boolean isSuccess() {
         return isSuccess;

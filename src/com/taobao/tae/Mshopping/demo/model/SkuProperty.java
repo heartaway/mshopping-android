@@ -1,8 +1,5 @@
 package com.taobao.tae.Mshopping.demo.model;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;

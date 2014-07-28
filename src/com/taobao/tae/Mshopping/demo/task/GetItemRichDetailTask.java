@@ -141,7 +141,7 @@ public class GetItemRichDetailTask extends AsyncTask<String, Integer, TaobaoItem
             } catch (IOException e) {
                 Log.e("IOException is : ", e.toString());
                 e.printStackTrace();
-                return taobaoItemRichInfo;
+                return null;
             }
         }
         try {

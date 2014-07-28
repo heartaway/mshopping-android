@@ -8,8 +8,8 @@ public enum PriceDisplay {
     NORMAL(2,"普通显示"),
     DELETELINE(3,"添加删除线");
 
-    int code;
-    String description;
+    private int code;
+    private String description;
 
     PriceDisplay(int code, String description) {
         this.code = code;

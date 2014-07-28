@@ -100,7 +100,7 @@ public class ItemsListFragment extends Fragment implements RefreshableListView.I
      * @param type
      */
     private void addItemToContainer(int pageindex, int type) {
-        if (task.getStatus() != AsyncTask.Status.RUNNING) {
+        if (task != null && task.getStatus() != AsyncTask.Status.RUNNING) {
             String url = "";
             if (type == Constants.PULL_REFRESH_ACTION) {
                 if (lastPushedItemsTime == null) {

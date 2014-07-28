@@ -109,7 +109,6 @@ public class UpdateOrderTask extends AsyncTask<String, Integer, Boolean> {
     public Boolean parseUpdateOrderJSON(String json) throws IOException {
         Boolean result = false;
         try {
-            JSONObject jsonObject = new JSONObject(json);
 
         } catch (Exception e) {
             Log.e("IOException is : ", e.toString());
@@ -141,7 +140,7 @@ public class UpdateOrderTask extends AsyncTask<String, Integer, Boolean> {
         if (itemOrderModel.getItemPay() != null) {
             TextView promotionTextView = (TextView) confirmOrdcerLayoutView.findViewById(R.id.confirm_order_promotion);
             String promotionPrice = itemOrderModel.getItemPromotion().getQuark();
-            if (promotionPrice == null || promotionPrice == "") {
+            if (promotionPrice == null || "".equals(promotionPrice)) {
                 promotionPrice = "0.00";
             }
             if (promotionPrice.startsWith("-")) {

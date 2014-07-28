@@ -65,6 +65,9 @@ public class CreateOrderTask extends AsyncTask<String, Integer, CreateOrderResp>
     protected CreateOrderResp doInBackground(String... params) {
         try {
             String json = getCreateOrderResult(params[0]);
+            if (json == null) {
+                return null;
+            }
             return parseCreateOrderJSON(json);
         } catch (IOException e) {
             e.printStackTrace();
@@ -112,7 +115,7 @@ public class CreateOrderTask extends AsyncTask<String, Integer, CreateOrderResp>
      * @throws java.io.IOException
      */
     public String getCreateOrderResult(String submitJson) throws IOException {
-        String result = "";
+        String result = null;
         String buildOrderUrl = Constants.SERVER_DOMAIN + "/api/order/createorder";
         int timeout = 30000;
         Map param = new HashMap<String, String>();
