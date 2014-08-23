@@ -17,7 +17,10 @@ import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.activity.ConfirmOrderActivity;
 import com.taobao.tae.Mshopping.demo.activity.ItemDetailActivity;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
-import com.taobao.tae.Mshopping.demo.login.auth.AccessToken;
+import com.taobao.tae.Mshopping.demo.login.LoginType;
+import com.taobao.tae.Mshopping.demo.login.User;
+import com.taobao.tae.Mshopping.demo.login.taobao.AccessToken;
+import com.taobao.tae.Mshopping.demo.login.taobao.TaobaoUser;
 import com.taobao.tae.Mshopping.demo.model.*;
 import com.taobao.tae.Mshopping.demo.util.RemoteImageHelper;
 import com.taobao.tae.Mshopping.demo.util.SecurityKey;
@@ -50,7 +53,10 @@ public class BuildOrderTask extends AsyncTask<String, Integer, Boolean> {
     public BuildOrderTask(Context context, ArrayList<ItemModel> itemModels, RelativeLayout confirmOrdcerLayoutView, ConfirmOrderActivity confirmOrderActivity) {
         super();
         this.context = context;
-        this.accessToken = ((MshoppingApplication) context).getAccessToken();
+        User user = ((MshoppingApplication) context).getUser();
+        if(((MshoppingApplication) context).getLoginType() == LoginType.TAOBAO.getType()){
+            this.accessToken = ((TaobaoUser)user).getAccessToken();
+        }
         this.itemModels = itemModels;
         this.confirmOrdcerLayoutView = confirmOrdcerLayoutView;
         this.confirmOrderActivity = confirmOrderActivity;
@@ -74,7 +80,7 @@ public class BuildOrderTask extends AsyncTask<String, Integer, Boolean> {
             initView();
         } else {
             int fromActivity = confirmOrderActivity.getIntent().getIntExtra("ACTIVITY_NAME_KEY", 0);
-            if (fromActivity == R.string.title_activity_personal) {
+            if (fromActivity == R.string.title_activity_login) {
                 //来自 淘宝登录后的跳转，则直接返回商品详情页，而不是上一级
                 Intent intent = new Intent(confirmOrderActivity, ItemDetailActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

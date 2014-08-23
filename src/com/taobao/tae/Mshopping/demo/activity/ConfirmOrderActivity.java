@@ -11,11 +11,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.taobao.api.internal.util.StringUtils;
 import com.taobao.tae.Mshopping.demo.R;
+import com.taobao.tae.Mshopping.demo.constant.Constants;
+import com.taobao.tae.Mshopping.demo.constant.UmengAnalysis;
 import com.taobao.tae.Mshopping.demo.image.ImageFetcher;
 import com.taobao.tae.Mshopping.demo.model.*;
 import com.taobao.tae.Mshopping.demo.task.BuildOrderTask;
 import com.taobao.tae.Mshopping.demo.task.CreateOrderTask;
 import com.taobao.tae.Mshopping.demo.task.UpdateOrderTask;
+import com.umeng.analytics.MobclickAgent;
 
 import java.util.ArrayList;
 import java.util.Map;
@@ -44,6 +47,7 @@ public class ConfirmOrderActivity extends BaseActivity {
         buildOrderInfo();
         addButtonListener();
         initView();
+        MobclickAgent.setDebugMode(UmengAnalysis.isOpenAnalyticsDebug);
     }
 
     /**

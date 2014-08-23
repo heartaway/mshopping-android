@@ -31,6 +31,9 @@ public class StaggeredAdapter extends BaseAdapter {
         this.imageFetcher = imageFetcher;
     }
 
+
+
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 

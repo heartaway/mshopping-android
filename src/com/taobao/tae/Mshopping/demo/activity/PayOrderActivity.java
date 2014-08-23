@@ -11,8 +11,11 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.RelativeLayout;
 import com.taobao.tae.Mshopping.demo.R;
+import com.taobao.tae.Mshopping.demo.constant.Constants;
+import com.taobao.tae.Mshopping.demo.constant.UmengAnalysis;
 import com.taobao.tae.Mshopping.demo.model.CreateOrderResp;
 import com.taobao.tae.Mshopping.demo.task.GetPayOrderUrlTask;
+import com.umeng.analytics.MobclickAgent;
 
 public class PayOrderActivity extends BaseActivity {
 
@@ -74,6 +77,7 @@ public class PayOrderActivity extends BaseActivity {
                 finish();
             }
         });
+        MobclickAgent.setDebugMode(UmengAnalysis.isOpenAnalyticsDebug);
     }
 
 

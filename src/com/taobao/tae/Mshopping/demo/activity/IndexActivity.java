@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -13,7 +14,10 @@ import android.widget.*;
 import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.adapter.FragmentPagerAdapter;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
+import com.taobao.tae.Mshopping.demo.constant.UmengAnalysis;
 import com.taobao.tae.Mshopping.demo.fegment.ItemsListFragment;
+import com.umeng.analytics.MobclickAgent;
+import com.umeng.update.UmengUpdateAgent;
 
 import java.util.ArrayList;
 
@@ -24,14 +28,18 @@ public class IndexActivity extends FragmentActivity {
     private RadioButton tvTabNew, tvTabSelect, tvTabFashion;
     private int param = 1;
     private int currIndex = 0;
+    private long firstClickBackTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.index_activity);
+        MobclickAgent.openActivityDurationTrack(false);
         initTextView();
         initViewPager();
+        UmengUpdateAgent.update(this);
+        MobclickAgent.setDebugMode(UmengAnalysis.isOpenAnalyticsDebug);
     }
 
     private void initTextView() {
@@ -152,5 +160,46 @@ public class IndexActivity extends FragmentActivity {
         @Override
         public void onPageScrollStateChanged(int arg0) {
         }
+    }
+
+    public final void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);  //统计时长
+    }
+
+    public  final void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
+
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_BACK:
+
+                long secondClickBackTime = System.currentTimeMillis();
+                if (secondClickBackTime - firstClickBackTime > 2000) {
+                    toast("再点一次，退出");
+                    firstClickBackTime = secondClickBackTime;
+                    return true;
+                } else {
+                    System.exit(0);
+                }
+                break;
+        }
+        return super.onKeyUp(keyCode, event);
+    }
+
+    /**
+     * 展示一个粉色的Toast
+     *
+     * @param message
+     */
+    protected void toast(String message) {
+        View toastRoot = getLayoutInflater().inflate(R.layout.toast, null);
+        Toast toast = new Toast(getApplicationContext());
+        toast.setView(toastRoot);
+        TextView tv = (TextView) toastRoot.findViewById(R.id.pink_toast_notice);
+        tv.setText(message);
+        toast.show();
     }
 }

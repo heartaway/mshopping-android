@@ -1,54 +1,84 @@
 package com.taobao.tae.Mshopping.demo;
 
 import android.app.Application;
-import com.taobao.tae.Mshopping.demo.login.auth.AccessToken;
-import com.taobao.tae.Mshopping.demo.login.auth.TaobaoUser;
+import com.taobao.tae.Mshopping.demo.login.LoginType;
+import com.taobao.tae.Mshopping.demo.login.User;
+import com.taobao.tae.Mshopping.demo.login.qq.QQUser;
+import com.taobao.tae.Mshopping.demo.login.taobao.TaobaoUser;
+import com.taobao.tae.Mshopping.demo.login.weibo.AccessTokenKeeper;
 
 /**
  * Created by xinyuan on 14/7/4.
  */
 public class MshoppingApplication extends Application {
 
-    /*用户授权信息*/
-    private AccessToken accessToken;
-    /*登录用户基本信息*/
-    private TaobaoUser taobaoUser;
+    /*用户选择的登陆方式*/
+    private int loginType = 0;
 
-    public AccessToken getAccessToken() {
-        return accessToken;
-    }
+    private User user;
 
     /**
-     * 判断 授权是否过期
-     * 如果已过期，返回true
+     * 判断 授权（淘宝、QQ、微博）是否有效
+     * 如果有效，返回true
      *
      * @return
      */
-    public boolean oAuthIsExpire() {
-        if (accessToken == null) {
-            return true;
-        } else {
-            return accessToken.isExpire();
+    public boolean oAuthIsValid() {
+        if (loginType == 0) {
+            return false;
         }
+        if (loginType == LoginType.TAOBAO.getType()) {
+            TaobaoUser taobaoUser = (TaobaoUser) user;
+            Boolean isValid = taobaoUser.getAccessToken().isSessionValid();
+            if (isValid) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        if (loginType == LoginType.QQ.getType()) {
+            QQUser qqUser = (QQUser) user;
+            Boolean isValid = qqUser.getQqAuth().isSessionValid();
+            if (isValid) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        if (loginType == LoginType.WEIBO.getType()) {
+            Boolean isValid = AccessTokenKeeper.readAccessToken(this).isSessionValid();
+            if (isValid) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        return false;
     }
 
     /**
      * 清空本地OAuth信息
      */
     public void makeOAuthExpire() {
-        accessToken = null;
-        taobaoUser = null;
+        user = null;
+        loginType = 0;
     }
 
-    public void setAccessToken(AccessToken accessToken) {
-        this.accessToken = accessToken;
+    public User getUser() {
+        return user;
     }
 
-    public TaobaoUser getTaobaoUser() {
-        return taobaoUser;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public void setTaobaoUser(TaobaoUser taobaoUser) {
-        this.taobaoUser = taobaoUser;
+    public int getLoginType() {
+        return loginType;
+    }
+
+    public void setLoginType(int loginType) {
+        this.loginType = loginType;
     }
 }

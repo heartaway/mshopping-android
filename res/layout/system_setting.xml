@@ -55,12 +55,13 @@
                 android:layout_height="wrap_content"
                 android:clickable="true">
             <TextView
+                    android:id="@+id/setting_loginout_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="50dip"
                     android:layout_marginLeft="20dip"
                     android:gravity="center_vertical"
                     android:layout_centerHorizontal="true"
-                    android:text="退出登录"
+                    android:text="登 录"
                     android:textSize="16dp"
                     android:textColor="@color/black"/>
         </RelativeLayout>

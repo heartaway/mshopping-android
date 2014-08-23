@@ -10,16 +10,17 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.google.gson.Gson;
 import com.taobao.api.internal.util.WebUtils;
 import com.taobao.tae.Mshopping.demo.MshoppingApplication;
 import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.activity.ConfirmOrderActivity;
-import com.taobao.tae.Mshopping.demo.activity.HomeActivity;
 import com.taobao.tae.Mshopping.demo.activity.ItemDetailActivity;
 import com.taobao.tae.Mshopping.demo.activity.PayOrderActivity;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
-import com.taobao.tae.Mshopping.demo.login.auth.AccessToken;
+import com.taobao.tae.Mshopping.demo.login.LoginType;
+import com.taobao.tae.Mshopping.demo.login.User;
+import com.taobao.tae.Mshopping.demo.login.taobao.AccessToken;
+import com.taobao.tae.Mshopping.demo.login.taobao.TaobaoUser;
 import com.taobao.tae.Mshopping.demo.model.CreateOrderResp;
 import com.taobao.tae.Mshopping.demo.model.ItemModel;
 import com.taobao.tae.Mshopping.demo.model.ItemOrderModel;
@@ -28,7 +29,6 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -55,7 +55,10 @@ public class CreateOrderTask extends AsyncTask<String, Integer, CreateOrderResp>
     public CreateOrderTask(Context context, ArrayList<ItemModel> itemModels, RelativeLayout confirmOrdcerLayoutView, ConfirmOrderActivity confirmOrderActivity) {
         super();
         this.context = context;
-        this.accessToken = ((MshoppingApplication) context).getAccessToken();
+        User user = ((MshoppingApplication) context).getUser();
+        if(((MshoppingApplication) context).getLoginType() == LoginType.TAOBAO.getType()){
+            this.accessToken = ((TaobaoUser)user).getAccessToken();
+        }
         this.itemModels = itemModels;
         this.confirmOrdcerLayoutView = confirmOrdcerLayoutView;
         this.confirmOrderActivity = confirmOrderActivity;
@@ -87,7 +90,7 @@ public class CreateOrderTask extends AsyncTask<String, Integer, CreateOrderResp>
             confirmOrderActivity.startActivity(intent);
         } else {
             int fromActivity = confirmOrderActivity.getIntent().getIntExtra("ACTIVITY_NAME_KEY", 0);
-            if (fromActivity == R.string.title_activity_personal) {
+            if (fromActivity == R.string.title_activity_login) {
                 Intent intent = new Intent();
                 Bundle bundle = new Bundle();
                 bundle.putString("itemId", itemModels.get(0).getItemId().toString());

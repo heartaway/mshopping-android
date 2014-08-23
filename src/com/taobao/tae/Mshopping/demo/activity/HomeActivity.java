@@ -4,6 +4,7 @@ import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
@@ -11,57 +12,69 @@ import com.taobao.tae.Mshopping.demo.R;
 
 
 public class HomeActivity extends TabActivity {
-	
-	public static final String TAG = HomeActivity.class.getSimpleName();
 
-	private RadioGroup mTabButtonGroup;
-	private TabHost mTabHost;
+    public static final String TAG = HomeActivity.class.getSimpleName();
 
-	public static final String TAB_MAIN = "MAIN_ACTIVITY";
-	public static final String TAB_PERSONAL = "PERSONAL_ACTIVITY";
+    private RadioGroup mTabButtonGroup;
+    private TabHost mTabHost;
+
+    public static final String TAB_MAIN = "MAIN_ACTIVITY";
+    public static final String TAB_MY = "MY_ACTIVITY";
 
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.home_activity);
-		findViewById();
-		initView();
-	}
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        setContentView(R.layout.home_activity);
+        findViewById();
+        initView();
+    }
 
-	private void findViewById() {
-		mTabButtonGroup = (RadioGroup) findViewById(R.id.home_radio_button_group);
-	}
-	
-	private void initView() {
+    private void findViewById() {
+        mTabButtonGroup = (RadioGroup) findViewById(R.id.home_radio_button_group);
+    }
 
-		mTabHost = getTabHost();
+    private void initView() {
 
-		Intent i_main = new Intent(this, IndexActivity.class);
-		Intent i_personal = new Intent(this, PersonalActivity.class);
+        mTabHost = getTabHost();
 
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_MAIN).setIndicator(TAB_MAIN).setContent(i_main));
-		mTabHost.addTab(mTabHost.newTabSpec(TAB_PERSONAL).setIndicator(TAB_PERSONAL).setContent(i_personal));
+        Intent i_main = new Intent(this, IndexActivity.class);
+        Intent i_my = new Intent(this, MyActivity.class);
 
-		mTabHost.setCurrentTabByTag(TAB_MAIN);
+        mTabHost.addTab(mTabHost.newTabSpec(TAB_MAIN).setIndicator(TAB_MAIN).setContent(i_main));
+        mTabHost.addTab(mTabHost.newTabSpec(TAB_MY).setIndicator(TAB_MY).setContent(i_my));
+        final RadioButton mainRadioButton = (RadioButton)findViewById(R.id.home_tab_main);
+        final RadioButton myRadioButton = (RadioButton)findViewById(R.id.home_tab_my);
 
-		mTabButtonGroup
-				.setOnCheckedChangeListener(new OnCheckedChangeListener() {
-					public void onCheckedChanged(RadioGroup group, int checkedId) {
-						switch (checkedId) {
-						case R.id.home_tab_main:
-							mTabHost.setCurrentTabByTag(TAB_MAIN);
-							break;
+        int fromActivity = getIntent().getIntExtra("ACTIVITY_NAME_KEY", 0);
+        if (R.string.title_activity_qq_login == fromActivity || R.string.title_activity_taobao_login == fromActivity || R.string.title_activity_weibo_login == fromActivity) {
+            myRadioButton.setSelected(true);
+            mTabHost.setCurrentTabByTag(TAB_MY);
+        } else {
+            mainRadioButton.setSelected(true);
+            mTabHost.setCurrentTabByTag(TAB_MAIN);
+        }
 
-						case R.id.home_tab_personal:
-							mTabHost.setCurrentTabByTag(TAB_PERSONAL);
-							break;
+        mTabButtonGroup
+                .setOnCheckedChangeListener(new OnCheckedChangeListener() {
+                    public void onCheckedChanged(RadioGroup group, int checkedId) {
+                        switch (checkedId) {
+                            case R.id.home_tab_main:
+                                myRadioButton.setSelected(false);
+                                mTabHost.setCurrentTabByTag(TAB_MAIN);
+                                break;
 
-						default:
-							break;
-						}
-					}
-				});
-	}
+                            case R.id.home_tab_my:
+                                mainRadioButton.setSelected(false);
+                                mTabHost.setCurrentTabByTag(TAB_MY);
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                });
+
+    }
+
 }

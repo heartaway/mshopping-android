@@ -5,7 +5,7 @@ import com.taobao.tae.Mshopping.demo.constant.Constants;
 
 public class FlowTag {
 	
-	public final int what = Constants.HANDLER_WHAT;
+	public final int what = 1;
 	
 	private int flowId;
 	private String fileName;

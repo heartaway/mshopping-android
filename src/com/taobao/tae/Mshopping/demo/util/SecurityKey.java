@@ -16,7 +16,7 @@ public class SecurityKey {
     public static String getKey() {
         try {
             MessageDigest md5 = MessageDigest.getInstance("MD5");
-            String origin = Constants.APP_KEY.concat(Constants.APP_SECRET);
+            String origin = Constants.TAOBAO_APP_KEY.concat(Constants.TAOBAO_APP_SECRET);
             md5.update(origin.getBytes());
             byte[] m = md5.digest();//加密
             return getString(m);

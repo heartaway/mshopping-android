@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="serverUrl">http://www.tae.com/update.xml</string>
+    <!--http_url=http://mclientpre.alipay.com/gateway.do
+#http://mobiletestabc.alipaydev.com/mobileclientgw/d3726/gateway.do
+#日常的http://mobiletestabc.alipaydev.com/mobileclientgw/oldnet/gateway.do
+#测试环境 https://mobiletestabc.alipaydev.com/mobileclientgw-1-64/test/gateway.do
+http_url=http://mclientpre.alipay.com/gateway.do
+#http_url=http://mclient.alipay.com/gateway.do-->
+    <!--是否是预发环境-->
+    <string name="mini_env_pre">false</string>
+    <!--收银台的地址，线上， 预发，日常各不相同-->
+    <string name="mini_http_url">http://mclient.alipay.com/gateway.do</string>
+    <!--是否打开log-->
+    <string name="mini_debuglog">false</string>
+    <!--<string name="hide_barcodesech">0</string>
+    <string name="no_sim">0</string>-->
+    <!-- <string name="ttid">600000</string>-->
+    <!--<string name="appkey">12278902</string>-->
 </resources>

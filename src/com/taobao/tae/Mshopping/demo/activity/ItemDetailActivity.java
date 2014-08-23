@@ -9,10 +9,16 @@ import android.view.*;
 import android.widget.*;
 import com.taobao.tae.Mshopping.demo.MshoppingApplication;
 import com.taobao.tae.Mshopping.demo.R;
+import com.taobao.tae.Mshopping.demo.constant.Constants;
+import com.taobao.tae.Mshopping.demo.constant.ManufacturerType;
+import com.taobao.tae.Mshopping.demo.constant.MessageNotice;
+import com.taobao.tae.Mshopping.demo.constant.UmengAnalysis;
 import com.taobao.tae.Mshopping.demo.image.ImageFetcher;
+import com.taobao.tae.Mshopping.demo.login.LoginType;
 import com.taobao.tae.Mshopping.demo.model.*;
 import com.taobao.tae.Mshopping.demo.task.GetItemRichDetailTask;
 import com.taobao.tae.Mshopping.demo.util.NetWorkStateUtil;
+import com.umeng.analytics.MobclickAgent;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -45,6 +51,7 @@ public class ItemDetailActivity extends BaseActivity {
         itemDetailPanel = (RelativeLayout) findViewById(R.id.item_detail_all_layout);
         buyNowButton = (Button) findViewById(R.id.item_detail_buy_btn);
         buyNowButton.setOnClickListener(new BuyNowClickListener());
+        MobclickAgent.setDebugMode(UmengAnalysis.isOpenAnalyticsDebug);
     }
 
     /**
@@ -70,7 +77,7 @@ public class ItemDetailActivity extends BaseActivity {
         String itemId = bundle.getString("itemId");
         if (!NetWorkStateUtil.isConnected(this)) {
             finish();
-            toast("请检查网络连接");
+            toast(MessageNotice.NO_ITEM_OF_THIS_GROUP);
             return;
         }
         GetItemRichDetailTask getItemRichDetailTask = new GetItemRichDetailTask(this, this);
@@ -85,7 +92,7 @@ public class ItemDetailActivity extends BaseActivity {
         public void onClick(View v) {
             ItemUnitCotrol itemUnitCotrol = taobaoItemRichInfo.getBasicInformation().getSkuModel().getItemUnitCotrol();
             if (itemUnitCotrol != null && !itemUnitCotrol.isBuySupport()) {
-                toast("商品已下架");
+                toast(MessageNotice.ITEM_OFF_LINE);
                 return;
             }
             buyView = v;
@@ -94,7 +101,7 @@ public class ItemDetailActivity extends BaseActivity {
             popUpView = layoutInflater.inflate(R.layout.item_detail_sku_select, null);
             itemDetailSkuPanel = (RelativeLayout) popUpView.findViewById(R.id.item_detail_sku_panel);
             //针对魅族手机的底部smartbar做兼容处理
-            if (android.os.Build.MANUFACTURER.equalsIgnoreCase("Meizu")) {
+            if (android.os.Build.MANUFACTURER.equalsIgnoreCase(ManufacturerType.MEIZU)) {
                 TextView autoHigtView = (TextView) popUpView.findViewById(R.id.item_detail_popup_auto_hight);
                 autoHigtView.getLayoutParams().height = 100;
             }
@@ -233,7 +240,7 @@ public class ItemDetailActivity extends BaseActivity {
                                     TextView quantityView = (TextView) popUpView.findViewById(R.id.item_deatil_sku_quantity_txt);
                                     if (showItemSku == null) {
                                         quantityView.setText("(库存: 0 件)");
-                                        toast("此商品属性组合下已无商品");
+                                        toast(MessageNotice.NO_ITEM_OF_THIS_GROUP);
                                         return;
                                     }
                                     PriceUnit priceUnit = showItemSku.getPriceUnits().get(PriceDisplay.HIGHLIGHT.getCode());
@@ -388,12 +395,16 @@ public class ItemDetailActivity extends BaseActivity {
                         return;
                     }
                 }
+                //友盟统计 点击购买事件
+                HashMap<String,String> param = new HashMap<String,String>();
+                param.put("itemId",taobaoItemRichInfo.getBasicInformation().getItemId().toString());
+                MobclickAgent.onEvent(context, UmengAnalysis.EVENT_USER_CLICK_BUY, param);
 
                 MshoppingApplication mshoppingApplication = (MshoppingApplication) context;
                 TextView itemCountTextView = (TextView) popUpView.findViewById(R.id.item_buy_count);
                 final Integer itemCount = Integer.valueOf(itemCountTextView.getText().toString());
-                if (mshoppingApplication.oAuthIsExpire()) {
-                    //用户登录
+                //用户未登录或者登录账号体系不为淘宝账号时进行提醒
+                if (!mshoppingApplication.oAuthIsValid() || (mshoppingApplication.oAuthIsValid() && mshoppingApplication.getLoginType() != LoginType.TAOBAO.getType())) {
                     setBackgroudShadowOnLoginNotice();
                     LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                     View loginPopUpView = layoutInflater.inflate(R.layout.item_detail_login_notice, null);
@@ -415,7 +426,7 @@ public class ItemDetailActivity extends BaseActivity {
                         @Override
                         public void onClick(View view) {
                             logoinPopupWindow.dismiss();
-                            Intent intent = new Intent(context, PersonalActivity.class);
+                            Intent intent = new Intent(context, TaobaoOAuthLoginActivity.class);
                             Bundle bundle = new Bundle();
                             bundle.putSerializable("taobaoItemBasicInfo", taobaoItemRichInfo.getBasicInformation());
                             bundle.putSerializable("skuSelect", skuSelect);
@@ -471,6 +482,11 @@ public class ItemDetailActivity extends BaseActivity {
         TextView tv = (TextView) toastRoot.findViewById(R.id.pink_toast_notice);
         tv.setText(message);
         toast.show();
+    }
+
+
+    private void analysis(Context context,Map map){
+
     }
 
 }

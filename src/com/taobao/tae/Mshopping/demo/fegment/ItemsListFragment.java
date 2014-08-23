@@ -16,6 +16,7 @@ import com.taobao.tae.Mshopping.demo.model.TaobaoItemBasicInfo;
 import com.taobao.tae.Mshopping.demo.task.ItemContentTask;
 import com.taobao.tae.Mshopping.demo.view.RefreshableListView;
 import com.taobao.tae.Mshopping.demo.view.pinterest.PinterestAdapterView;
+import com.umeng.analytics.MobclickAgent;
 
 import java.util.Date;
 
@@ -32,7 +33,6 @@ public class ItemsListFragment extends Fragment implements RefreshableListView.I
     private ItemContentTask task = null;
     private FragmentManager fragmentManager;
     private Boolean onPause = false;
-
 
     private String categoryId;
     private String defaultCategoryId = Constants.NEW_CATEGORY;
@@ -128,6 +128,7 @@ public class ItemsListFragment extends Fragment implements RefreshableListView.I
     @Override
     public void onResume() {
         super.onResume();
+        MobclickAgent.onPageStart("Index-Activity-Fregment-"+categoryId); //统计页面
         imageFetcher.setExitTasksEarly(false);
         if (!onPause) {
             refreshableListView.setAdapter(staggeredAdapter);
@@ -139,6 +140,7 @@ public class ItemsListFragment extends Fragment implements RefreshableListView.I
     @Override
     public void onPause() {
         super.onPause();
+        MobclickAgent.onPageEnd("Index-Activity-Fregment-"+categoryId);
         onPause = true;
     }
 

@@ -14,9 +14,11 @@ import com.taobao.tae.Mshopping.demo.MshoppingApplication;
 import com.taobao.tae.Mshopping.demo.R;
 import com.taobao.tae.Mshopping.demo.activity.ConfirmOrderActivity;
 import com.taobao.tae.Mshopping.demo.constant.Constants;
-import com.taobao.tae.Mshopping.demo.login.auth.AccessToken;
+import com.taobao.tae.Mshopping.demo.login.LoginType;
+import com.taobao.tae.Mshopping.demo.login.User;
+import com.taobao.tae.Mshopping.demo.login.taobao.AccessToken;
+import com.taobao.tae.Mshopping.demo.login.taobao.TaobaoUser;
 import com.taobao.tae.Mshopping.demo.model.*;
-import com.taobao.tae.Mshopping.demo.util.RemoteImageHelper;
 import com.taobao.tae.Mshopping.demo.util.SecurityKey;
 import org.json.JSONObject;
 
@@ -49,7 +51,10 @@ public class UpdateOrderTask extends AsyncTask<String, Integer, Boolean> {
     public UpdateOrderTask(Context context, ArrayList<ItemModel> itemModels, RelativeLayout confirmOrdcerLayoutView, ConfirmOrderActivity confirmOrderActivity) {
         super();
         this.context = context;
-        this.accessToken = ((MshoppingApplication) context).getAccessToken();
+        User user = ((MshoppingApplication) context).getUser();
+        if(((MshoppingApplication) context).getLoginType() == LoginType.TAOBAO.getType()){
+            this.accessToken = ((TaobaoUser)user).getAccessToken();
+        }
         this.itemModels = itemModels;
         this.confirmOrdcerLayoutView = confirmOrdcerLayoutView;
         this.confirmOrderActivity = confirmOrderActivity;
