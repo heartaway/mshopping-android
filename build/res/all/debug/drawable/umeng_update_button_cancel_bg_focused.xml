@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners android:radius="6dp" />
+    <stroke android:color="#ff7900" android:width="3dp" />
+    <gradient android:startColor="#dcdcdc" android:endColor="#fbfbfb" android:angle="90"/>
+</shape>
+<!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_cancel_bg_focused.xml -->

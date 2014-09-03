@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/index_activity_layout_id">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46.669983dip">
+
+        <TextView
+            android:background="@drawable/title_bg"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="TAE无线Demo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <!-- tab切换 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <RadioGroup
+                android:id="@+id/top_radio_button_group"
+                android:layout_width="fill_parent"
+                android:layout_height="35dip"
+                android:layout_gravity="center"
+                android:paddingLeft="60dip"
+                android:paddingRight="60dip"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tv_tab_new"
+                    android:text="@string/tab_1"
+                    style="@style/index_tab_top"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/special_icon_bg" />
+
+                <RadioButton
+                    android:id="@+id/tv_tab_select"
+                    android:text="@string/tab_2"
+                    style="@style/index_tab_top"
+                    android:drawableLeft="@drawable/fashion_icon_bg" />
+
+                <RadioButton
+                    android:id="@+id/tv_tab_fashion"
+                    style="@style/index_tab_top"
+                    android:text="@string/tab_3"
+                    android:drawableLeft="@drawable/mei_icon_bg" />
+            </RadioGroup>
+
+            <View
+                android:layout_height="1px"
+                android:background="#bbbbbb"
+                android:layout_width="fill_parent"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"></LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vPager"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="1.0"
+                android:layout_gravity="center"
+                android:background="#fafafa"
+                android:flipInterval="30"
+                android:persistentDrawingCache="animation" />
+
+            <!--<WebView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp"-->
+                <!--android:id="@+id/webView"-->
+                <!--android:visibility="invisible"-->
+                <!--android:layout_gravity="center_horizontal" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- 切换结束 -->
+
+</LinearLayout><!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/layout/index_activity.xml -->

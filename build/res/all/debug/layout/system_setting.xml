@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="@color/lightwhite">
+    <RelativeLayout
+            android:id="@+id/system_setting_header_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="46.669983dip"
+            android:background="@drawable/title_bg">
+        <!-- 添加RelativeLayout 以增大用户点击返回的区域 -->
+        <RelativeLayout android:id="@+id/setting_top_back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="20dip"
+                        android:paddingTop="6dip"
+                        android:paddingBottom="6dip"
+                >
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/back_btn"/>
+        </RelativeLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="设置"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/system_setting_header_layout"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            >
+        <View android:layout_height="1px" android:background="#bbbbbb" android:layout_width="fill_parent"></View>
+        <RelativeLayout
+                android:id="@+id/setting_logout_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+            <TextView
+                    android:id="@+id/setting_loginout_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:layout_centerHorizontal="true"
+                    android:text="登 录"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+        </RelativeLayout>
+        <View android:layout_height="1px" android:background="#bbbbbb" android:layout_width="fill_parent"></View>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/layout/system_setting.xml -->

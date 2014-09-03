@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        android:duration="1000"
+        android:fromYDelta="100.0%p"
+        android:toYDelta="0" />
+
+</set><!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/anim/image_upload_push_bottom_in.xml -->

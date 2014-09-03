@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/huamulou/work/gits/mandroid1/src/main/assets" >
+            <file
+                name="config.json"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/assets/config.json" />
+        </source>
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/Users/huamulou/work/gits/mandroid1/src/release/assets" />
+    </dataSet>
+
+</merger>

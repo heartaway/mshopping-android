@@ -1,0 +1,121 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.2.0" package="com.taobao.tae.Mshopping.demo">
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.taobao.tae.Mshopping.demo.MshoppingApplication" android:theme="@android:style/Theme.Black.NoTitleBar">
+
+        <activity android:label="@string/app_name" android:name="com.taobao.tae.Mshopping.demo.activity.HomeActivity" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_index" android:name="com.taobao.tae.Mshopping.demo.activity.IndexActivity">
+        </activity>
+        <activity android:label="@string/title_activity_base" android:name="com.taobao.tae.Mshopping.demo.activity.BaseActivity">
+        </activity>
+        <activity android:label="@string/title_activity_pay_order" android:name="com.taobao.tae.Mshopping.demo.activity.PayOrderActivity">
+        </activity>
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.ItemDetailActivity"/>
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.SettingActivity"/>
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.ConfirmOrderActivity"/>
+        <activity android:launchMode="singleInstance" android:name="com.taobao.tae.Mshopping.demo.activity.MyActivity"/>
+
+        <activity android:label="@string/title_activity_login" android:name="com.taobao.tae.Mshopping.demo.activity.LoginActivity">
+        </activity>
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.TaobaoOAuthLoginActivity"/>
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.WeiboOAuthLoginActivity"/>
+
+        <!-- 腾讯QQ登陆 -->
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.QQOAuthLoginActivity"/>
+        <activity android:name="com.tencent.connect.avatar.ImageActivity"/>
+        <activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.PayActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <!--支付宝收银台-->
+        <!-- sdk begin -->
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.alipay.android.mini.window.sdk.MiniLaucherActivity" android:theme="@style/MspAppTheme">
+            <intent-filter>
+                <action android:name="com.alipay.mobilepay.android"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <meta-data android:name="com.taobao.android.ski.NODERIVATION" android:value="true"/>
+        </activity>
+        <!-- 极简收银台主界面 -->
+        <activity android:configChanges="orientation|keyboardHidden" android:excludeFromRecents="true" android:exported="false" android:label="@string/msp_app_name" android:launchMode="singleTop" android:name="com.alipay.android.mini.window.sdk.MiniPayActivity" android:screenOrientation="behind" android:theme="@style/MspAppTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter android:priority="800">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+
+            <meta-data android:name="com.taobao.android.ski.NODERIVATION" android:value="true"/>
+        </activity>
+        <!-- 极简收银台链接查看界面 -->
+        <activity android:configChanges="orientation|keyboardHidden|navigation" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.alipay.android.mini.window.sdk.MiniWebActivity" android:screenOrientation="behind" android:theme="@style/MspAppTheme">
+            <intent-filter android:priority="800">
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="com.taobao.android.ski.NODERIVATION" android:value="true"/>
+        </activity>
+        <!-- 快捷支付服务 -->
+        <service android:exported="false" android:name="com.alipay.android.app.MspService">
+            <intent-filter android:priority="800"/>
+        </service>
+
+        <!-- 友盟组件 -->
+        <service android:name="com.umeng.update.net.DownloadingService" android:process=":DownloadingService">
+        </service>
+        <activity android:name="com.umeng.update.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <activity android:name="com.umeng.fb.ConversationActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.umeng.fb.ContactActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="53d84eb6fd98c582f300f48f"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="tae"/>
+
+
+        <!-- 照片上传 -->
+
+
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.imgupload.PicMainActivity" android:theme="@android:style/Theme.NoTitleBar">
+
+        </activity>
+
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.imgupload.ImageGridActivity" android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:configChanges="orientation|keyboardHidden" android:name="com.taobao.tae.Mshopping.demo.activity.imgupload.PublishedActivity" android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity android:name="com.taobao.tae.Mshopping.demo.activity.imgupload.PhotoActivity" android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <!-- 照片上传 -->
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>  
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/> 
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+</manifest>

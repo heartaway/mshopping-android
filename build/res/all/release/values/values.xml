@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/pinterest_attrs.xml -->
+    <eat-comment />
+
+    <attr name="absListViewStyle" format="reference" />
+    <attr name="listViewStyle" format="reference" />
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_colors.xml -->
+    <eat-comment />
+
+    <color name="B_black">#FF000000</color>
+    <color name="C_white">#FFFFFFFF</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="black">#ff333333</color>
+    <color name="boy_name">#ff0099ee</color>
+    <color name="btn_black">#ff000000</color>
+    <color name="button_stroke">#ff528641</color>
+    <color name="comment_me_color">#ff669900</color>
+    <color name="dark">#ff3c3c3c</color>
+    <color name="default_pic_color">#ffecedef</color>
+    <color name="divide">#9f3c3c3c</color>
+    <color name="fans_nmu">#ff09afd9</color>
+    <color name="filter_btn_color">#ffe884a5</color>
+    <color name="font_like">#ffff0066</color>
+    <color name="font_note">#ff0099ff</color>
+    <color name="girl_name">#ffe71f8d</color>
+    <color name="gray">#FFFAFA</color>
+    <color name="green">#ff6ec514</color>
+    <color name="head">#ffb10000</color>
+    <color name="img_type_grey_color">#ff8f8f8f</color>
+    <color name="img_type_select_color">#ff669900</color>
+    <color name="index_desc">#ff666666</color>
+    <color name="lightRed">#e94277</color>
+    <color name="lightwhite">#ddd</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_colors.xml -->
+    <eat-comment />
+
+    <color name="mini_button_text_disable">#aaaaaa</color>
+    <color name="mini_button_text_normal">#ffffff</color>
+    <color name="mini_card_defaultuse">#FF9933</color>
+    <color name="mini_card_edit_pop_shadow">#59000000</color>
+    <color name="mini_card_edti_bk">#31373e</color>
+    <color name="mini_cardlimit_money_color">#666666</color>
+    <color name="mini_cardlimit_text_color">#000000</color>
+    <color name="mini_color_gray">#666666</color>
+    <color name="mini_color_light_gray">#999999</color>
+    <color name="mini_error_hint_color">#ffffff</color>
+    <color name="mini_error_input">#FF0000</color>
+    <color name="mini_hint_color">#b2b2b2</color>
+    <color name="mini_input_hint_color">#cccccc</color>
+    <color name="mini_list_bg_color">#bababa</color>
+    <color name="mini_page_bg_color">#ededed</color>
+    <color name="mini_text_black">#000000</color>
+    <color name="mini_text_color_desc">#999999</color>
+    <color name="mini_text_color_gray">#333333</color>
+    <color name="mini_text_link">#2861d7</color>
+    <color name="mini_text_shadow">#fefefe</color>
+    <color name="mini_text_white">#ffffff</color>
+    <color name="mini_win_background">#00000000</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="mogujie_register_proto">#ff0099ee</color>
+    <color name="mogujie_register_title">#ff669900</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_colors.xml -->
+    <eat-comment />
+
+    <color name="msp_combox_list_devider_color">#d8d8d8</color>
+    <color name="msp_dialog_tiltle_blue">#2277BB</color>
+    <color name="msp_hint_color">#b2b2b2</color>
+    <color name="msp_line_color">#cccccc</color>
+    <color name="msp_text_color_gray">#333333</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="my_info_sbg">#ff628ef6</color>
+    <color name="my_transparent">#c0000000</color>
+    <color name="normal_font_color">#424242</color>
+    <color name="pink">#ffffb5d1</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="pull_title_color">#ffff4d9b</color>
+    <color name="red">#FF0000</color>
+    <color name="result_view">#b0000000</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_colors.xml -->
+    <eat-comment />
+
+    <color name="setting_translucent_bg">#e0000000</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="single_t_desc_color">#ff669900</color>
+    <color name="sku_out_bg_shadow">#50000000</color>
+    <color name="slider_page">#ff999999</color>
+    <color name="t_color">#ff0099ee</color>
+    <color name="trans">#55000000</color>
+    <color name="transparent">#00000000</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_fb_strings.xml -->
+    <eat-comment />
+
+    <color name="umeng_fb_color_btn_normal">#333333</color>
+    <color name="umeng_fb_color_btn_pressed">#1495F7</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/colors.xml -->
+    <eat-comment />
+
+    <color name="uname">#ffe71f8d</color>
+    <color name="user_home_fans_bg">#ffe6366c</color>
+    <color name="user_home_t_info_color">#ff8f8f8f</color>
+    <color name="user_info_pink">#ffff897a</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewflip_indicator_ly_color">#b3ffffff</color>
+    <color name="white">#ffffffff</color>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/pinterest_attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="AbsListView">
+
+        <!-- Drawable used to indicate the currently selected item in the list. -->
+        <attr name="listSelector" format="color|reference" />
+        <!--
+             When set to true, the selector will be drawn over the selected item.
+             Otherwise the selector is drawn behind the selected item. The default
+             value is false.
+        -->
+        <attr name="drawSelectorOnTop" format="boolean" />
+        <!-- Used by ListView and GridView to stack their content from the bottom. -->
+        <attr name="stackFromBottom" format="boolean" />
+        <!--
+             When set to true, the list uses a drawing cache during scrolling.
+             This makes the rendering faster but uses more memory. The default
+             value is true.
+        -->
+        <attr name="scrollingCache" format="boolean" />
+        <!--
+             When set to true, the list will filter results as the user types. The
+             List's adapter must support the Filterable interface for this to work.
+        -->
+        <attr name="textFilterEnabled" format="boolean" />
+        <!--
+             Sets the transcript mode for the list. In transcript mode, the list
+             scrolls to the bottom to make new items visible when they are added.
+        -->
+        <attr name="transcriptMode">
+
+            <!-- Disables transcript mode. This is the default value. -->
+            <enum name="disabled" value="0" />
+            <!--
+                 The list will automatically scroll to the bottom when
+                 a data set change notification is received and only if the last item is
+                 already visible on screen.
+            -->
+            <enum name="normal" value="1" />
+            <!--
+                 The list will automatically scroll to the bottom, no matter what items
+                 are currently visible.
+            -->
+            <enum name="alwaysScroll" value="2" />
+        </attr>
+        <!--
+             Indicates that this list will always be drawn on top of solid, single-color
+             opaque background. This allows the list to optimize drawing.
+        -->
+        <attr name="cacheColorHint" format="color" />
+        <!--
+             Enables the fast scroll thumb that can be dragged to quickly scroll through
+             the list.
+        -->
+        <attr name="fastScrollEnabled" format="boolean" />
+        <!--
+             When set to true, the list will use a more refined calculation
+             method based on the pixels height of the items visible on screen. This
+             property is set to true by default but should be set to false if your adapter
+             will display items of varying heights. When this property is set to true and
+             your adapter displays items of varying heights, the scrollbar thumb will
+             change size as the user scrolls through the list. When set to fale, the list
+             will use only the number of items in the adapter and the number of items visible
+             on screen to determine the scrollbar's properties.
+        -->
+        <attr name="smoothScrollbar" format="boolean" />
+        <!--
+             Defines the choice behavior for the view. By default, lists do not have
+             any choice behavior. By setting the choiceMode to singleChoice, the list
+             allows up to one item to be in a chosen state. By setting the choiceMode to
+             multipleChoice, the list allows any number of items to be chosen.
+             Finally, by setting the choiceMode to multipleChoiceModal the list allows
+             any number of items to be chosen in a special selection mode.
+             The application will supply a
+             {@link android.widget.AbsListView.MultiChoiceModeListener} using
+             {@link android.widget.AbsListView#setMultiChoiceModeListener} to control the
+             selection mode. This uses the {@link android.view.ActionMode} API.
+        -->
+        <attr name="choiceMode">
+
+            <!-- Normal list that does not indicate choices. -->
+            <enum name="none" value="0" />
+            <!-- The list allows up to one choice. -->
+            <enum name="singleChoice" value="1" />
+            <!-- The list allows multiple choices. -->
+            <enum name="multipleChoice" value="2" />
+            <!-- The list allows multiple choices in a custom selection mode. -->
+            <enum name="multipleChoiceModal" value="3" />
+        </attr>
+
+        <!--
+             When set to true, the list will always show the fast scroll interface.
+             This setting implies fastScrollEnabled.
+        -->
+        <attr name="fastScrollAlwaysVisible" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ListView">
+
+        <!-- Drawable or color to draw between list items. -->
+        <!-- <attr name="divider" format="reference|color" /> -->
+        <!--
+             Height of the divider. Will use the intrinsic height of the divider if this
+             is not specified.
+        -->
+        <attr name="dividerHeight" format="dimension" />
+        <!--
+             When set to false, the ListView will not draw the divider after each header view.
+             The default value is true.
+        -->
+        <attr name="headerDividersEnabled" format="boolean" />
+        <!--
+             When set to false, the ListView will not draw the divider before each footer view.
+             The default value is true.
+        -->
+        <attr name="footerDividersEnabled" format="boolean" />
+        <!-- Drawable to draw above list content. -->
+        <attr name="overScrollHeader" format="reference|color" />
+        <!-- Drawable to draw below list content. -->
+
+        <attr name="overScrollFooter" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="PinterestLikeAdapterView">
+        <attr name="plaColumnNumber" format="integer" />
+        <attr name="plaLandscapeColumnNumber" format="integer" />
+        <attr name="plaColumnPaddingLeft" format="dimension" />
+        <attr name="plaColumnPaddingRight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="View">
+
+        <!--
+             Supply an identifier name for this view, to later retrieve it
+             with {@link android.view.View#findViewById View.findViewById()} or
+             {@link android.app.Activity#findViewById Activity.findViewById()}.
+             This must be a
+             resource reference; typically you set this using the
+             <code>@+</code> syntax to create a new ID resources.
+             For example: <code>android:id="@+id/my_id"</code> which
+             allows you to later retrieve the view
+             with <code>findViewById(R.id.my_id)</code>.
+        -->
+        <attr name="id" format="reference" />
+
+        <!--
+             Supply a tag for this view containing a String, to be retrieved
+             later with {@link android.view.View#getTag View.getTag()} or
+             searched for with {@link android.view.View#findViewWithTag
+             View.findViewWithTag()}.  It is generally preferable to use
+             IDs (through the android:id attribute) instead of tags because
+             they are faster and allow for compile-time type checking.
+        -->
+        <attr name="tag" format="string" />
+
+        <!-- The initial horizontal scroll offset, in pixels. -->
+        <attr name="scrollX" format="dimension" />
+
+        <!-- The initial vertical scroll offset, in pixels. -->
+        <attr name="scrollY" format="dimension" />
+
+        <!--
+             A drawable to use as the background.  This can be either a reference
+             to a full drawable resource (such as a PNG image, 9-patch,
+             XML state list description, etc), or a solid color such as "#ff000000"
+            (black).
+        -->
+
+
+        <!-- <attr name="background" format="reference|color" /> -->
+
+
+        <!--
+             Sets the padding, in pixels, of all four edges.  Padding is defined as
+             space between the edges of the view and the view's content. A views size
+             will include it's padding.  If a {@link android.R.attr#background}
+             is provided, the padding will initially be set to that (0 if the
+             drawable does not have padding).  Explicitly setting a padding value
+             will override the corresponding padding found in the background.
+        -->
+        <attr name="padding" format="dimension" />
+        <!-- Sets the padding, in pixels, of the left edge; see {@link android.R.attr#padding}. -->
+        <attr name="paddingLeft" format="dimension" />
+        <!-- Sets the padding, in pixels, of the top edge; see {@link android.R.attr#padding}. -->
+        <attr name="paddingTop" format="dimension" />
+        <!-- Sets the padding, in pixels, of the right edge; see {@link android.R.attr#padding}. -->
+        <attr name="paddingRight" format="dimension" />
+        <!-- Sets the padding, in pixels, of the bottom edge; see {@link android.R.attr#padding}. -->
+        <attr name="paddingBottom" format="dimension" />
+        <!-- Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. -->
+        <attr name="paddingStart" format="dimension" />
+        <!-- Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. -->
+        <attr name="paddingEnd" format="dimension" />
+
+        <!--
+             Boolean that controls whether a view can take focus.  By default the user can not
+             move focus to a view; by setting this attribute to true the view is
+             allowed to take focus.  This value does not impact the behavior of
+             directly calling {@link android.view.View#requestFocus}, which will
+             always request focus regardless of this view.  It only impacts where
+             focus navigation will try to move focus.
+        -->
+        <attr name="focusable" format="boolean" />
+
+        <!--
+             Boolean that controls whether a view can take focus while in touch mode.
+             If this is true for a view, that view can gain focus when clicked on, and can keep
+             focus if another view is clicked on that doesn't have this attribute set to true.
+        -->
+        <attr name="focusableInTouchMode" format="boolean" />
+
+        <!-- Controls the initial visibility of the view. -->
+        <attr name="visibility">
+
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+
+        <!--
+             Boolean internal attribute to adjust view layout based on
+             system windows such as the status bar.
+             If true, adjusts the padding of this view to leave space for the system windows.
+             Will only take effect if this view is in a non-embedded activity.
+        -->
+        <attr name="fitsSystemWindows" format="boolean" />
+
+        <!-- Defines which scrollbars should be displayed on scrolling or not. -->
+        <attr name="scrollbars">
+
+            <!-- No scrollbar is displayed. -->
+            <flag name="none" value="0x00000000" />
+            <!-- Displays horizontal scrollbar only. -->
+            <flag name="horizontal" value="0x00000100" />
+            <!-- Displays vertical scrollbar only. -->
+            <flag name="vertical" value="0x00000200" />
+        </attr>
+
+        <!--
+             Controls the scrollbar style and position. The scrollbars can be overlaid or
+             inset. When inset, they add to the padding of the view. And the
+             scrollbars can be drawn inside the padding area or on the edge of
+             the view. For example, if a view has a background drawable and you
+             want to draw the scrollbars inside the padding specified by the
+             drawable, you can use insideOverlay or insideInset. If you want them
+             to appear at the edge of the view, ignoring the padding, then you can
+             use outsideOverlay or outsideInset.
+        -->
+        <attr name="scrollbarStyle">
+
+            <!-- Inside the padding and overlaid -->
+            <enum name="insideOverlay" value="0x0" />
+            <!-- Inside the padding and inset -->
+            <enum name="insideInset" value="0x01000000" />
+            <!-- Edge of the view and overlaid -->
+            <enum name="outsideOverlay" value="0x02000000" />
+            <!-- Edge of the view and inset -->
+            <enum name="outsideInset" value="0x03000000" />
+        </attr>
+
+        <!--
+             Set this if the view will serve as a scrolling container, meaing
+             that it can be resized to shrink its overall window so that there
+             will be space for an input method.  If not set, the default
+             value will be true if "scrollbars" has the vertical scrollbar
+             set, else it will be false.
+        -->
+        <attr name="isScrollContainer" format="boolean" />
+
+        <!-- Defines whether to fade out scrollbars when they are not in use. -->
+        <attr name="fadeScrollbars" format="boolean" />
+        <!-- Defines the delay in milliseconds that a scrollbar takes to fade out. -->
+        <attr name="scrollbarFadeDuration" format="integer" />
+        <!-- Defines the delay in milliseconds that a scrollbar waits before fade out. -->
+        <attr name="scrollbarDefaultDelayBeforeFade" format="integer" />
+        <!-- Sets the width of vertical scrollbars and height of horizontal scrollbars. -->
+        <attr name="scrollbarSize" format="dimension" />
+        <!-- Defines the horizontal scrollbar thumb drawable. -->
+        <attr name="scrollbarThumbHorizontal" format="reference" />
+        <!-- Defines the vertical scrollbar thumb drawable. -->
+        <attr name="scrollbarThumbVertical" format="reference" />
+        <!-- Defines the horizontal scrollbar track drawable. -->
+        <attr name="scrollbarTrackHorizontal" format="reference" />
+        <!-- Defines the vertical scrollbar track drawable. -->
+        <attr name="scrollbarTrackVertical" format="reference" />
+        <!-- Defines whether the horizontal scrollbar track should always be drawn. -->
+        <attr name="scrollbarAlwaysDrawHorizontalTrack" format="boolean" />
+        <!-- Defines whether the vertical scrollbar track should always be drawn. -->
+        <attr name="scrollbarAlwaysDrawVerticalTrack" format="boolean" />
+
+        <!--
+             This attribute is deprecated and will be ignored as of
+             API level 14 ({@link android.os.Build.VERSION_CODES#ICE_CREAM_SANDWICH}).
+             Using fading edges may introduce noticeable performance
+             degradations and should be used only when required by the application's
+             visual design. To request fading edges with API level 14 and above,
+             use the <code>android:requiresFadingEdge</code> attribute instead.
+        -->
+        <attr name="fadingEdge">
+
+            <!-- No edge is faded. -->
+            <flag name="none" value="0x00000000" />
+            <!-- Fades horizontal edges only. -->
+            <flag name="horizontal" value="0x00001000" />
+            <!-- Fades vertical edges only. -->
+            <flag name="vertical" value="0x00002000" />
+        </attr>
+        <!-- Defines which edges should be faded on scrolling. -->
+        <attr name="requiresFadingEdge">
+
+            <!-- No edge is faded. -->
+            <flag name="none" value="0x00000000" />
+            <!-- Fades horizontal edges only. -->
+            <flag name="horizontal" value="0x00001000" />
+            <!-- Fades vertical edges only. -->
+            <flag name="vertical" value="0x00002000" />
+        </attr>
+        <!-- Defines the length of the fading edges. -->
+        <attr name="fadingEdgeLength" format="dimension" />
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_LEFT}.
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr name="nextFocusLeft" format="reference" />
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_RIGHT}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr name="nextFocusRight" format="reference" />
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_UP}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr name="nextFocusUp" format="reference" />
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_DOWN}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr name="nextFocusDown" format="reference" />
+
+        <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_FORWARD}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+        -->
+        <attr name="nextFocusForward" format="reference" />
+
+        <!-- Defines whether this view reacts to click events. -->
+        <attr name="clickable" format="boolean" />
+
+        <!-- Defines whether this view reacts to long click events. -->
+        <attr name="longClickable" format="boolean" />
+
+        <!--
+             If unset, no state will be saved for this view when it is being
+             frozen. The default is true, allowing the view to be saved
+             (however it also must have an ID assigned to it for its
+             state to be saved).  Setting this to false only disables the
+             state for this view, not for its children which may still
+             be saved.
+        -->
+        <attr name="saveEnabled" format="boolean" />
+
+        <!--
+             Specifies whether to filter touches when the view's window is obscured by
+             another visible window.  When set to true, the view will not receive touches
+             whenever a toast, dialog or other window appears above the view's window.
+             Refer to the {@link android.view.View} security documentation for more details.
+        -->
+        <attr name="filterTouchesWhenObscured" format="boolean" />
+
+        <!--
+             Defines the quality of translucent drawing caches. This property is used
+             only when the drawing cache is enabled and translucent. The default value is auto.
+        -->
+        <attr name="drawingCacheQuality">
+
+            <!--
+                 Lets the framework decide what quality level should be used
+                 for the drawing cache.
+            -->
+            <enum name="auto" value="0" />
+            <!--
+                 Low quality. When set to low quality, the drawing cache uses a lower color
+                 depth, thus losing precision in rendering gradients, but uses less memory.
+            -->
+            <enum name="low" value="1" />
+            <!--
+                 High quality. When set to high quality, the drawing cache uses a higher
+                 color depth but uses more memory.
+            -->
+            <enum name="high" value="2" />
+        </attr>
+
+        <!--
+             Controls whether the view's window should keep the screen on
+             while visible.
+        -->
+        <attr name="keepScreenOn" format="boolean" />
+
+        <!--
+             When this attribute is set to true, the view gets its drawable state
+             (focused, pressed, etc.) from its direct parent rather than from itself.
+        -->
+        <attr name="duplicateParentState" format="boolean" />
+
+        <!--
+             Defines the minimum height of the view. It is not guaranteed
+             the view will be able to achieve this minimum height (for example,
+             if its parent layout constrains it with less available height).
+        -->
+        <attr name="minHeight" format="dimension" />
+
+        <!--
+             Defines the minimum width of the view. It is not guaranteed
+             the view will be able to achieve this minimum width (for example,
+             if its parent layout constrains it with less available width).
+        -->
+        <attr name="minWidth" format="dimension" />
+
+        <!--
+             Boolean that controls whether a view should have sound effects
+             enabled for events such as clicking and touching.
+        -->
+        <attr name="soundEffectsEnabled" format="boolean" />
+
+        <!--
+             Boolean that controls whether a view should have haptic feedback
+             enabled for events such as long presses.
+        -->
+        <attr name="hapticFeedbackEnabled" format="boolean" />
+
+        <!--
+             Defines text that briefly describes content of the view. This property is used
+             primarily for accessibility. Since some views do not have textual
+             representation this attribute can be used for providing such.
+        -->
+        <attr name="contentDescription" format="string" localization="suggested" />
+
+        <!--
+             Name of the method in this View's context to invoke when the view is
+             clicked. This name must correspond to a public method that takes
+             exactly one parameter of type View. For instance, if you specify
+             <code>android:onClick="sayHello"</code>, you must declare a
+             <code>public void sayHello(View v)</code> method of your context
+             (typically, your Activity).
+        -->
+        <attr name="onClick" format="string" />
+
+        <!--
+             Defines over-scrolling behavior. This property is used only if the
+             View is scrollable. Over-scrolling is the ability for the user to
+             receive feedback when attempting to scroll beyond meaningful content.
+        -->
+        <attr name="overScrollMode">
+
+            <!--
+                 Always show over-scroll effects, even if the content fits entirely
+                 within the available space.
+            -->
+            <enum name="always" value="0" />
+            <!--
+                 Only show over-scroll effects if the content is large
+                 enough to meaningfully scroll.
+            -->
+            <enum name="ifContentScrolls" value="1" />
+            <!-- Never show over-scroll effects. -->
+            <enum name="never" value="2" />
+        </attr>
+
+        <!--
+             alpha property of the view, as a value between 0 (completely transparent) and 1
+             (completely opaque).
+        -->
+        <attr name="alpha" format="float" />
+
+        <!--
+             translation in x of the view. This value is added post-layout to the left
+             property of the view, which is set by its layout.
+        -->
+        <attr name="translationX" format="dimension" />
+
+        <!--
+             translation in y of the view. This value is added post-layout to the left
+             property of the view, which is set by its layout.
+        -->
+        <attr name="translationY" format="dimension" />
+
+        <!--
+             x location of the pivot point around which the view will rotate and scale.
+             This xml attribute sets the pivotX property of the View.
+        -->
+        <attr name="transformPivotX" format="dimension" />
+
+        <!--
+             y location of the pivot point around which the view will rotate and scale.
+             This xml attribute sets the pivotY property of the View.
+        -->
+        <attr name="transformPivotY" format="dimension" />
+
+        <!-- rotation of the view, in degrees. -->
+        <attr name="rotation" format="float" />
+
+        <!-- rotation of the view around the x axis, in degrees. -->
+        <attr name="rotationX" format="float" />
+
+        <!-- rotation of the view around the y axis, in degrees. -->
+        <attr name="rotationY" format="float" />
+
+        <!-- scale of the view in the x direction. -->
+        <attr name="scaleX" format="float" />
+
+        <!-- scale of the view in the y direction. -->
+        <attr name="scaleY" format="float" />
+
+        <!-- Determines which side the vertical scroll bar should be placed on. -->
+        <attr name="verticalScrollbarPosition">
+
+            <!-- Place the scroll bar wherever the system default determines. -->
+            <enum name="defaultPosition" value="0" />
+            <!-- Place the scroll bar on the left. -->
+            <enum name="left" value="1" />
+            <!-- Place the scroll bar on the right. -->
+            <enum name="right" value="2" />
+        </attr>
+
+        <!--
+             Specifies the type of layer backing this view. The default value is none.
+             Refer to {@link android.view.View#setLayerType(int, android.graphics.Paint)}
+             for more information.
+        -->
+        <attr name="layerType">
+
+            <!-- Don't use a layer. -->
+            <enum name="none" value="0" />
+            <!--
+                 Use a software layer. Refer to
+                 {@link android.view.View#setLayerType(int, android.graphics.Paint) for
+                 more information.
+            -->
+            <enum name="software" value="1" />
+            <!--
+                 Use a hardware layer. Refer to
+                 {@link android.view.View#setLayerType(int, android.graphics.Paint) for
+                 more information.
+            -->
+            <enum name="hardware" value="2" />
+        </attr>
+
+        <!--
+             Defines the direction of layout drawing. This typically is associated with writing
+             direction of the language script used. The possible values are "ltr" for Left-to-Right,
+             "rtl" for Right-to-Left, "locale" and "inherit" from parent view. If there is nothing
+             to inherit, "locale" is used. "locale" falls back to "en-US". "ltr" is the direction
+             used in "en-US". The default for this attribute is "inherit".
+        -->
+        <attr name="layoutDirection">
+
+            <!-- Left-to-Right -->
+            <enum name="ltr" value="0" />
+            <!-- Right-to-Left -->
+            <enum name="rtl" value="1" />
+            <!-- Inherit from parent -->
+            <enum name="inherit" value="2" />
+            <!-- Locale -->
+            <enum name="locale" value="3" />
+        </attr>
+
+        <!--
+             Direction of the text. A heuristic is used to determine the resolved text direction
+             of paragraphs.
+        -->
+        <attr name="textDirection" format="integer">
+
+            <!-- Default -->
+            <enum name="inherit" value="0" />
+            <!--
+                 Default for the root view. The first strong directional character determines the
+                 paragraph direction.  If there is no strong directional character, the paragraph
+                 direction is the view’s resolved layout direction.
+            -->
+            <enum name="firstStrong" value="1" />
+            <!--
+                 The paragraph direction is RTL if it contains any strong RTL character, otherwise
+                 it is LTR if it contains any strong LTR characters.  If there are neither, the
+                 paragraph direction is the view’s resolved layout direction.
+            -->
+            <enum name="anyRtl" value="2" />
+            <!-- The paragraph direction is left to right. -->
+            <enum name="ltr" value="3" />
+            <!-- The paragraph direction is right to left. -->
+            <enum name="rtl" value="4" />
+            <!-- The paragraph direction is coming from the system Locale. -->
+            <enum name="locale" value="5" />
+        </attr>
+
+        <!--
+             Alignment of the text. A heuristic is used to determine the resolved
+            text alignment.
+        -->
+        <attr name="textAlignment" format="integer">
+
+            <!-- Default -->
+            <enum name="inherit" value="0" />
+            <!--
+                 Default for the root view. The gravity determines the alignment, ALIGN_NORMAL,
+                ALIGN_CENTER, or ALIGN_OPPOSITE, which are relative to each paragraph’s
+                text direction
+            -->
+            <enum name="gravity" value="1" />
+            <!-- Align to the start of the paragraph, e.g. ALIGN_NORMAL. -->
+            <enum name="textStart" value="2" />
+            <!-- Align to the end of the paragraph, e.g. ALIGN_OPPOSITE. -->
+            <enum name="textEnd" value="3" />
+            <!-- Center the paragraph, e.g. ALIGN_CENTER. -->
+            <enum name="center" value="4" />
+            <!--
+                 Align to the start of the view, which is ALIGN_LEFT if the view’s resolved
+                layoutDirection is LTR, and ALIGN_RIGHT otherwise.
+            -->
+            <enum name="viewStart" value="5" />
+            <!--
+                 Align to the end of the view, which is ALIGN_RIGHT if the view’s resolved
+                layoutDirection is LTR, and ALIGN_LEFT otherwise
+            -->
+            <enum name="viewEnd" value="6" />
+        </attr>
+
+        <!--
+             Controls how this View is important for accessibility which is if it fires
+             accessibility events and if it is reported to accessibility services that
+             query the screen. Note: While not recommended, an accessibility service may
+             decide to ignore this attribute and operate on all views in the view tree.
+        -->
+        <attr name="importantForAccessibility" format="integer">
+
+            <!--
+                 The system determines whether the view is important for accessibility - default
+                 (recommended).
+            -->
+            <enum name="auto" value="0" />
+            <!-- The view is important for accessibility. -->
+            <enum name="yes" value="1" />
+            <!-- The view is not important for accessibility. -->
+            <enum name="no" value="2" />
+        </attr>
+
+        <!-- @hide Controls whether this view can take accessibility focus. -->
+        <attr name="accessibilityFocusable" format="integer">
+
+            <!--
+                 The system determines whether the view can take accessibility focus - default
+                 (recommended).
+                 <p>
+                 Such a view is consideted by the focus search if it is:
+                 <ul>
+                 <li>
+                 Important for accessibility and actionable (clickable, long clickable, focusable)
+                 </li>
+                 <li>
+                 Important for accessibility, not actionable (clickable, long clickable, focusable),
+                 and does not have an actionable predecessor.
+                 </li>
+                 </ul>
+                 An accessibility srvice can request putting accessibility focus on such a view.
+                 </p>
+            -->
+            <enum name="auto" value="0" />
+            <!--
+                 The view can take accessibility focus.
+                 <p>
+                 A view that can take accessibility focus is always considered during focus
+                 search and an accessibility service can request putting accessibility focus
+                 on it.
+                 </p>
+            -->
+            <enum name="yes" value="1" />
+            <!--
+                 The view can not take accessibility focus.
+                 <p>
+                 A view that can not take accessibility focus is never considered during focus
+                 search and an accessibility service can not request putting accessibility focus
+                 on it.
+                 </p>
+            -->
+            <enum name="no" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ViewGroup">
+
+        <!--
+             Defines whether changes in layout (caused by adding and removing items) should
+             cause a LayoutTransition to run. When this flag is set to true, a default
+             LayoutTransition object will be set on the ViewGroup container and default
+             animations will run when these layout changes occur.
+        -->
+        <attr name="animateLayoutChanges" format="boolean" />
+        <!--
+             Defines whether a child is limited to draw inside of its bounds or not.
+             This is useful with animations that scale the size of the children to more
+             than 100% for instance. In such a case, this property should be set to false
+             to allow the children to draw outside of their bounds. The default value of
+             this property is true.
+        -->
+        <attr name="clipChildren" format="boolean" />
+        <!--
+             Defines whether the ViewGroup will clip its drawing surface so as to exclude
+             the padding area. This property is set to true by default.
+        -->
+        <attr name="clipToPadding" format="boolean" />
+        <!--
+             Defines the layout animation to use the first time the ViewGroup is laid out.
+             Layout animations can also be started manually after the first layout.
+        -->
+        <attr name="layoutAnimation" format="reference" />
+        <!--
+             Defines whether layout animations should create a drawing cache for their
+             children. Enabling the animation cache consumes more memory and requires
+             a longer initialization but provides better performance. The animation
+             cache is enabled by default.
+        -->
+        <attr name="animationCache" format="boolean" />
+        <!--
+             Defines the persistence of the drawing cache. The drawing cache might be
+             enabled by a ViewGroup for all its children in specific situations (for
+             instance during a scrolling.) This property lets you persist the cache
+             in memory after its initial usage. Persisting the cache consumes more
+             memory but may prevent frequent garbage collection is the cache is created
+             over and over again. By default the persistence is set to scrolling.
+        -->
+        <attr name="persistentDrawingCache">
+
+            <!-- The drawing cache is not persisted after use. -->
+            <flag name="none" value="0x0" />
+            <!-- The drawing cache is persisted after a layout animation. -->
+            <flag name="animation" value="0x1" />
+            <!-- The drawing cache is persisted after a scroll. -->
+            <flag name="scrolling" value="0x2" />
+            <!-- The drawing cache is always persisted. -->
+            <flag name="all" value="0x3" />
+        </attr>
+        <!--
+             Defines whether the ViewGroup should always draw its children using their
+             drawing cache or not. The default value is true.
+        -->
+        <attr name="alwaysDrawnWithCache" format="boolean" />
+        <!--
+             Sets whether this ViewGroup's drawable states also include
+             its children's drawable states.  This is used, for example, to
+             make a group appear to be focused when its child EditText or button
+             is focused.
+        -->
+        <attr name="addStatesFromChildren" format="boolean" />
+
+        <!--
+             Defines the relationship between the ViewGroup and its descendants
+             when looking for a View to take focus.
+        -->
+        <attr name="descendantFocusability">
+
+            <!-- The ViewGroup will get focus before any of its descendants. -->
+            <enum name="beforeDescendants" value="0" />
+            <!-- The ViewGroup will get focus only if none of its descendants want it. -->
+            <enum name="afterDescendants" value="1" />
+            <!-- The ViewGroup will block its descendants from receiving focus. -->
+            <enum name="blocksDescendants" value="2" />
+        </attr>
+
+        <!--
+             Sets whether this ViewGroup should split MotionEvents
+             to separate child views during touch event dispatch.
+             If false (default), touch events will be dispatched to
+             the child view where the first pointer went down until
+             the last pointer goes up.
+             If true, touch events may be dispatched to multiple children.
+             MotionEvents for each pointer will be dispatched to the child
+             view where the initial ACTION_DOWN event happened.
+             See {@link android.view.ViewGroup#setMotionEventSplittingEnabled(boolean)}
+             for more information.
+        -->
+        <attr name="splitMotionEvents" format="boolean" />
+    </declare-styleable>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_attrs.xml -->
+    <eat-comment />
+
+    <declare-styleable name="labelInput">
+
+        <!-- label名称 -->
+        <attr name="labelName" format="string|reference" />
+
+        <!-- 右侧图标 -->
+        <attr name="rightIcon" format="reference" />
+
+        <!-- hint -->
+        <attr name="miniInputHint" format="string|reference" />
+
+        <!-- 是否密码 -->
+        <attr name="isPassword" format="boolean" />
+
+        <!-- 最大输入长度 -->
+        <attr name="maxInputLength" format="integer" />
+    </declare-styleable>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_dimens.xml -->
+    <eat-comment />
+
+    <dimen name="item_left_icon_large">32dp</dimen>
+    <dimen name="item_left_icon_small">29dp</dimen>
+    <dimen name="mini_add_card_margin_left">21dp</dimen>
+    <dimen name="mini_element_default_height">44dp</dimen>
+    <dimen name="mini_margin_1">1dp</dimen>
+    <dimen name="mini_margin_10">10dp</dimen>
+    <dimen name="mini_margin_13">13dp</dimen>
+    <dimen name="mini_margin_15">15dp</dimen>
+    <dimen name="mini_margin_19">19dp</dimen>
+    <dimen name="mini_margin_20">20dp</dimen>
+    <dimen name="mini_margin_27">27dp</dimen>
+    <dimen name="mini_margin_3">3dp</dimen>
+    <dimen name="mini_margin_42">42dp</dimen>
+    <dimen name="mini_margin_6">6dp</dimen>
+    <dimen name="mini_margin_bottom">10dp</dimen>
+    <dimen name="mini_margin_default">10dp</dimen>
+    <dimen name="mini_margin_left">14dp</dimen>
+    <dimen name="mini_margin_right">14dp</dimen>
+    <dimen name="mini_margin_textview_13">9dp</dimen>
+    <dimen name="mini_margin_textview_6">3dp</dimen>
+    <dimen name="mini_margin_top">10dp</dimen>
+    <dimen name="mini_text_size_14">14sp</dimen>
+    <dimen name="mini_text_size_large">16sp</dimen>
+    <dimen name="mini_text_size_link">17sp</dimen>
+    <dimen name="mini_text_size_medium">15sp</dimen>
+    <dimen name="mini_text_size_small">13sp</dimen>
+    <dimen name="mini_text_size_x_small">12sp</dimen>
+    <dimen name="mini_text_size_xx_large">20sp</dimen>
+    <dimen name="mini_title_height">47dp</dimen>
+    <dimen name="mini_win_default_height">233dp</dimen>
+    <dimen name="mini_win_default_width">280dp</dimen>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_dimens.xml -->
+    <eat-comment />
+
+    <dimen name="msp_dimen_40">40dp</dimen>
+    <dimen name="msp_dimen_input_40">40dp</dimen>
+    <dimen name="msp_font_medium">16sp</dimen>
+    <dimen name="msp_margin_bottom">7dp</dimen>
+    <dimen name="msp_margin_default">7dp</dimen>
+    <dimen name="msp_margin_left">10dp</dimen>
+    <dimen name="msp_margin_right">10dp</dimen>
+    <dimen name="msp_margin_top">7dp</dimen>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_colors.xml -->
+    <eat-comment />
+
+    <drawable name="mini_list_devider">#bababa</drawable>
+    <drawable name="mini_page_bg_color">#ededed</drawable>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_colors.xml -->
+    <eat-comment />
+
+    <drawable name="mini_web_back_text_default">#333333</drawable>
+    <drawable name="mini_web_back_text_press">#cccccc</drawable>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_colors.xml -->
+    <eat-comment />
+
+    <drawable name="mini_win_background_draw">#00000000</drawable>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_update_string.xml -->
+    <eat-comment />
+
+    <string name="UMAppUpdate">App updating</string>
+    <string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+    <string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+    <string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+    <string name="UMIgnore">Ingore this</string>
+    <string name="UMNewVersion">Latest version: </string>
+    <string name="UMNotNow">Not now</string>
+    <string name="UMTargetSize">Target size: </string>
+    <string name="UMToast_IsUpdating">Updating....</string>
+    <string name="UMUpdateCheck">2.4.2.20140520</string>
+    <string name="UMUpdateContent">Update Content</string>
+    <string name="UMUpdateNow">Update now</string>
+    <string name="UMUpdateSize">Update size: </string>
+    <string name="UMUpdateTitle">New version found</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">TAE无线Demo</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml -->
+    <eat-comment />
+
+    <string name="cardCancle">取消</string>
+    <string name="cardDefaultuse">默认使用该卡支付</string>
+    <string name="cardUnbing">解除绑定</string>
+    <string name="channel">AliChannelInfo</string>
+    <string name="confirm_title">提示</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="login_expired_relogin">您取消的订单过多，请稍后再试</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml -->
+    <eat-comment />
+
+    <string name="mini_agree">同意</string>
+    <string name="mini_app_error">系统繁忙，请稍后再试。</string>
+    <string name="mini_canel_install_msp">你已取消安装移动快捷支付。</string>
+    <string name="mini_canel_install_wallet">你已取消安装支付宝钱包。</string>
+    <string name="mini_car_default_use">默认使用该卡支付</string>
+    <string name="mini_car_limit_phone">调整交易限额，请联系银行客服：</string>
+    <string name="mini_card_no">卡号</string>
+    <string name="mini_card_type">卡类型</string>
+    <string name="mini_countdown_info">秒后重发</string>
+    <string name="mini_date">有效期</string>
+    <string name="mini_date_hint">月份/年份</string>
+    <string name="mini_debug_app_error">程序发生错误！点击确定退出程序。</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/config.xml -->
+    <eat-comment />
+
+    <string name="mini_debuglog">false</string>
+    <string name="mini_env_pre">false</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml -->
+    <eat-comment />
+
+    <string name="mini_error_title_default">提示</string>
+    <string name="mini_format_error">格式错误</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/config.xml -->
+    <eat-comment />
+
+    <string name="mini_http_url">http://mclient.alipay.com/gateway.do</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml -->
+    <eat-comment />
+
+    <string name="mini_id_no">证件号</string>
+    <string name="mini_loading">加载中</string>
+    <string name="mini_loading_1">正在安全检测…</string>
+    <string name="mini_net_error">不能连接到网络，是否重试？</string>
+    <string name="mini_no_input">不能为空</string>
+    <string name="mini_page_add_hint">银行卡号</string>
+    <string name="mini_page_add_other_pay"> 其他付款方式</string>
+    <string name="mini_page_add_tips"> 提供支付密码和短信验证的双重保障</string>
+    <string name="mini_page_add_title">添加银行卡</string>
+    <string name="mini_page_input_id_hint">证件号码</string>
+    <string name="mini_page_input_name_hint">持卡人姓名</string>
+    <string name="mini_page_msg_check">信息加密处理，仅用于银行验证</string>
+    <string name="mini_page_msg_choose_type">选择证件类型</string>
+    <string name="mini_page_msg_title">填写银行卡信息</string>
+    <string name="mini_page_name">姓名          </string>
+    <string name="mini_page_next">下一步</string>
+    <string name="mini_password">密码</string>
+    <string name="mini_password_hint">请输入密码</string>
+    <string name="mini_phone_no">手机号</string>
+    <string name="mini_phone_no_hint">银行预留手机号码</string>
+    <string name="mini_quickpay_protocol">《服务协议》</string>
+    <string name="mini_redo">重试</string>
+    <string name="mini_safe_no">安全码</string>
+    <string name="mini_safe_no_hint">卡背面末三位数字</string>
+    <string name="mini_setting_credit_cards_tips">信用卡</string>
+    <string name="mini_setting_debit_cards_tips">储蓄卡</string>
+    <string name="mini_setting_default_tips">默认使用该卡支付</string>
+    <string name="mini_setting_pay_password">支付密码</string>
+    <string name="mini_setting_view_all_bankcard">查看全部(%1$d张)</string>
+    <string name="mini_str_null">xx</string>
+    <string name="mini_switch">切换</string>
+    <string name="mini_weakpassword_error_same">请不要使用相同的数字</string>
+    <string name="mini_weakpassword_error_serial">请不要使用连续的数字</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml -->
+    <eat-comment />
+
+    <string name="msp_action_settings">设置</string>
+    <string name="msp_app_name">支付宝快捷支付服务</string>
+    <string name="msp_close">关闭</string>
+    <string name="msp_error_title_default">提示</string>
+    <string name="msp_memo_app_cancel">程序或者数据出现问题。</string>
+    <string name="msp_memo_repeat_pay">同一订单禁止同时多次支付。</string>
+    <string name="msp_memo_server_cancel">系统繁忙，请稍后再试。</string>
+    <string name="msp_memo_user_cancel">操作已经取消。</string>
+    <string name="msp_mini_card_type_text">卡类型</string>
+    <string name="msp_mini_choose_identitify">选择证件类别</string>
+    <string name="msp_mini_read_protocal_title">选择阅读协议</string>
+    <string name="msp_mini_safty_code_info">安全码是打印在信用卡背面签名区的一组数字，一般是后3位或后4位数字</string>
+    <string name="msp_mini_safty_code_title">安全码说明</string>
+    <string name="msp_str_null"></string>
+    <string name="msp_xlistview_footer_hint_normal">查看更多</string>
+    <string name="msp_xlistview_header_hint_normal">下拉刷新</string>
+    <string name="msp_xlistview_header_last_time">上次更新时间：</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="my_tb">我的淘宝</string>
+    <string name="tab_1">最新</string>
+    <string name="tab_2">精选</string>
+    <string name="tab_3">潮流</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_confirm_order">ConfirmOrderActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_index">IndexActivity</string>
+    <string name="title_activity_item_detail">ItemDetailActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="title_activity_pay_order">PayOrderActivity</string>
+    <string name="title_activity_qq_login">QQOAuthLoginActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_taobao_login">TaobaoOAuthLoginActivity</string>
+    <string name="title_activity_weibo_login">WeiboOAuthLoginActivity</string>
+    <string name="title_cart">购物车</string>
+    <string name="title_category">分类</string>
+    <string name="title_image_upload_main">PicMainActivity</string>
+    <string name="title_index">爱逛</string>
+    <string name="title_my">我的</string>
+    <string name="title_stars">搜货</string>
+    <string name="todo">TODO</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_common_strings.xml -->
+    <eat-comment />
+
+    <string name="umeng_common_action_cancel">Cancel</string>
+    <string name="umeng_common_action_continue">Continue</string>
+    <string name="umeng_common_action_info_exist">The app is already in downloading list.</string>
+    <string name="umeng_common_action_pause">Pause</string>
+    <string name="umeng_common_download_failed">Download Failed! </string>
+    <string name="umeng_common_download_finish">Download finished,click to install it.</string>
+    <string name="umeng_common_download_notification_prefix">Downloading: </string>
+    <string name="umeng_common_icon">icon</string>
+    <string name="umeng_common_info_interrupt">dowload interrupted.</string>
+    <string name="umeng_common_network_break_alert">Please make sure you are connected to internet, download failed</string>
+    <string name="umeng_common_patch_finish">Patch finished,click to install it.</string>
+    <string name="umeng_common_pause_notification_prefix">Pause: </string>
+    <string name="umeng_common_silent_download_finish">New version is ready,click to install it.</string>
+    <string name="umeng_common_start_download_notification">Download start.</string>
+    <string name="umeng_common_start_patch_notification">Patch start.</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_fb_strings.xml -->
+    <eat-comment />
+
+    <string name="umeng_fb_back">Back</string>
+    <string name="umeng_fb_contact_info">Contact Info</string>
+    <string name="umeng_fb_contact_info_hint">Email, msn, gtalk, or whatever we can find you.</string>
+    <string name="umeng_fb_contact_title">Contact</string>
+    <string name="umeng_fb_contact_update_at">Updated at </string>
+    <string name="umeng_fb_notification_content_formatter_multiple_msg">You received %d new replies from the app developer.</string>
+    <string name="umeng_fb_notification_content_formatter_single_msg">New reply: %s</string>
+    <string name="umeng_fb_notification_ticker_text">Got new reply</string>
+    <string name="umeng_fb_powered_by">Powered by</string>
+    <string name="umeng_fb_reply_content_default">Your precious feedback are appriciated.</string>
+    <string name="umeng_fb_reply_content_hint">I want to tell</string>
+    <string name="umeng_fb_reply_date_default">2013-3-12 13:24:00</string>
+    <string name="umeng_fb_send">Send</string>
+    <string name="umeng_fb_title">Feedback</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="user_work_back">返回</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_last_time">最后更新：</string>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_styles.xml -->
+    <eat-comment />
+
+    <style name="MspAppBaseTheme" parent="android:Theme.Light.NoTitleBar" />
+
+    <style name="MspAppPayTheme" parent="android:Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="MspAppTheme" parent="MspAppBaseTheme">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="ProgressDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/msp_dialog_progress_bg</item>
+    </style>
+
+    <style name="TextLarge">
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextMedium">
+        <item name="android:textColor">#444444</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextSmall">
+        <item name="android:textColor">#888888</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/styles.xml -->
+    <eat-comment />
+
+    <style name="home_tab_bottom">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/tab_textcolor</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:background">@drawable/home_btn_bg_s</item>
+    </style>
+
+    <style name="index_tab_top">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/tab_textcolor</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="item_sku_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+    <style name="login_animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_styles.xml -->
+    <eat-comment />
+
+    <style name="mini_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/mini_win_background</item>
+    </style>
+
+    <style name="mini_UITextField">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingLeft">@dimen/mini_margin_left</item>
+        <item name="android:paddingRight">@dimen/mini_margin_right</item>
+        <item name="android:background">@drawable/mini_ui_input_bg</item>
+    </style>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_styles.xml -->
+    <eat-comment />
+
+    <style name="mini_progressBar_webview">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mini_progress_bar_webview</item>
+        <item name="android:secondaryProgress">0</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+    </style>
+
+    <style name="mini_safty_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="mini_title_text_style">
+        <item name="android:textColor">@color/mini_color_gray</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:shadowColor">@color/mini_text_white</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:shadowDy">1.5</item>
+    </style>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/ptr_default_style.xml -->
+    <eat-comment />
+
+    <style name="ptr_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ic_launcher</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+
+    <style name="ptr_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ptr_headerContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0px</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="ptr_last_updated" parent="ptr_text">
+        <item name="android:textStyle">normal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_below">@+id/ptr_id_text</item>
+    </style>
+
+    <style name="ptr_spinner" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+
+    <style name="ptr_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ptr_textwrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_styles.xml -->
+    <eat-comment />
+
+    <style name="text_20">
+        <item name="android:textSize">13.3sp</item>
+    </style>
+
+    <style name="text_24">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="text_dark_gray_24" parent="text_24">
+        <item name="android:textColor">@color/mini_text_black</item>
+    </style>
+
+    <style name="text_gray_20" parent="text_20">
+        <item name="android:textColor">@color/mini_color_gray</item>
+    </style>
+
+    <style name="text_light_gray_20" parent="text_20">
+        <item name="android:textColor">@color/mini_color_light_gray</item>
+    </style>
+
+</resources>

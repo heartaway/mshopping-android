@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/values-v11/alipay_styles.xml -->
+    <eat-comment />
+
+    <style name="MspAppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+    <style name="MspAppTranslucentBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+</resources>

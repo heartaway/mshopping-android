@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/item_detail_all_layout">
+
+
+    <WebView android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#e1e1e1">
+
+    </WebView>
+
+    <!-- 顶部菜单 -->
+    <RelativeLayout
+        android:id="@+id/tb_top"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:background="#70000000"
+        android:orientation="horizontal">
+
+        <!-- 添加RelativeLayout 以增大用户点击返回的区域 -->
+        <RelativeLayout android:id="@+id/item_detail_top_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="20dip"
+            android:paddingTop="6dip"
+            android:paddingBottom="6dip"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="75.0dip"
+            android:layout_height="25.0dip"
+            android:layout_margin="8.0dip"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="商品详情"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout><!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/layout/item_detail_webview_activity.xml -->

@@ -1,0 +1,135 @@
+apply plugin: 'android'
+
+/**
+ * 参考http://www.atatech.org/articles/19707
+ * 对gradle和工具版本配置
+ */
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url "http://mvnrepo.taobao.ali.com/mvn/releases" }
+        maven { url "http://mvnrepo.taobao.ali.com/mvn/snapshots" }
+
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:' + System.properties['androidGradlePluginVersion']
+    }
+}
+
+task hello << {
+    println System.properties['androidGradlePluginVersion']
+}
+
+
+repositories {
+    mavenLocal()
+    maven { url "http://mvnrepo.taobao.ali.com/mvn/releases" }
+    maven { url "http://mvnrepo.taobao.ali.com/mvn/snapshots" }
+
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 14
+    buildToolsVersion System.properties['buildToolsVersion']
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 15
+        versionCode 1
+        versionName "1.2.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    /**
+     * 这个是替换res values文件夹下面的xml文件
+     */
+    android.applicationVariants.all { variant ->
+        def encoding = java.nio.charset.Charset.defaultCharset().toString()
+        def placeholders = loadGroovy()
+        variant.mergeResources.doLast {
+            println 'replacing placeholders in values folder'
+            def dir = file("${buildDir}/intermediates/res/${variant.dirName}/values")
+            dir.listFiles().each { f ->
+                println f.name
+                String content = f.getText(encoding)
+                placeholders.each { k, v ->
+                    content = content.replaceAll('\\$\\{' + k + '\\}', v)
+                }
+                f.write(content, encoding)
+            }
+        }
+    }
+    /**
+     * 这个是替换assets文件夹下面的properties
+     */
+    android.applicationVariants.all { variant ->
+        def encoding = java.nio.charset.Charset.defaultCharset().toString()
+        def placeholders = loadGroovy()
+        variant.mergeAssets.doLast {
+            println 'replacing placeholders in assets folder'
+            def dir = file("${buildDir}/intermediates/assets/${variant.dirName}/")
+            dir.listFiles().each { f ->
+                def filepath = f.absolutePath
+                String content = f.getText(encoding)
+                placeholders.each { k, v ->
+                    println k + " -> " + v
+                    content = content.replaceAll('\\$\\{' + k + '\\}', v)
+                }
+                f.delete()
+                def tf = new File(filepath)
+                tf.write(content, encoding)
+            }
+        }
+    }
+
+
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.squareup.retrofit:retrofit:1.6.1'
+    compile 'org.apache.httpcomponents:httpmime:4.1.1'
+    compile 'commons-io:commons-io:2.4'
+    compile 'com.squareup.okhttp:okhttp:1.6.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:1.6.0'
+}
+
+task copyNativeLibs(type: Copy) {
+    from(new File('libs')) { include '**/*.so' }
+    into new File(buildDir, 'native-libs')
+}
+ext {
+    if (project.hasProperty('profile')) {
+        profile = project['profile']
+
+    } else {
+        profile = "production"
+    }
+}
+
+def loadGroovy() {
+    println 'load config.groovy with ' + profile + ' env'
+    def configFile = file('config.groovy')
+    new ConfigSlurper(profile).parse(configFile.toURL()).toProperties()
+}
+
+
+
+
+

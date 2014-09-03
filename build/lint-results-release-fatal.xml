@@ -1,0 +1,2527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 22.6.4">
+
+    <issue
+        id="WrongCall"
+        severity="Fatal"
+        message="Suspicious method call; should probably call &quot;layout&quot; rather than &quot;onLayout&quot;"
+        category="Correctness"
+        priority="6"
+        summary="Finds cases where the wrong call is made, such as calling `onMeasure` instead of `measure`"
+        explanation="Custom views typically need to call `measure()` on their children, not `onMeasure`. Ditto for onDraw, onLayout, etc."
+        errorLine1="                this.onLayout(false, getLeft(), getTop(), getRight(), getBottom());"
+        errorLine2="                     ~~~~~~~~">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/java/com/taobao/tae/Mshopping/demo/view/pinterest/PinterestAdapterView.java"
+            line="745"
+            column="22"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_str_null&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_str_null&quot; />"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_app_name&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_app_name&quot;>支付宝快捷支付服务&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_error_title_default&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_error_title_default&quot;>提示&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="6"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_action_settings&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_action_settings&quot;>设置&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_xlistview_header_hint_normal&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_xlistview_header_hint_normal&quot;>下拉刷新&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_xlistview_header_last_time&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_xlistview_header_last_time&quot;>上次更新时间：&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_xlistview_footer_hint_normal&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_xlistview_footer_hint_normal&quot;>查看更多&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_close&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_close&quot;>关闭&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="11"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_memo_user_cancel&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_memo_user_cancel&quot;>操作已经取消。&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="12"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_memo_app_cancel&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_memo_app_cancel&quot;>程序或者数据出现问题。&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="13"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_memo_server_cancel&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_memo_server_cancel&quot;>系统繁忙，请稍后再试。&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_memo_repeat_pay&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_memo_repeat_pay&quot;>同一订单禁止同时多次支付。&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_mini_safty_code_info&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_mini_safty_code_info&quot;>安全码是打印在信用卡背面签名区的一组数字，一般是后3位或后4位数字&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_mini_safty_code_title&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_mini_safty_code_title&quot;>安全码说明&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_mini_read_protocal_title&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_mini_read_protocal_title&quot;>选择阅读协议&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_mini_choose_identitify&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_mini_choose_identitify&quot;>选择证件类别&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="20"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;msp_mini_card_type_text&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;msp_mini_card_type_text&quot;>卡类型&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;confirm_title&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;confirm_title&quot;>提示&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;cardUnbing&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;cardUnbing&quot;>解除绑定&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;cardDefaultuse&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;cardDefaultuse&quot;>默认使用该卡支付&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;cardCancle&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;cardCancle&quot;>取消&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;channel&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;channel&quot;>AliChannelInfo&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_env_pre&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_env_pre&quot;>false&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/config.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_http_url&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_http_url&quot;>http://mclient.alipay.com/gateway.do&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/config.xml"
+            line="12"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_debuglog&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_debuglog&quot;>false&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/config.xml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_loading_1&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_loading_1&quot;>正在安全检测&amp;#8230;&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_loading&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_loading&quot;>加载中&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_net_error&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_net_error&quot;>不能连接到网络，是否重试？&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="6"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_redo&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_redo&quot;>重试&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_error_title_default&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_error_title_default&quot;>提示&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_app_error&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_app_error&quot;>系统繁忙，请稍后再试。&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_debug_app_error&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_debug_app_error&quot;>程序发生错误！点击确定退出程序。&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_countdown_info&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_countdown_info&quot;>秒后重发&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="11"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_no_input&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_no_input&quot;>不能为空&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="12"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_format_error&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_format_error&quot;>格式错误&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="13"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_add_title&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_add_title&quot;>添加银行卡&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_add_hint&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_add_hint&quot;>银行卡号&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_card_no&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_card_no&quot;>卡号&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_add_tips&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_add_tips&quot;> 提供支付密码和短信验证的双重保障&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_add_other_pay&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_add_other_pay&quot;> 其他付款方式&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_msg_title&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_msg_title&quot;>填写银行卡信息&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_next&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_next&quot;>下一步&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="20"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_name&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_name&quot;>姓名          &lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_input_name_hint&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_input_name_hint&quot;>持卡人姓名&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_card_type&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_card_type&quot;>卡类型&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_id_no&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_id_no&quot;>证件号&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_input_id_hint&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_input_id_hint&quot;>证件号码&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_msg_check&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_msg_check&quot;>信息加密处理，仅用于银行验证&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_page_msg_choose_type&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_page_msg_choose_type&quot;>选择证件类型&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_date&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_date&quot;>有效期&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_date_hint&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_date_hint&quot;>月份/年份&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="29"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_safe_no&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_safe_no&quot;>安全码&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_safe_no_hint&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_safe_no_hint&quot;>卡背面末三位数字&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="31"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_phone_no&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_phone_no&quot;>手机号&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_phone_no_hint&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_phone_no_hint&quot;>银行预留手机号码&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_agree&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_agree&quot;>同意&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="34"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_quickpay_protocol&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_quickpay_protocol&quot;>《服务协议》&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_password&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_password&quot;>密码&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_switch&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_switch&quot;>切换&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="37"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_car_default_use&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_car_default_use&quot;>默认使用该卡支付&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="38"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_car_limit_phone&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_car_limit_phone&quot;>调整交易限额，请联系银行客服：&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="39"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_password_hint&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_password_hint&quot;>请输入密码&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_canel_install_msp&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_canel_install_msp&quot;>你已取消安装移动快捷支付。&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="41"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_canel_install_wallet&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_canel_install_wallet&quot;>你已取消安装支付宝钱包。&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="42"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_setting_default_tips&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_setting_default_tips&quot;>默认使用该卡支付&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="43"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_setting_view_all_bankcard&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_setting_view_all_bankcard&quot;>查看全部(%1$d张)&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="44"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_setting_debit_cards_tips&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_setting_debit_cards_tips&quot;>储蓄卡&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="45"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_setting_credit_cards_tips&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_setting_credit_cards_tips&quot;>信用卡&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="46"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_setting_pay_password&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_setting_pay_password&quot;>支付密码&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="47"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_weakpassword_error_same&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_weakpassword_error_same&quot;>请不要使用相同的数字&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="48"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_weakpassword_error_serial&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_weakpassword_error_serial&quot;>请不要使用连续的数字&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="49"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;mini_str_null&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;mini_str_null&quot;>xx&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+            line="50"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;app_name&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;app_name&quot;>TAE无线Demo&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="4"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;action_settings&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;action_settings&quot;>Settings&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="5"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_home&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_home&quot;>HomeActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="6"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_base&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_base&quot;>BaseActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_index&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_index&quot;>IndexActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="8"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_search&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_search&quot;>SearchActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="9"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_item_detail&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_item_detail&quot;>ItemDetailActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="10"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_confirm_order&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_confirm_order&quot;>ConfirmOrderActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="11"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_my&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_my&quot;>MyActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="12"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_login&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_login&quot;>LoginActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="13"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_taobao_login&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_taobao_login&quot;>TaobaoOAuthLoginActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="14"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_qq_login&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_qq_login&quot;>QQOAuthLoginActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_weibo_login&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_weibo_login&quot;>WeiboOAuthLoginActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_pay_order&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_pay_order&quot;>PayOrderActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_activity_setting&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_activity_setting&quot;>SettingActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_image_upload_main&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_image_upload_main&quot;>PicMainActivity&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_cart&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_cart&quot;>购物车&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_category&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_category&quot;>分类&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="24"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_index&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_index&quot;>爱逛&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_stars&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_stars&quot;>搜货&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;title_my&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;title_my&quot;>我的&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;todo&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;todo&quot;>TODO&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="28"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;user_work_back&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;user_work_back&quot;>返回&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="29"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;my_tb&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;my_tb&quot;>我的淘宝&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;tab_1&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;tab_1&quot;>最新&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="31"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;tab_2&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;tab_2&quot;>精选&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;tab_3&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;tab_3&quot;>潮流&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;xlistview_header_hint_normal&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;xlistview_header_hint_normal&quot;>下拉刷新&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="35"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;xlistview_header_hint_ready&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;xlistview_header_hint_ready&quot;>松开刷新数据&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="36"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;xlistview_header_hint_loading&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;xlistview_header_hint_loading&quot;>正在加载...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="37"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;xlistview_header_last_time&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;xlistview_header_last_time&quot;>最后更新：&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="38"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;xlistview_footer_hint_normal&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;xlistview_footer_hint_normal&quot;>查看更多&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="39"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;xlistview_footer_hint_ready&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;xlistview_footer_hint_ready&quot;>松开载入更多&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="40"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;login_expired_relogin&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;login_expired_relogin&quot; >您取消的订单过多，请稍后再试&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+            line="42"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;umeng_common_icon&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1=" &lt;string name=&quot;umeng_common_icon&quot;>icon&lt;/string>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_common_strings.xml"
+            line="17"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;umeng_fb_powered_by&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1="    &lt;string name=&quot;umeng_fb_powered_by&quot;>Powered by&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_fb_strings.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="MissingTranslation"
+        severity="Fatal"
+        message="&quot;UMUpdateCheck&quot; is not translated in &quot;zh&quot; (Chinese)"
+        category="Correctness:Messages"
+        priority="8"
+        summary="Checks for incomplete translations where not all strings are translated"
+        explanation="If an application has more than one locale, then all the strings declared in one language should also be translated in all other languages.
+
+If the string should *not* be translated, you can add the attribute `translatable=&quot;false&quot;` on the `&lt;string>` element, or you can define all your non-translatable strings in a resource file called `donottranslate.xml`. Or, you can ignore the issue with a `tools:ignore=&quot;MissingTranslation&quot;` attribute.
+
+By default this detector allows regions of a language to just provide a subset of the strings and fall back to the standard language strings. You can require all regions to provide a full translation by setting the environment variable `ANDROID_LINT_COMPLETE_REGIONS`.
+
+You can tell lint (and other tools) which language is the default language in your `res/values/` folder by specifying `tools:locale=&quot;languageCode&quot;` for the root `&lt;resources>` element in your resource file. (The `tools` prefix refers to the namespace declaration `http://schemas.android.com/tools`.)"
+        errorLine1=" &lt;string name=&quot;UMUpdateCheck&quot;>2.4.2.20140520&lt;/string>"
+        errorLine2="         ~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_update_string.xml"
+            line="17"
+            column="10"/>
+    </issue>
+
+</issues>

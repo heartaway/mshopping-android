@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="bottom">
+
+    <RelativeLayout
+            android:id="@+id/pull_to_refresh_content"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical" android:id="@+id/pull_to_refresh_text">
+
+            <TextView
+                    android:id="@+id/pull_to_refresh_hint_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="@string/xlistview_header_hint_normal"/>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xlistview_header_last_time"
+                        android:textSize="10sp"/>
+
+                <TextView
+                        android:id="@+id/pull_to_refresh_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/pull_to_refresh_arrow"
+                android:layout_width="20dip"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/pull_to_refresh_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-35dp"
+                android:src="@drawable/pull_to_refresh_arrow"/>
+
+        <ProgressBar
+                android:id="@+id/pull_to_refresh_progressbar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@id/pull_to_refresh_text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-40dp"
+                android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/layout/pull_to_refresh.xml -->

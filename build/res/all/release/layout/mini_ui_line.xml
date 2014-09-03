@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="2dp"
+    android:contentDescription="@string/mini_str_null" />
+<!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_line.xml -->

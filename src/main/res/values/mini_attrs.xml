@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="labelInput">
+
+        <!-- label名称 -->
+        <attr name="labelName" format="string|reference" />
+
+        <!-- 右侧图标 -->
+        <attr name="rightIcon" format="reference" />
+
+        <!-- hint -->
+        <attr name="miniInputHint" format="string|reference" />
+
+        <!-- 是否密码 -->
+        <attr name="isPassword" format="boolean" />
+
+        <!-- 最大输入长度 -->
+        <attr name="maxInputLength" format="integer" />
+    </declare-styleable>
+
+</resources>

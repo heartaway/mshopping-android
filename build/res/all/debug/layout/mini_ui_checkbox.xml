@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.android.mini.widget.CustomCheckbox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:contentDescription="checkbox_relativelayout"
+    android:layout_height="wrap_content" />
+<!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_checkbox.xml -->

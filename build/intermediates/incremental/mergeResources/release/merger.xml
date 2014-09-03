@@ -1,0 +1,4349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="/Users/huamulou/work/gits/mandroid1/src/main/res" >
+            <file
+                name="fade_in"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/fade_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="fade_out"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/fade_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="image_upload_fade_ins"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/image_upload_fade_ins.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="image_upload_hold"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/image_upload_hold.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="image_upload_push_bottom_in"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/image_upload_push_bottom_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="image_upload_push_bottom_in_2"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/image_upload_push_bottom_in_2.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="image_upload_push_up_out"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/image_upload_push_up_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="msp_alpha_out"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/msp_alpha_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="msp_left_in"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/msp_left_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="msp_left_out"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/msp_left_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="msp_right_in"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/msp_right_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="msp_right_out"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/msp_right_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="push_left_in"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/push_left_in.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="push_left_out"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/push_left_out.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="slide_in_from_bottom"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/slide_in_from_bottom.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="slide_in_from_top"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/slide_in_from_top.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="slide_out_to_bottom"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/slide_out_to_bottom.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="slide_out_to_top"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/slide_out_to_top.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="splash_loading"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/splash_loading.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="umeng_fb_slide_in_from_left"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/umeng_fb_slide_in_from_left.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="umeng_fb_slide_in_from_right"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/umeng_fb_slide_in_from_right.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="umeng_fb_slide_out_from_left"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/umeng_fb_slide_out_from_left.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="umeng_fb_slide_out_from_right"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/anim/umeng_fb_slide_out_from_right.xml"
+                qualifiers=""
+                type="anim" />
+            <file
+                name="avatar_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/avatar_bg.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_close_image"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/btn_close_image.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="btn_setting"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/btn_setting.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="buy_btn_shape"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/buy_btn_shape.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="cart_indicator_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/cart_indicator_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="category_indicator_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/category_indicator_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="elist_item_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/elist_item_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="empty_photo"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/empty_photo.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="fashion_icon_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/fashion_icon_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="home_tab_background_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/home_tab_background_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="home_tab_cart_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/home_tab_cart_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="home_tab_category_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/home_tab_category_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="home_tab_main_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/home_tab_main_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="home_tab_personal_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/home_tab_personal_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="home_tab_search_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/home_tab_search_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/ic_launcher.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="image_upload_bgd_relatly_line"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/image_upload_bgd_relatly_line.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="image_upload_bt_add_pic"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/image_upload_bt_add_pic.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="image_upload_bt_nobgd"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/image_upload_bt_nobgd.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="image_upload_bt_queding"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/image_upload_bt_queding.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="image_upload_bt_quxiao"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/image_upload_bt_quxiao.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="image_upload_bt_shanchu"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/image_upload_bt_shanchu.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="image_upload_text_while"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/image_upload_text_while.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="index_indicator_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/index_indicator_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="item_count_add_remove_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/item_count_add_remove_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="item_image_unfav"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/item_image_unfav.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="item_list_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/item_list_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="item_sku_background"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/item_sku_background.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="item_tmp_pic"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/item_tmp_pic.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="loading_animation"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/loading_animation.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="login_bg_btn_shape"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/login_bg_btn_shape.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="login_btn_round_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/login_btn_round_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="login_notice_btn"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/login_notice_btn.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="login_person"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/login_person.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="map_location"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/map_location.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mei_icon_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mei_icon_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_back_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_back_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_block_not_margin_bottom_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_block_not_margin_bottom_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_block_not_margin_middle_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_block_not_margin_middle_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_block_not_margin_top_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_block_not_margin_top_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_btn_bg_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_btn_bg_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_btn_cancel_bg_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_btn_cancel_bg_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_btn_confirm_bg_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_btn_confirm_bg_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_btn_confirm_text_color_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_btn_confirm_text_color_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_btn_text_color_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_btn_text_color_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_dash_line_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_dash_line_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_fullscreen_switch_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_fullscreen_switch_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_list_bottom_mask"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_list_bottom_mask.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_list_coner_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_list_coner_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_progress_bar_webview"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_progress_bar_webview.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_ui_check_mark"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_ui_check_mark.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_ui_input_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_ui_input_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_webview_back_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_webview_back_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_webview_bottom_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_webview_bottom_bg.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_webview_forward_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_webview_forward_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_webview_refresh_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_webview_refresh_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_widget_toast_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_widget_toast_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="mini_year_month_picker_button"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/mini_year_month_picker_button.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="msp_dialog_progress_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/msp_dialog_progress_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="my_indicator_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/my_indicator_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="news_item_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/news_item_bg.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="positive_btn_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/positive_btn_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="pull_to_refresh_arrow"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/pull_to_refresh_arrow.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="qq_logo"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/qq_logo.jpg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="recommend_icon_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/recommend_icon_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="right_arrow"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/right_arrow.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="shop_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/shop_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="sku_button_select_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/sku_button_select_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="sku_button_unselect_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/sku_button_unselect_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="special_icon_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/special_icon_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="stars_indicator_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/stars_indicator_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tab_textcolor"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/tab_textcolor.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tabbar_icon_home_d"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/tabbar_icon_home_d.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="taobao_logo"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/taobao_logo.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tb_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/tb_icon.jpeg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tb_login_logo"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/tb_login_logo.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tmall_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/tmall_icon.jpeg"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="toast_border"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/toast_border.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="tuan_icon_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/tuan_icon_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_common_gradient_green"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_common_gradient_green.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_common_gradient_orange"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_common_gradient_orange.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_common_gradient_red"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_common_gradient_red.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_arrow_right"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_arrow_right.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_back_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_back_normal.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_back_selected"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_back_selected.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_back_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_back_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_bar_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_bar_bg.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_btn_bg_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_btn_bg_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_conversation_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_conversation_bg.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_gradient_green"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_gradient_green.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_gradient_orange"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_gradient_orange.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_gray_frame"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_gray_frame.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_list_item"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_list_item.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_list_item_pressed"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_list_item_pressed.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_list_item_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_list_item_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_logo"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_logo.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_point_new"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_point_new.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_point_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_point_normal.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_reply_left_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_reply_left_bg.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_reply_right_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_reply_right_bg.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_see_list_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_see_list_normal.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_see_list_pressed"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_see_list_pressed.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_see_list_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_see_list_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_statusbar_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_statusbar_icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_submit_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_submit_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_tick_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_tick_normal.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_tick_selected"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_tick_selected.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_tick_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_tick_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_top_banner"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_top_banner.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_user_bubble"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_user_bubble.9.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_write_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_write_normal.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_write_pressed"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_write_pressed.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_fb_write_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_fb_write_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_cancel_bg_focused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_cancel_bg_focused.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_cancel_bg_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_cancel_bg_normal.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_cancel_bg_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_cancel_bg_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_cancel_bg_tap"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_cancel_bg_tap.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_check_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_check_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_close_bg_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_close_bg_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_ok_bg_focused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_ok_bg_focused.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_ok_bg_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_ok_bg_normal.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_ok_bg_selector"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_ok_bg_selector.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_button_ok_bg_tap"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_button_ok_bg_tap.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_dialog_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_dialog_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_title_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_title_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="umeng_update_wifi_disable"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/umeng_update_wifi_disable.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="web_back"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/web_back.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="web_freshbtn_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/web_freshbtn_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="web_nextbtn_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/web_nextbtn_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="web_prebtn_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/web_prebtn_bg.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="weibo_logo"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/weibo_logo.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="wraper_stamp_config"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/wraper_stamp_config.xml"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="wrapper_stamp_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/wrapper_stamp_bg.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="yuan"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable/yuan.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="accessories_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/accessories_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="android_layout_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/android_layout_bg.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="back_btn"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/back_btn.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="bag_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/bag_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="bag_icon_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/bag_icon_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="bg_transparent"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/bg_transparent.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_browser"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/btn_browser.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="btn_browser2"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/btn_browser2.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_abc"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_abc.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_abc1"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_abc1.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_abc1_on"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_abc1_on.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_abc_on"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_abc_on.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_del"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_del.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_del_on"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_del_on.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_more1"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_more1.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_more2"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_more2.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_show"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_show.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_space"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_space.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="button_space_on"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/button_space_on.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="fashion_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/fashion_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="fashion_icon_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/fashion_icon_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="fresh"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/fresh.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="fresh_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/fresh_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="home_btn_bg_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/home_btn_bg_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_bg_back_integration"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/ic_bg_back_integration.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_bg_baoyou"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/ic_bg_baoyou.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_focus"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/ic_focus.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_focus_select"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/ic_focus_select.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_global_back"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/ic_global_back.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_addpic_focused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/icon_addpic_focused.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_addpic_unfocused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/icon_addpic_unfocused.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_data_select"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/icon_data_select.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_queding_focused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/icon_queding_focused.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_queding_unfocused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/icon_queding_unfocused.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_quxiao_focused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/icon_quxiao_focused.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_quxiao_unfocused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/icon_quxiao_unfocused.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_shanchu_focused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/icon_shanchu_focused.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="icon_shanchu_unfocused"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/icon_shanchu_unfocused.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="image_fail"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/image_fail.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="image_indicator"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/image_indicator.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="keyback"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/keyback.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_cart_focus"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_cart_focus.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_cart_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_cart_normal.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_category_focus"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_category_focus.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_category_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_category_normal.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_home_focus"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_home_focus.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_home_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_home_normal.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_personal_focus"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_personal_focus.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_personal_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_personal_normal.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_search_focus"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_search_focus.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_bottom_tab_search_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_bottom_tab_search_normal.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_navigation_background"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_navigation_background.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="main_navigation_highlight_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/main_navigation_highlight_bg.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mei_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mei_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mei_icon_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mei_icon_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_arrow"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_arrow.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_back"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_back.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_back_focus"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_back_focus.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_bg.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_bg_gray"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_bg_gray.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_bg_white"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_bg_white.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_black_point"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_black_point.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_block_not_margin_bottom"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_block_not_margin_bottom.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_block_not_margin_bottom_press"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_block_not_margin_bottom_press.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_block_not_margin_middle"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_block_not_margin_middle.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_block_not_margin_middle_press"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_block_not_margin_middle_press.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_block_not_margin_top"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_block_not_margin_top.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_block_not_margin_top_press"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_block_not_margin_top_press.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_btn_cancel_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_btn_cancel_bg.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_btn_cancel_hover"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_btn_cancel_hover.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_btn_confirm_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_btn_confirm_bg.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_btn_confirm_hover"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_btn_confirm_hover.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_btn_disable"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_btn_disable.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_btn_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_btn_normal.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_btn_push"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_btn_push.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_card_title_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_card_title_bg.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_channel_gou"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_channel_gou.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_channel_hui"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_channel_hui.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_check_selected"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_check_selected.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_checkbox_disable"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_checkbox_disable.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_checkbox_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_checkbox_normal.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_footer_line"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_footer_line.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_fullscreen_switch_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_fullscreen_switch_normal.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_fullscreen_switch_press"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_fullscreen_switch_press.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_guide_img"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_guide_img.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_guide_ok_btn"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_guide_ok_btn.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_header_line"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_header_line.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_help_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_help_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_icon_clean"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_icon_clean.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_icon_ok"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_icon_ok.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_icon_sure"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_icon_sure.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_info_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_info_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_input_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_input_bg.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_page_card_safecode_info"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_page_card_safecode_info.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_red_dot"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_red_dot.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_safty_code_card"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_safty_code_card.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_safty_code_close"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_safty_code_close.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_safty_code_dialog_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_safty_code_dialog_bg.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_simple_pwd_center"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_simple_pwd_center.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_simple_pwd_left"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_simple_pwd_left.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_simple_pwd_right"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_simple_pwd_right.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_smsbtn_disable"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_smsbtn_disable.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_three_point"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_three_point.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_webview_back"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_webview_back.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_webview_back_disable"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_webview_back_disable.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_webview_bottom_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_webview_bottom_bg.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_webview_forward"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_webview_forward.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_webview_forward_disable"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_webview_forward_disable.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_webview_refresh"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_webview_refresh.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_webview_refresh_click"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_webview_refresh_click.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_year_month_picker_down"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_year_month_picker_down.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mini_year_month_picker_up"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mini_year_month_picker_up.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="msp_demo_title"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/msp_demo_title.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="msp_demo_title_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/msp_demo_title_bg.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="mytaobao"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/mytaobao.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="narrow"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/narrow.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="narrow_select"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/narrow_select.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="next"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/next.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="next_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/next_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="positive"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/positive.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="positive_pressed"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/positive_pressed.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="pre"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/pre.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="pre_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/pre_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="recommend_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/recommend_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="recommend_icon_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/recommend_icon_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="search_bar_ly_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/search_bar_ly_bg.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="search_edit_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/search_edit_bg.9.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="search_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/search_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="searchbar_back_button_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/searchbar_back_button_bg.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="searchbar_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/searchbar_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="special_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/special_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="special_icon_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/special_icon_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="splash_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/splash_bg.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="splash_loading_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/splash_loading_bg.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="splash_loading_item"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/splash_loading_item.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="splash_logo"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/splash_logo.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="title_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/title_bg.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="top_theme_blue"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/top_theme_blue.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="tuan_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/tuan_icon.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="tuan_icon_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/tuan_icon_s.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="umeng_update_btn_check_off_focused_holo_light"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/umeng_update_btn_check_off_focused_holo_light.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="umeng_update_btn_check_off_holo_light"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/umeng_update_btn_check_off_holo_light.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="umeng_update_btn_check_off_pressed_holo_light"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/umeng_update_btn_check_off_pressed_holo_light.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="umeng_update_btn_check_on_focused_holo_light"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/umeng_update_btn_check_on_focused_holo_light.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="umeng_update_btn_check_on_holo_light"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/umeng_update_btn_check_on_holo_light.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="umeng_update_btn_check_on_pressed_holo_light"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/umeng_update_btn_check_on_pressed_holo_light.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="umeng_update_close_bg_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/umeng_update_close_bg_normal.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="umeng_update_close_bg_tap"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/umeng_update_close_bg_tap.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="umeng_xp_point_normal"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/umeng_xp_point_normal.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="web_bottom_bg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-hdpi/web_bottom_bg.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-ldpi/ic_launcher.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-mdpi/ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="cart_tab_icon_dark"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/cart_tab_icon_dark.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="cart_tab_icon_red"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/cart_tab_icon_red.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="category_indicator"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/category_indicator.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="category_indicator_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/category_indicator_s.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/ic_launcher.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="index_indicator"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/index_indicator.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_1"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_1.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_10"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_10.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_11"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_11.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_12"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_12.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_2"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_2.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_3"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_3.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_4"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_4.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_5"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_5.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_6"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_6.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_7"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_7.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_8"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_8.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="loading_9"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/loading_9.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="my_indicator"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/my_indicator.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="my_indicator_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/my_indicator_s.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="stars_indicator"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/stars_indicator.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="stars_indicator_s"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xhdpi/stars_indicator_s.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/drawable-xxhdpi/ic_launcher.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="confirm_order_activity"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/confirm_order_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="home_activity"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/home_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="image_upload_bucket"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_bucket.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="image_upload_grid"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_grid.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="image_upload_item_bucket"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_item_bucket.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="image_upload_item_grid"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_item_grid.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="image_upload_item_popupwindows"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_item_popupwindows.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="image_upload_item_published_grida"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_item_published_grida.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="image_upload_main"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="image_upload_photo"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_photo.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="image_upload_selectimg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_selectimg.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="index_activity"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/index_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_detail_core"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/item_detail_core.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_detail_frame"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/item_detail_frame.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_detail_login_notice"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/item_detail_login_notice.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_detail_sku_select"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/item_detail_sku_select.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_detail_webview_activity"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/item_detail_webview_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="item_list"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/item_list.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="login_activity"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/login_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_activity_main"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_activity_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_custom_text_toast"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_custom_text_toast.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_express_year_month_picker"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_express_year_month_picker.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_guide_layout_new"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_guide_layout_new.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_key_input_popup"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_key_input_popup.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_layout"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_safty_code_info_layout"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_safty_code_info_layout.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_block"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_block.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_button"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_button.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_checkbox"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_checkbox.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_combobox"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_combobox.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_component"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_component.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_custom_toast"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_custom_toast.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_icon"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_icon.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_image"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_image.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_label"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_label.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_lable_input"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_lable_input.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_line"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_line.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_link"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_link.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_page_add_card"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_page_add_card.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_page_card_msg"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_page_card_msg.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_password"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_password.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_radio"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_radio.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_richtext"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_richtext.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_scroll"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_scroll.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_select_button"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_select_button.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_select_button_item"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_select_button_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_simple_password"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_simple_password.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_span"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_span.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_textarea"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_textarea.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_ui_webview"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_ui_webview.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_web_view"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_web_view.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_widget_label"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_widget_label.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_widget_label_input"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_widget_label_input.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="mini_year_month_picker"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/mini_year_month_picker.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="msp_demo_main"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/msp_demo_main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="msp_dialog_progress"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/msp_dialog_progress.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="my_activity"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/my_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="pay_order_activity"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/pay_order_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="ptr_header"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/ptr_header.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="pull_to_refresh"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/pull_to_refresh.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="pull_to_refresh_items"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/pull_to_refresh_items.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="system_setting"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/system_setting.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="taobao_login_activity"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/taobao_login_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="toast"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/toast.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="umeng_common_download_notification"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/umeng_common_download_notification.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="umeng_fb_activity_contact"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/umeng_fb_activity_contact.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="umeng_fb_activity_conversation"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/umeng_fb_activity_conversation.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="umeng_fb_list_header"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/umeng_fb_list_header.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="umeng_fb_list_item"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/umeng_fb_list_item.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="umeng_fb_new_reply_alert_dialog"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/umeng_fb_new_reply_alert_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="umeng_update_dialog"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/umeng_update_dialog.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="view_more"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/view_more.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="weibo_login_activity"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout/weibo_login_activity.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="umeng_common_download_notification"
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/layout-v9/umeng_common_download_notification.xml"
+                qualifiers="v9"
+                type="layout" />
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_colors.xml"
+                qualifiers="" >
+                <color name="msp_dialog_tiltle_blue" >#2277BB
+                </color>
+                <color name="msp_hint_color" >#b2b2b2
+                </color>
+
+                <drawable name="mini_web_back_text_default" >
+#333333
+                </drawable>
+
+                <color name="msp_line_color" >#cccccc
+                </color>
+                <color name="msp_combox_list_devider_color" >#d8d8d8
+                </color>
+
+                <drawable name="mini_web_back_text_press" >
+#cccccc
+                </drawable>
+
+                <color name="msp_text_color_gray" >#333333
+                </color>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_dimens.xml"
+                qualifiers="" >
+                <dimen name="msp_margin_default" >7dp
+                </dimen>
+                <dimen name="msp_margin_left" >10dp
+                </dimen>
+                <dimen name="msp_font_medium" >16sp
+                </dimen>
+                <dimen name="msp_dimen_40" >40dp
+                </dimen>
+                <dimen name="msp_margin_bottom" >7dp
+                </dimen>
+                <dimen name="msp_margin_top" >7dp
+                </dimen>
+                <dimen name="msp_dimen_input_40" >40dp
+                </dimen>
+                <dimen name="msp_margin_right" >10dp
+                </dimen>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_strings.xml"
+                qualifiers="" >
+                <string name="cardDefaultuse" >默认使用该卡支付
+                </string>
+                <string name="channel" >AliChannelInfo
+                </string>
+                <string name="msp_mini_safty_code_title" >安全码说明
+                </string>
+                <string name="msp_str_null" ></string>
+                <string name="confirm_title" >提示
+                </string>
+                <string name="msp_memo_app_cancel" >程序或者数据出现问题。
+                </string>
+                <string name="cardUnbing" >解除绑定
+                </string>
+                <string name="msp_memo_user_cancel" >操作已经取消。
+                </string>
+                <string name="msp_error_title_default" >提示
+                </string>
+                <string name="msp_xlistview_header_hint_normal" >下拉刷新
+                </string>
+                <string name="msp_mini_card_type_text" >卡类型
+                </string>
+                <string name="msp_xlistview_header_last_time" >上次更新时间：
+                </string>
+                <string name="msp_mini_choose_identitify" >选择证件类别
+                </string>
+                <string name="msp_action_settings" >设置
+                </string>
+                <string name="msp_memo_server_cancel" >系统繁忙，请稍后再试。
+                </string>
+                <string name="cardCancle" >取消
+                </string>
+                <string name="msp_xlistview_footer_hint_normal" >查看更多
+                </string>
+                <string name="msp_memo_repeat_pay" >同一订单禁止同时多次支付。
+                </string>
+                <string name="msp_mini_read_protocal_title" >选择阅读协议
+                </string>
+                <string name="msp_close" >关闭
+                </string>
+                <string name="msp_mini_safty_code_info" >安全码是打印在信用卡背面签名区的一组数字，一般是后3位或后4位数字
+                </string>
+                <string name="msp_app_name" >支付宝快捷支付服务
+                </string>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/alipay_styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="ProgressDialog"
+                    parent="android:Theme.Dialog" >
+                    <item name="android:windowNoTitle">
+true
+                    </item>
+                    <item name="android:windowBackground">
+@drawable/msp_dialog_progress_bg
+                    </item>
+                </style>
+
+                <style
+                    name="MspAppPayTheme"
+                    parent="android:Theme.Translucent" >
+                    <item name="android:windowNoTitle">
+true
+                    </item>
+                    <item name="android:windowFrame">
+@null
+                    </item>
+                    <item name="android:windowBackground">
+@android:color/transparent
+                    </item>
+                    <item name="android:windowIsFloating">
+true
+                    </item>
+                </style>
+
+                <style
+                    name="MspAppBaseTheme"
+                    parent="android:Theme.Light.NoTitleBar" />
+
+                <style name="TextMedium" >
+                    <item name="android:textColor">
+#444444
+                    </item>
+                    <item name="android:textSize">
+18sp
+                    </item>
+                </style>
+
+                <style
+                    name="mini_safty_dialog"
+                    parent="@android:style/Theme.Dialog" >
+                    <item name="android:windowFrame">
+@null
+                    </item>
+                    <item name="android:windowIsFloating">
+true
+                    </item>
+                    <item name="android:windowIsTranslucent">
+false
+                    </item>
+                    <item name="android:windowNoTitle">
+true
+                    </item>
+                    <item name="android:windowBackground">
+@android:color/transparent
+                    </item>
+                    <item name="android:backgroundDimEnabled">
+true
+                    </item>
+                </style>
+
+                <style name="mini_title_text_style" >
+                    <item name="android:textColor">
+@color/mini_color_gray
+                    </item>
+                    <item name="android:textSize">
+14dp
+                    </item>
+                    <item name="android:shadowColor">
+@color/mini_text_white
+                    </item>
+                    <item name="android:shadowRadius">
+1.0
+                    </item>
+                    <item name="android:shadowDy">
+1.5
+                    </item>
+                </style>
+
+                <style name="mini_progressBar_webview" >
+                    <item name="android:indeterminateOnly">
+false
+                    </item>
+                    <item name="android:progressDrawable">
+@drawable/mini_progress_bar_webview
+                    </item>
+                    <item name="android:secondaryProgress">
+0
+                    </item>
+                    <item name="android:minHeight">
+5dip
+                    </item>
+                    <item name="android:maxHeight">
+5dip
+                    </item>
+                </style>
+
+                <style name="TextLarge" >
+                    <item name="android:textColor">
+#444444
+                    </item>
+                    <item name="android:textSize">
+22sp
+                    </item>
+                </style>
+
+                <style
+                    name="MspAppTheme"
+                    parent="MspAppBaseTheme" >
+                    <item name="android:windowIsFloating">
+true
+                    </item>
+                    <item name="android:windowBackground">
+@android:color/transparent
+                    </item>
+                </style>
+
+                <style name="TextSmall" >
+                    <item name="android:textColor">
+#888888
+                    </item>
+                    <item name="android:textSize">
+14sp
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/colors.xml"
+                qualifiers="" >
+                <color name="divide" >#9f3c3c3c
+                </color>
+                <color name="possible_result_points" >#c0ffff00
+                </color>
+                <color name="viewfinder_frame" >#ff000000
+                </color>
+                <color name="green" >#ff6ec514
+                </color>
+                <color name="mogujie_register_proto" >#ff0099ee
+                </color>
+                <color name="mogujie_register_title" >#ff669900
+                </color>
+                <color name="dark" >#ff3c3c3c
+                </color>
+                <color name="my_info_sbg" >#ff628ef6
+                </color>
+                <color name="comment_me_color" >#ff669900
+                </color>
+                <color name="user_home_fans_bg" >#ffe6366c
+                </color>
+                <color name="girl_name" >#ffe71f8d
+                </color>
+                <color name="slider_page" >#ff999999
+                </color>
+                <color name="sku_out_bg_shadow" >#50000000
+                </color>
+                <color name="default_pic_color" >#ffecedef
+                </color>
+                <color name="t_color" >#ff0099ee
+                </color>
+                <color name="viewflip_indicator_ly_color" >#b3ffffff
+                </color>
+                <color name="fans_nmu" >#ff09afd9
+                </color>
+                <color name="single_t_desc_color" >#ff669900
+                </color>
+                <color name="black" >#ff333333
+                </color>
+                <color name="trans" >#55000000
+                </color>
+                <color name="transparent" >#00000000
+                </color>
+                <color name="lightRed" >#e94277
+                </color>
+                <color name="img_type_select_color" >#ff669900
+                </color>
+                <color name="font_note" >#ff0099ff
+                </color>
+                <color name="result_view" >#b0000000
+                </color>
+                <color name="pull_title_color" >#ffff4d9b
+                </color>
+                <color name="uname" >#ffe71f8d
+                </color>
+                <color name="red" >#FF0000
+                </color>
+                <color name="boy_name" >#ff0099ee
+                </color>
+                <color name="pink" >#ffffb5d1
+                </color>
+                <color name="gray" >#FFFAFA
+                </color>
+                <color name="button_stroke" >#ff528641
+                </color>
+                <color name="my_transparent" >#c0000000
+                </color>
+                <color name="lightwhite" >#ddd
+                </color>
+                <color name="normal_font_color" >#424242
+                </color>
+                <color name="filter_btn_color" >#ffe884a5
+                </color>
+                <color name="head" >#ffb10000
+                </color>
+                <color name="white" >#ffffffff
+                </color>
+                <color name="viewfinder_mask" >#60000000
+                </color>
+                <color name="img_type_grey_color" >#ff8f8f8f
+                </color>
+                <color name="btn_black" >#ff000000
+                </color>
+                <color name="font_like" >#ffff0066
+                </color>
+                <color name="user_info_pink" >#ffff897a
+                </color>
+                <color name="viewfinder_laser" >#ffff0000
+                </color>
+                <color name="index_desc" >#ff666666
+                </color>
+                <color name="user_home_t_info_color" >#ff8f8f8f
+                </color>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/config.xml"
+                qualifiers="" >
+                <string name="mini_env_pre" >false
+                </string>
+                <string name="mini_http_url" >http://mclient.alipay.com/gateway.do
+                </string>
+                <string name="mini_debuglog" >false
+                </string>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_attrs.xml"
+                qualifiers="" >
+                <declare-styleable name="labelInput" >
+
+                    <!-- label名称 -->
+                    <attr
+                        name="labelName"
+                        format="string|reference" />
+
+                    <!-- 右侧图标 -->
+                    <attr
+                        name="rightIcon"
+                        format="reference" />
+
+                    <!-- hint -->
+                    <attr
+                        name="miniInputHint"
+                        format="string|reference" />
+
+                    <!-- 是否密码 -->
+                    <attr
+                        name="isPassword"
+                        format="boolean" />
+
+                    <!-- 最大输入长度 -->
+                    <attr
+                        name="maxInputLength"
+                        format="integer" />
+                </declare-styleable>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_colors.xml"
+                qualifiers="" >
+                <color name="mini_list_bg_color" >#bababa
+                </color>
+                <color name="mini_cardlimit_money_color" >#666666
+                </color>
+                <color name="mini_color_light_gray" >#999999
+                </color>
+
+                <drawable name="mini_win_background_draw" >
+#00000000
+                </drawable>
+
+                <color name="setting_translucent_bg" >#e0000000
+                </color>
+                <color name="C_white" >#FFFFFFFF
+                </color>
+                <color name="mini_error_input" >#FF0000
+                </color>
+                <color name="mini_text_color_desc" >#999999
+                </color>
+                <color name="mini_button_text_disable" >#aaaaaa
+                </color>
+                <color name="mini_text_shadow" >#fefefe
+                </color>
+                <color name="mini_win_background" >#00000000
+                </color>
+                <color name="mini_input_hint_color" >#cccccc
+                </color>
+
+                <drawable name="mini_list_devider" >
+#bababa
+                </drawable>
+                <drawable name="mini_page_bg_color" >
+#ededed
+                </drawable>
+
+                <color name="mini_page_bg_color" >#ededed
+                </color>
+                <color name="B_black" >#FF000000
+                </color>
+                <color name="mini_button_text_normal" >#ffffff
+                </color>
+                <color name="mini_cardlimit_text_color" >#000000
+                </color>
+                <color name="mini_color_gray" >#666666
+                </color>
+                <color name="mini_hint_color" >#b2b2b2
+                </color>
+                <color name="mini_text_black" >#000000
+                </color>
+                <color name="mini_text_link" >#2861d7
+                </color>
+                <color name="mini_text_color_gray" >#333333
+                </color>
+                <color name="mini_card_defaultuse" >#FF9933
+                </color>
+                <color name="mini_card_edit_pop_shadow" >#59000000
+                </color>
+                <color name="mini_card_edti_bk" >#31373e
+                </color>
+                <color name="mini_text_white" >#ffffff
+                </color>
+                <color name="mini_error_hint_color" >#ffffff
+                </color>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_dimens.xml"
+                qualifiers="" >
+                <dimen name="mini_margin_left" >14dp
+                </dimen>
+                <dimen name="mini_win_default_width" >280dp
+                </dimen>
+                <dimen name="mini_margin_textview_6" >3dp
+                </dimen>
+                <dimen name="mini_margin_default" >10dp
+                </dimen>
+                <dimen name="mini_margin_right" >14dp
+                </dimen>
+                <dimen name="mini_margin_20" >20dp
+                </dimen>
+                <dimen name="mini_margin_42" >42dp
+                </dimen>
+                <dimen name="mini_text_size_medium" >15sp
+                </dimen>
+                <dimen name="mini_margin_27" >27dp
+                </dimen>
+                <dimen name="mini_title_height" >47dp
+                </dimen>
+                <dimen name="mini_text_size_14" >14sp
+                </dimen>
+                <dimen name="item_left_icon_small" >29dp
+                </dimen>
+                <dimen name="mini_text_size_large" >16sp
+                </dimen>
+                <dimen name="mini_margin_6" >6dp
+                </dimen>
+                <dimen name="mini_text_size_x_small" >12sp
+                </dimen>
+                <dimen name="mini_margin_3" >3dp
+                </dimen>
+                <dimen name="item_left_icon_large" >32dp
+                </dimen>
+                <dimen name="mini_margin_1" >1dp
+                </dimen>
+                <dimen name="mini_text_size_small" >13sp
+                </dimen>
+                <dimen name="mini_text_size_xx_large" >20sp
+                </dimen>
+                <dimen name="mini_element_default_height" >44dp
+                </dimen>
+                <dimen name="mini_margin_textview_13" >9dp
+                </dimen>
+                <dimen name="mini_margin_top" >10dp
+                </dimen>
+                <dimen name="mini_margin_10" >10dp
+                </dimen>
+                <dimen name="mini_text_size_link" >17sp
+                </dimen>
+                <dimen name="mini_margin_19" >19dp
+                </dimen>
+                <dimen name="mini_add_card_margin_left" >21dp
+                </dimen>
+                <dimen name="mini_margin_bottom" >10dp
+                </dimen>
+                <dimen name="mini_win_default_height" >233dp
+                </dimen>
+                <dimen name="mini_margin_15" >15dp
+                </dimen>
+                <dimen name="mini_margin_13" >13dp
+                </dimen>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_strings.xml"
+                qualifiers="" >
+                <string name="mini_password" >密码
+                </string>
+                <string name="mini_weakpassword_error_same" >请不要使用相同的数字
+                </string>
+                <string name="mini_page_name" >姓名          
+                </string>
+                <string name="mini_safe_no_hint" >卡背面末三位数字
+                </string>
+                <string name="mini_net_error" >不能连接到网络，是否重试？
+                </string>
+                <string name="mini_setting_credit_cards_tips" >信用卡
+                </string>
+                <string name="mini_page_add_hint" >银行卡号
+                </string>
+                <string name="mini_page_next" >下一步
+                </string>
+                <string name="mini_str_null" >xx
+                </string>
+                <string name="mini_card_type" >卡类型
+                </string>
+                <string name="mini_redo" >重试
+                </string>
+                <string name="mini_id_no" >证件号
+                </string>
+                <string name="mini_quickpay_protocol" >《服务协议》
+                </string>
+                <string name="mini_phone_no" >手机号
+                </string>
+                <string name="mini_page_msg_check" >信息加密处理，仅用于银行验证
+                </string>
+                <string name="mini_switch" >切换
+                </string>
+                <string name="mini_page_input_name_hint" >持卡人姓名
+                </string>
+                <string name="mini_page_msg_choose_type" >选择证件类型
+                </string>
+                <string name="mini_weakpassword_error_serial" >请不要使用连续的数字
+                </string>
+                <string name="mini_setting_pay_password" >支付密码
+                </string>
+                <string name="mini_app_error" >系统繁忙，请稍后再试。
+                </string>
+                <string name="mini_setting_debit_cards_tips" >储蓄卡
+                </string>
+                <string name="mini_phone_no_hint" >银行预留手机号码
+                </string>
+                <string name="mini_canel_install_wallet" >你已取消安装支付宝钱包。
+                </string>
+                <string name="mini_debug_app_error" >程序发生错误！点击确定退出程序。
+                </string>
+                <string name="mini_setting_default_tips" >默认使用该卡支付
+                </string>
+                <string name="mini_date" >有效期
+                </string>
+                <string name="mini_loading" >加载中
+                </string>
+                <string name="mini_safe_no" >安全码
+                </string>
+                <string name="mini_agree" >同意
+                </string>
+                <string name="mini_page_add_title" >添加银行卡
+                </string>
+                <string name="mini_loading_1" >正在安全检测…
+                </string>
+                <string name="mini_setting_view_all_bankcard" >查看全部(%1$d张)
+                </string>
+                <string name="mini_password_hint" >请输入密码
+                </string>
+                <string name="mini_car_limit_phone" >调整交易限额，请联系银行客服：
+                </string>
+                <string name="mini_countdown_info" >秒后重发
+                </string>
+                <string name="mini_page_msg_title" >填写银行卡信息
+                </string>
+                <string name="mini_error_title_default" >提示
+                </string>
+                <string name="mini_page_add_other_pay" > 其他付款方式
+                </string>
+                <string name="mini_car_default_use" >默认使用该卡支付
+                </string>
+                <string name="mini_format_error" >格式错误
+                </string>
+                <string name="mini_no_input" >不能为空
+                </string>
+                <string name="mini_page_input_id_hint" >证件号码
+                </string>
+                <string name="mini_canel_install_msp" >你已取消安装移动快捷支付。
+                </string>
+                <string name="mini_date_hint" >月份/年份
+                </string>
+                <string name="mini_card_no" >卡号
+                </string>
+                <string name="mini_page_add_tips" > 提供支付密码和短信验证的双重保障
+                </string>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/mini_styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="text_light_gray_20"
+                    parent="text_20" >
+                    <item name="android:textColor">
+@color/mini_color_light_gray
+                    </item>
+                </style>
+
+                <style
+                    name="text_dark_gray_24"
+                    parent="text_24" >
+                    <item name="android:textColor">
+@color/mini_text_black
+                    </item>
+                </style>
+
+                <style
+                    name="text_gray_20"
+                    parent="text_20" >
+                    <item name="android:textColor">
+@color/mini_color_gray
+                    </item>
+                </style>
+
+                <style
+                    name="mini_Dialog"
+                    parent="@android:style/Theme.Dialog" >
+                    <item name="android:windowNoTitle">
+true
+                    </item>
+                    <item name="android:windowIsFloating">
+true
+                    </item>
+                    <item name="android:windowBackground">
+@color/mini_win_background
+                    </item>
+                </style>
+
+                <style name="text_20" >
+                    <item name="android:textSize">
+13.3sp
+                    </item>
+                </style>
+
+                <style name="text_24" >
+                    <item name="android:textSize">
+16sp
+                    </item>
+                </style>
+
+                <style name="mini_UITextField" >
+                    <item name="android:layout_width">
+fill_parent
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:layout_margin">
+5dp
+                    </item>
+                    <item name="android:paddingLeft">
+@dimen/mini_margin_left
+                    </item>
+                    <item name="android:paddingRight">
+@dimen/mini_margin_right
+                    </item>
+                    <item name="android:background">
+@drawable/mini_ui_input_bg
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/pinterest_attrs.xml"
+                qualifiers="" >
+                <attr
+                    name="absListViewStyle"
+                    format="reference" />
+
+                <declare-styleable name="ViewGroup" >
+
+                    <!--
+             Defines whether changes in layout (caused by adding and removing items) should
+             cause a LayoutTransition to run. When this flag is set to true, a default
+             LayoutTransition object will be set on the ViewGroup container and default
+             animations will run when these layout changes occur.
+                    -->
+                    <attr
+                        name="animateLayoutChanges"
+                        format="boolean" />
+                    <!--
+             Defines whether a child is limited to draw inside of its bounds or not.
+             This is useful with animations that scale the size of the children to more
+             than 100% for instance. In such a case, this property should be set to false
+             to allow the children to draw outside of their bounds. The default value of
+             this property is true.
+                    -->
+                    <attr
+                        name="clipChildren"
+                        format="boolean" />
+                    <!--
+             Defines whether the ViewGroup will clip its drawing surface so as to exclude
+             the padding area. This property is set to true by default.
+                    -->
+                    <attr
+                        name="clipToPadding"
+                        format="boolean" />
+                    <!--
+             Defines the layout animation to use the first time the ViewGroup is laid out.
+             Layout animations can also be started manually after the first layout.
+                    -->
+                    <attr
+                        name="layoutAnimation"
+                        format="reference" />
+                    <!--
+             Defines whether layout animations should create a drawing cache for their
+             children. Enabling the animation cache consumes more memory and requires
+             a longer initialization but provides better performance. The animation
+             cache is enabled by default.
+                    -->
+                    <attr
+                        name="animationCache"
+                        format="boolean" />
+                    <!--
+             Defines the persistence of the drawing cache. The drawing cache might be
+             enabled by a ViewGroup for all its children in specific situations (for
+             instance during a scrolling.) This property lets you persist the cache
+             in memory after its initial usage. Persisting the cache consumes more
+             memory but may prevent frequent garbage collection is the cache is created
+             over and over again. By default the persistence is set to scrolling.
+                    -->
+                    <attr name="persistentDrawingCache" >
+
+                        <!-- The drawing cache is not persisted after use. -->
+                        <flag
+                            name="none"
+                            value="0x0" />
+                        <!-- The drawing cache is persisted after a layout animation. -->
+                        <flag
+                            name="animation"
+                            value="0x1" />
+                        <!-- The drawing cache is persisted after a scroll. -->
+                        <flag
+                            name="scrolling"
+                            value="0x2" />
+                        <!-- The drawing cache is always persisted. -->
+                        <flag
+                            name="all"
+                            value="0x3" />
+                    </attr>
+                    <!--
+             Defines whether the ViewGroup should always draw its children using their
+             drawing cache or not. The default value is true.
+                    -->
+                    <attr
+                        name="alwaysDrawnWithCache"
+                        format="boolean" />
+                    <!--
+             Sets whether this ViewGroup's drawable states also include
+             its children's drawable states.  This is used, for example, to
+             make a group appear to be focused when its child EditText or button
+             is focused.
+                    -->
+                    <attr
+                        name="addStatesFromChildren"
+                        format="boolean" />
+
+                    <!--
+             Defines the relationship between the ViewGroup and its descendants
+             when looking for a View to take focus.
+                    -->
+                    <attr name="descendantFocusability" >
+
+                        <!-- The ViewGroup will get focus before any of its descendants. -->
+                        <enum
+                            name="beforeDescendants"
+                            value="0" />
+                        <!-- The ViewGroup will get focus only if none of its descendants want it. -->
+                        <enum
+                            name="afterDescendants"
+                            value="1" />
+                        <!-- The ViewGroup will block its descendants from receiving focus. -->
+                        <enum
+                            name="blocksDescendants"
+                            value="2" />
+                    </attr>
+
+                    <!--
+             Sets whether this ViewGroup should split MotionEvents
+             to separate child views during touch event dispatch.
+             If false (default), touch events will be dispatched to
+             the child view where the first pointer went down until
+             the last pointer goes up.
+             If true, touch events may be dispatched to multiple children.
+             MotionEvents for each pointer will be dispatched to the child
+             view where the initial ACTION_DOWN event happened.
+             See {@link android.view.ViewGroup#setMotionEventSplittingEnabled(boolean)}
+             for more information.
+                    -->
+                    <attr
+                        name="splitMotionEvents"
+                        format="boolean" />
+                </declare-styleable>
+                <declare-styleable name="View" >
+
+                    <!--
+             Supply an identifier name for this view, to later retrieve it
+             with {@link android.view.View#findViewById View.findViewById()} or
+             {@link android.app.Activity#findViewById Activity.findViewById()}.
+             This must be a
+             resource reference; typically you set this using the
+             <code>@+</code> syntax to create a new ID resources.
+             For example: <code>android:id="@+id/my_id"</code> which
+             allows you to later retrieve the view
+             with <code>findViewById(R.id.my_id)</code>.
+                    -->
+                    <attr
+                        name="id"
+                        format="reference" />
+
+                    <!--
+             Supply a tag for this view containing a String, to be retrieved
+             later with {@link android.view.View#getTag View.getTag()} or
+             searched for with {@link android.view.View#findViewWithTag
+             View.findViewWithTag()}.  It is generally preferable to use
+             IDs (through the android:id attribute) instead of tags because
+             they are faster and allow for compile-time type checking.
+                    -->
+                    <attr
+                        name="tag"
+                        format="string" />
+
+                    <!-- The initial horizontal scroll offset, in pixels. -->
+                    <attr
+                        name="scrollX"
+                        format="dimension" />
+
+                    <!-- The initial vertical scroll offset, in pixels. -->
+                    <attr
+                        name="scrollY"
+                        format="dimension" />
+
+                    <!--
+             A drawable to use as the background.  This can be either a reference
+             to a full drawable resource (such as a PNG image, 9-patch,
+             XML state list description, etc), or a solid color such as "#ff000000"
+            (black).
+                    -->
+
+
+                    <!-- <attr name="background" format="reference|color" /> -->
+
+
+                    <!--
+             Sets the padding, in pixels, of all four edges.  Padding is defined as
+             space between the edges of the view and the view's content. A views size
+             will include it's padding.  If a {@link android.R.attr#background}
+             is provided, the padding will initially be set to that (0 if the
+             drawable does not have padding).  Explicitly setting a padding value
+             will override the corresponding padding found in the background.
+                    -->
+                    <attr
+                        name="padding"
+                        format="dimension" />
+                    <!-- Sets the padding, in pixels, of the left edge; see {@link android.R.attr#padding}. -->
+                    <attr
+                        name="paddingLeft"
+                        format="dimension" />
+                    <!-- Sets the padding, in pixels, of the top edge; see {@link android.R.attr#padding}. -->
+                    <attr
+                        name="paddingTop"
+                        format="dimension" />
+                    <!-- Sets the padding, in pixels, of the right edge; see {@link android.R.attr#padding}. -->
+                    <attr
+                        name="paddingRight"
+                        format="dimension" />
+                    <!-- Sets the padding, in pixels, of the bottom edge; see {@link android.R.attr#padding}. -->
+                    <attr
+                        name="paddingBottom"
+                        format="dimension" />
+                    <!-- Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}. -->
+                    <attr
+                        name="paddingStart"
+                        format="dimension" />
+                    <!-- Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. -->
+                    <attr
+                        name="paddingEnd"
+                        format="dimension" />
+
+                    <!--
+             Boolean that controls whether a view can take focus.  By default the user can not
+             move focus to a view; by setting this attribute to true the view is
+             allowed to take focus.  This value does not impact the behavior of
+             directly calling {@link android.view.View#requestFocus}, which will
+             always request focus regardless of this view.  It only impacts where
+             focus navigation will try to move focus.
+                    -->
+                    <attr
+                        name="focusable"
+                        format="boolean" />
+
+                    <!--
+             Boolean that controls whether a view can take focus while in touch mode.
+             If this is true for a view, that view can gain focus when clicked on, and can keep
+             focus if another view is clicked on that doesn't have this attribute set to true.
+                    -->
+                    <attr
+                        name="focusableInTouchMode"
+                        format="boolean" />
+
+                    <!-- Controls the initial visibility of the view. -->
+                    <attr name="visibility" >
+
+                        <!-- Visible on screen; the default value. -->
+                        <enum
+                            name="visible"
+                            value="0" />
+                        <!-- Not displayed, but taken into account during layout (space is left for it). -->
+                        <enum
+                            name="invisible"
+                            value="1" />
+                        <!-- Completely hidden, as if the view had not been added. -->
+                        <enum
+                            name="gone"
+                            value="2" />
+                    </attr>
+
+                    <!--
+             Boolean internal attribute to adjust view layout based on
+             system windows such as the status bar.
+             If true, adjusts the padding of this view to leave space for the system windows.
+             Will only take effect if this view is in a non-embedded activity.
+                    -->
+                    <attr
+                        name="fitsSystemWindows"
+                        format="boolean" />
+
+                    <!-- Defines which scrollbars should be displayed on scrolling or not. -->
+                    <attr name="scrollbars" >
+
+                        <!-- No scrollbar is displayed. -->
+                        <flag
+                            name="none"
+                            value="0x00000000" />
+                        <!-- Displays horizontal scrollbar only. -->
+                        <flag
+                            name="horizontal"
+                            value="0x00000100" />
+                        <!-- Displays vertical scrollbar only. -->
+                        <flag
+                            name="vertical"
+                            value="0x00000200" />
+                    </attr>
+
+                    <!--
+             Controls the scrollbar style and position. The scrollbars can be overlaid or
+             inset. When inset, they add to the padding of the view. And the
+             scrollbars can be drawn inside the padding area or on the edge of
+             the view. For example, if a view has a background drawable and you
+             want to draw the scrollbars inside the padding specified by the
+             drawable, you can use insideOverlay or insideInset. If you want them
+             to appear at the edge of the view, ignoring the padding, then you can
+             use outsideOverlay or outsideInset.
+                    -->
+                    <attr name="scrollbarStyle" >
+
+                        <!-- Inside the padding and overlaid -->
+                        <enum
+                            name="insideOverlay"
+                            value="0x0" />
+                        <!-- Inside the padding and inset -->
+                        <enum
+                            name="insideInset"
+                            value="0x01000000" />
+                        <!-- Edge of the view and overlaid -->
+                        <enum
+                            name="outsideOverlay"
+                            value="0x02000000" />
+                        <!-- Edge of the view and inset -->
+                        <enum
+                            name="outsideInset"
+                            value="0x03000000" />
+                    </attr>
+
+                    <!--
+             Set this if the view will serve as a scrolling container, meaing
+             that it can be resized to shrink its overall window so that there
+             will be space for an input method.  If not set, the default
+             value will be true if "scrollbars" has the vertical scrollbar
+             set, else it will be false.
+                    -->
+                    <attr
+                        name="isScrollContainer"
+                        format="boolean" />
+
+                    <!-- Defines whether to fade out scrollbars when they are not in use. -->
+                    <attr
+                        name="fadeScrollbars"
+                        format="boolean" />
+                    <!-- Defines the delay in milliseconds that a scrollbar takes to fade out. -->
+                    <attr
+                        name="scrollbarFadeDuration"
+                        format="integer" />
+                    <!-- Defines the delay in milliseconds that a scrollbar waits before fade out. -->
+                    <attr
+                        name="scrollbarDefaultDelayBeforeFade"
+                        format="integer" />
+                    <!-- Sets the width of vertical scrollbars and height of horizontal scrollbars. -->
+                    <attr
+                        name="scrollbarSize"
+                        format="dimension" />
+                    <!-- Defines the horizontal scrollbar thumb drawable. -->
+                    <attr
+                        name="scrollbarThumbHorizontal"
+                        format="reference" />
+                    <!-- Defines the vertical scrollbar thumb drawable. -->
+                    <attr
+                        name="scrollbarThumbVertical"
+                        format="reference" />
+                    <!-- Defines the horizontal scrollbar track drawable. -->
+                    <attr
+                        name="scrollbarTrackHorizontal"
+                        format="reference" />
+                    <!-- Defines the vertical scrollbar track drawable. -->
+                    <attr
+                        name="scrollbarTrackVertical"
+                        format="reference" />
+                    <!-- Defines whether the horizontal scrollbar track should always be drawn. -->
+                    <attr
+                        name="scrollbarAlwaysDrawHorizontalTrack"
+                        format="boolean" />
+                    <!-- Defines whether the vertical scrollbar track should always be drawn. -->
+                    <attr
+                        name="scrollbarAlwaysDrawVerticalTrack"
+                        format="boolean" />
+
+                    <!--
+             This attribute is deprecated and will be ignored as of
+             API level 14 ({@link android.os.Build.VERSION_CODES#ICE_CREAM_SANDWICH}).
+             Using fading edges may introduce noticeable performance
+             degradations and should be used only when required by the application's
+             visual design. To request fading edges with API level 14 and above,
+             use the <code>android:requiresFadingEdge</code> attribute instead.
+                    -->
+                    <attr name="fadingEdge" >
+
+                        <!-- No edge is faded. -->
+                        <flag
+                            name="none"
+                            value="0x00000000" />
+                        <!-- Fades horizontal edges only. -->
+                        <flag
+                            name="horizontal"
+                            value="0x00001000" />
+                        <!-- Fades vertical edges only. -->
+                        <flag
+                            name="vertical"
+                            value="0x00002000" />
+                    </attr>
+                    <!-- Defines which edges should be faded on scrolling. -->
+                    <attr name="requiresFadingEdge" >
+
+                        <!-- No edge is faded. -->
+                        <flag
+                            name="none"
+                            value="0x00000000" />
+                        <!-- Fades horizontal edges only. -->
+                        <flag
+                            name="horizontal"
+                            value="0x00001000" />
+                        <!-- Fades vertical edges only. -->
+                        <flag
+                            name="vertical"
+                            value="0x00002000" />
+                    </attr>
+                    <!-- Defines the length of the fading edges. -->
+                    <attr
+                        name="fadingEdgeLength"
+                        format="dimension" />
+
+                    <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_LEFT}.
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+                    -->
+                    <attr
+                        name="nextFocusLeft"
+                        format="reference" />
+
+                    <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_RIGHT}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+                    -->
+                    <attr
+                        name="nextFocusRight"
+                        format="reference" />
+
+                    <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_UP}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+                    -->
+                    <attr
+                        name="nextFocusUp"
+                        format="reference" />
+
+                    <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_DOWN}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+                    -->
+                    <attr
+                        name="nextFocusDown"
+                        format="reference" />
+
+                    <!--
+             Defines the next view to give focus to when the next focus is
+             {@link android.view.View#FOCUS_FORWARD}
+
+             If the reference refers to a view that does not exist or is part
+             of a hierarchy that is invisible, a {@link java.lang.RuntimeException}
+             will result when the reference is accessed.
+                    -->
+                    <attr
+                        name="nextFocusForward"
+                        format="reference" />
+
+                    <!-- Defines whether this view reacts to click events. -->
+                    <attr
+                        name="clickable"
+                        format="boolean" />
+
+                    <!-- Defines whether this view reacts to long click events. -->
+                    <attr
+                        name="longClickable"
+                        format="boolean" />
+
+                    <!--
+             If unset, no state will be saved for this view when it is being
+             frozen. The default is true, allowing the view to be saved
+             (however it also must have an ID assigned to it for its
+             state to be saved).  Setting this to false only disables the
+             state for this view, not for its children which may still
+             be saved.
+                    -->
+                    <attr
+                        name="saveEnabled"
+                        format="boolean" />
+
+                    <!--
+             Specifies whether to filter touches when the view's window is obscured by
+             another visible window.  When set to true, the view will not receive touches
+             whenever a toast, dialog or other window appears above the view's window.
+             Refer to the {@link android.view.View} security documentation for more details.
+                    -->
+                    <attr
+                        name="filterTouchesWhenObscured"
+                        format="boolean" />
+
+                    <!--
+             Defines the quality of translucent drawing caches. This property is used
+             only when the drawing cache is enabled and translucent. The default value is auto.
+                    -->
+                    <attr name="drawingCacheQuality" >
+
+                        <!--
+                 Lets the framework decide what quality level should be used
+                 for the drawing cache.
+                        -->
+                        <enum
+                            name="auto"
+                            value="0" />
+                        <!--
+                 Low quality. When set to low quality, the drawing cache uses a lower color
+                 depth, thus losing precision in rendering gradients, but uses less memory.
+                        -->
+                        <enum
+                            name="low"
+                            value="1" />
+                        <!--
+                 High quality. When set to high quality, the drawing cache uses a higher
+                 color depth but uses more memory.
+                        -->
+                        <enum
+                            name="high"
+                            value="2" />
+                    </attr>
+
+                    <!--
+             Controls whether the view's window should keep the screen on
+             while visible.
+                    -->
+                    <attr
+                        name="keepScreenOn"
+                        format="boolean" />
+
+                    <!--
+             When this attribute is set to true, the view gets its drawable state
+             (focused, pressed, etc.) from its direct parent rather than from itself.
+                    -->
+                    <attr
+                        name="duplicateParentState"
+                        format="boolean" />
+
+                    <!--
+             Defines the minimum height of the view. It is not guaranteed
+             the view will be able to achieve this minimum height (for example,
+             if its parent layout constrains it with less available height).
+                    -->
+                    <attr
+                        name="minHeight"
+                        format="dimension" />
+
+                    <!--
+             Defines the minimum width of the view. It is not guaranteed
+             the view will be able to achieve this minimum width (for example,
+             if its parent layout constrains it with less available width).
+                    -->
+                    <attr
+                        name="minWidth"
+                        format="dimension" />
+
+                    <!--
+             Boolean that controls whether a view should have sound effects
+             enabled for events such as clicking and touching.
+                    -->
+                    <attr
+                        name="soundEffectsEnabled"
+                        format="boolean" />
+
+                    <!--
+             Boolean that controls whether a view should have haptic feedback
+             enabled for events such as long presses.
+                    -->
+                    <attr
+                        name="hapticFeedbackEnabled"
+                        format="boolean" />
+
+                    <!--
+             Defines text that briefly describes content of the view. This property is used
+             primarily for accessibility. Since some views do not have textual
+             representation this attribute can be used for providing such.
+                    -->
+                    <attr
+                        name="contentDescription"
+                        format="string"
+                        localization="suggested" />
+
+                    <!--
+             Name of the method in this View's context to invoke when the view is
+             clicked. This name must correspond to a public method that takes
+             exactly one parameter of type View. For instance, if you specify
+             <code>android:onClick="sayHello"</code>, you must declare a
+             <code>public void sayHello(View v)</code> method of your context
+             (typically, your Activity).
+                    -->
+                    <attr
+                        name="onClick"
+                        format="string" />
+
+                    <!--
+             Defines over-scrolling behavior. This property is used only if the
+             View is scrollable. Over-scrolling is the ability for the user to
+             receive feedback when attempting to scroll beyond meaningful content.
+                    -->
+                    <attr name="overScrollMode" >
+
+                        <!--
+                 Always show over-scroll effects, even if the content fits entirely
+                 within the available space.
+                        -->
+                        <enum
+                            name="always"
+                            value="0" />
+                        <!--
+                 Only show over-scroll effects if the content is large
+                 enough to meaningfully scroll.
+                        -->
+                        <enum
+                            name="ifContentScrolls"
+                            value="1" />
+                        <!-- Never show over-scroll effects. -->
+                        <enum
+                            name="never"
+                            value="2" />
+                    </attr>
+
+                    <!--
+             alpha property of the view, as a value between 0 (completely transparent) and 1
+             (completely opaque).
+                    -->
+                    <attr
+                        name="alpha"
+                        format="float" />
+
+                    <!--
+             translation in x of the view. This value is added post-layout to the left
+             property of the view, which is set by its layout.
+                    -->
+                    <attr
+                        name="translationX"
+                        format="dimension" />
+
+                    <!--
+             translation in y of the view. This value is added post-layout to the left
+             property of the view, which is set by its layout.
+                    -->
+                    <attr
+                        name="translationY"
+                        format="dimension" />
+
+                    <!--
+             x location of the pivot point around which the view will rotate and scale.
+             This xml attribute sets the pivotX property of the View.
+                    -->
+                    <attr
+                        name="transformPivotX"
+                        format="dimension" />
+
+                    <!--
+             y location of the pivot point around which the view will rotate and scale.
+             This xml attribute sets the pivotY property of the View.
+                    -->
+                    <attr
+                        name="transformPivotY"
+                        format="dimension" />
+
+                    <!-- rotation of the view, in degrees. -->
+                    <attr
+                        name="rotation"
+                        format="float" />
+
+                    <!-- rotation of the view around the x axis, in degrees. -->
+                    <attr
+                        name="rotationX"
+                        format="float" />
+
+                    <!-- rotation of the view around the y axis, in degrees. -->
+                    <attr
+                        name="rotationY"
+                        format="float" />
+
+                    <!-- scale of the view in the x direction. -->
+                    <attr
+                        name="scaleX"
+                        format="float" />
+
+                    <!-- scale of the view in the y direction. -->
+                    <attr
+                        name="scaleY"
+                        format="float" />
+
+                    <!-- Determines which side the vertical scroll bar should be placed on. -->
+                    <attr name="verticalScrollbarPosition" >
+
+                        <!-- Place the scroll bar wherever the system default determines. -->
+                        <enum
+                            name="defaultPosition"
+                            value="0" />
+                        <!-- Place the scroll bar on the left. -->
+                        <enum
+                            name="left"
+                            value="1" />
+                        <!-- Place the scroll bar on the right. -->
+                        <enum
+                            name="right"
+                            value="2" />
+                    </attr>
+
+                    <!--
+             Specifies the type of layer backing this view. The default value is none.
+             Refer to {@link android.view.View#setLayerType(int, android.graphics.Paint)}
+             for more information.
+                    -->
+                    <attr name="layerType" >
+
+                        <!-- Don't use a layer. -->
+                        <enum
+                            name="none"
+                            value="0" />
+                        <!--
+                 Use a software layer. Refer to
+                 {@link android.view.View#setLayerType(int, android.graphics.Paint) for
+                 more information.
+                        -->
+                        <enum
+                            name="software"
+                            value="1" />
+                        <!--
+                 Use a hardware layer. Refer to
+                 {@link android.view.View#setLayerType(int, android.graphics.Paint) for
+                 more information.
+                        -->
+                        <enum
+                            name="hardware"
+                            value="2" />
+                    </attr>
+
+                    <!--
+             Defines the direction of layout drawing. This typically is associated with writing
+             direction of the language script used. The possible values are "ltr" for Left-to-Right,
+             "rtl" for Right-to-Left, "locale" and "inherit" from parent view. If there is nothing
+             to inherit, "locale" is used. "locale" falls back to "en-US". "ltr" is the direction
+             used in "en-US". The default for this attribute is "inherit".
+                    -->
+                    <attr name="layoutDirection" >
+
+                        <!-- Left-to-Right -->
+                        <enum
+                            name="ltr"
+                            value="0" />
+                        <!-- Right-to-Left -->
+                        <enum
+                            name="rtl"
+                            value="1" />
+                        <!-- Inherit from parent -->
+                        <enum
+                            name="inherit"
+                            value="2" />
+                        <!-- Locale -->
+                        <enum
+                            name="locale"
+                            value="3" />
+                    </attr>
+
+                    <!--
+             Direction of the text. A heuristic is used to determine the resolved text direction
+             of paragraphs.
+                    -->
+                    <attr
+                        name="textDirection"
+                        format="integer" >
+
+                        <!-- Default -->
+                        <enum
+                            name="inherit"
+                            value="0" />
+                        <!--
+                 Default for the root view. The first strong directional character determines the
+                 paragraph direction.  If there is no strong directional character, the paragraph
+                 direction is the view’s resolved layout direction.
+                        -->
+                        <enum
+                            name="firstStrong"
+                            value="1" />
+                        <!--
+                 The paragraph direction is RTL if it contains any strong RTL character, otherwise
+                 it is LTR if it contains any strong LTR characters.  If there are neither, the
+                 paragraph direction is the view’s resolved layout direction.
+                        -->
+                        <enum
+                            name="anyRtl"
+                            value="2" />
+                        <!-- The paragraph direction is left to right. -->
+                        <enum
+                            name="ltr"
+                            value="3" />
+                        <!-- The paragraph direction is right to left. -->
+                        <enum
+                            name="rtl"
+                            value="4" />
+                        <!-- The paragraph direction is coming from the system Locale. -->
+                        <enum
+                            name="locale"
+                            value="5" />
+                    </attr>
+
+                    <!--
+             Alignment of the text. A heuristic is used to determine the resolved
+            text alignment.
+                    -->
+                    <attr
+                        name="textAlignment"
+                        format="integer" >
+
+                        <!-- Default -->
+                        <enum
+                            name="inherit"
+                            value="0" />
+                        <!--
+                 Default for the root view. The gravity determines the alignment, ALIGN_NORMAL,
+                ALIGN_CENTER, or ALIGN_OPPOSITE, which are relative to each paragraph’s
+                text direction
+                        -->
+                        <enum
+                            name="gravity"
+                            value="1" />
+                        <!-- Align to the start of the paragraph, e.g. ALIGN_NORMAL. -->
+                        <enum
+                            name="textStart"
+                            value="2" />
+                        <!-- Align to the end of the paragraph, e.g. ALIGN_OPPOSITE. -->
+                        <enum
+                            name="textEnd"
+                            value="3" />
+                        <!-- Center the paragraph, e.g. ALIGN_CENTER. -->
+                        <enum
+                            name="center"
+                            value="4" />
+                        <!--
+                 Align to the start of the view, which is ALIGN_LEFT if the view’s resolved
+                layoutDirection is LTR, and ALIGN_RIGHT otherwise.
+                        -->
+                        <enum
+                            name="viewStart"
+                            value="5" />
+                        <!--
+                 Align to the end of the view, which is ALIGN_RIGHT if the view’s resolved
+                layoutDirection is LTR, and ALIGN_LEFT otherwise
+                        -->
+                        <enum
+                            name="viewEnd"
+                            value="6" />
+                    </attr>
+
+                    <!--
+             Controls how this View is important for accessibility which is if it fires
+             accessibility events and if it is reported to accessibility services that
+             query the screen. Note: While not recommended, an accessibility service may
+             decide to ignore this attribute and operate on all views in the view tree.
+                    -->
+                    <attr
+                        name="importantForAccessibility"
+                        format="integer" >
+
+                        <!--
+                 The system determines whether the view is important for accessibility - default
+                 (recommended).
+                        -->
+                        <enum
+                            name="auto"
+                            value="0" />
+                        <!-- The view is important for accessibility. -->
+                        <enum
+                            name="yes"
+                            value="1" />
+                        <!-- The view is not important for accessibility. -->
+                        <enum
+                            name="no"
+                            value="2" />
+                    </attr>
+
+                    <!-- @hide Controls whether this view can take accessibility focus. -->
+                    <attr
+                        name="accessibilityFocusable"
+                        format="integer" >
+
+                        <!--
+                 The system determines whether the view can take accessibility focus - default
+                 (recommended).
+                 <p>
+                 Such a view is consideted by the focus search if it is:
+                 <ul>
+                 <li>
+                 Important for accessibility and actionable (clickable, long clickable, focusable)
+                 </li>
+                 <li>
+                 Important for accessibility, not actionable (clickable, long clickable, focusable),
+                 and does not have an actionable predecessor.
+                 </li>
+                 </ul>
+                 An accessibility srvice can request putting accessibility focus on such a view.
+                 </p>
+                        -->
+                        <enum
+                            name="auto"
+                            value="0" />
+                        <!--
+                 The view can take accessibility focus.
+                 <p>
+                 A view that can take accessibility focus is always considered during focus
+                 search and an accessibility service can request putting accessibility focus
+                 on it.
+                 </p>
+                        -->
+                        <enum
+                            name="yes"
+                            value="1" />
+                        <!--
+                 The view can not take accessibility focus.
+                 <p>
+                 A view that can not take accessibility focus is never considered during focus
+                 search and an accessibility service can not request putting accessibility focus
+                 on it.
+                 </p>
+                        -->
+                        <enum
+                            name="no"
+                            value="2" />
+                    </attr>
+                </declare-styleable>
+                <declare-styleable name="ListView" >
+
+                    <!-- Drawable or color to draw between list items. -->
+                    <!-- <attr name="divider" format="reference|color" /> -->
+                    <!--
+             Height of the divider. Will use the intrinsic height of the divider if this
+             is not specified.
+                    -->
+                    <attr
+                        name="dividerHeight"
+                        format="dimension" />
+                    <!--
+             When set to false, the ListView will not draw the divider after each header view.
+             The default value is true.
+                    -->
+                    <attr
+                        name="headerDividersEnabled"
+                        format="boolean" />
+                    <!--
+             When set to false, the ListView will not draw the divider before each footer view.
+             The default value is true.
+                    -->
+                    <attr
+                        name="footerDividersEnabled"
+                        format="boolean" />
+                    <!-- Drawable to draw above list content. -->
+                    <attr
+                        name="overScrollHeader"
+                        format="reference|color" />
+                    <!-- Drawable to draw below list content. -->
+
+                    <attr
+                        name="overScrollFooter"
+                        format="reference|color" />
+                </declare-styleable>
+                <declare-styleable name="AbsListView" >
+
+                    <!-- Drawable used to indicate the currently selected item in the list. -->
+                    <attr
+                        name="listSelector"
+                        format="color|reference" />
+                    <!--
+             When set to true, the selector will be drawn over the selected item.
+             Otherwise the selector is drawn behind the selected item. The default
+             value is false.
+                    -->
+                    <attr
+                        name="drawSelectorOnTop"
+                        format="boolean" />
+                    <!-- Used by ListView and GridView to stack their content from the bottom. -->
+                    <attr
+                        name="stackFromBottom"
+                        format="boolean" />
+                    <!--
+             When set to true, the list uses a drawing cache during scrolling.
+             This makes the rendering faster but uses more memory. The default
+             value is true.
+                    -->
+                    <attr
+                        name="scrollingCache"
+                        format="boolean" />
+                    <!--
+             When set to true, the list will filter results as the user types. The
+             List's adapter must support the Filterable interface for this to work.
+                    -->
+                    <attr
+                        name="textFilterEnabled"
+                        format="boolean" />
+                    <!--
+             Sets the transcript mode for the list. In transcript mode, the list
+             scrolls to the bottom to make new items visible when they are added.
+                    -->
+                    <attr name="transcriptMode" >
+
+                        <!-- Disables transcript mode. This is the default value. -->
+                        <enum
+                            name="disabled"
+                            value="0" />
+                        <!--
+                 The list will automatically scroll to the bottom when
+                 a data set change notification is received and only if the last item is
+                 already visible on screen.
+                        -->
+                        <enum
+                            name="normal"
+                            value="1" />
+                        <!--
+                 The list will automatically scroll to the bottom, no matter what items
+                 are currently visible.
+                        -->
+                        <enum
+                            name="alwaysScroll"
+                            value="2" />
+                    </attr>
+                    <!--
+             Indicates that this list will always be drawn on top of solid, single-color
+             opaque background. This allows the list to optimize drawing.
+                    -->
+                    <attr
+                        name="cacheColorHint"
+                        format="color" />
+                    <!--
+             Enables the fast scroll thumb that can be dragged to quickly scroll through
+             the list.
+                    -->
+                    <attr
+                        name="fastScrollEnabled"
+                        format="boolean" />
+                    <!--
+             When set to true, the list will use a more refined calculation
+             method based on the pixels height of the items visible on screen. This
+             property is set to true by default but should be set to false if your adapter
+             will display items of varying heights. When this property is set to true and
+             your adapter displays items of varying heights, the scrollbar thumb will
+             change size as the user scrolls through the list. When set to fale, the list
+             will use only the number of items in the adapter and the number of items visible
+             on screen to determine the scrollbar's properties.
+                    -->
+                    <attr
+                        name="smoothScrollbar"
+                        format="boolean" />
+                    <!--
+             Defines the choice behavior for the view. By default, lists do not have
+             any choice behavior. By setting the choiceMode to singleChoice, the list
+             allows up to one item to be in a chosen state. By setting the choiceMode to
+             multipleChoice, the list allows any number of items to be chosen.
+             Finally, by setting the choiceMode to multipleChoiceModal the list allows
+             any number of items to be chosen in a special selection mode.
+             The application will supply a
+             {@link android.widget.AbsListView.MultiChoiceModeListener} using
+             {@link android.widget.AbsListView#setMultiChoiceModeListener} to control the
+             selection mode. This uses the {@link android.view.ActionMode} API.
+                    -->
+                    <attr name="choiceMode" >
+
+                        <!-- Normal list that does not indicate choices. -->
+                        <enum
+                            name="none"
+                            value="0" />
+                        <!-- The list allows up to one choice. -->
+                        <enum
+                            name="singleChoice"
+                            value="1" />
+                        <!-- The list allows multiple choices. -->
+                        <enum
+                            name="multipleChoice"
+                            value="2" />
+                        <!-- The list allows multiple choices in a custom selection mode. -->
+                        <enum
+                            name="multipleChoiceModal"
+                            value="3" />
+                    </attr>
+
+                    <!--
+             When set to true, the list will always show the fast scroll interface.
+             This setting implies fastScrollEnabled.
+                    -->
+                    <attr
+                        name="fastScrollAlwaysVisible"
+                        format="boolean" />
+                </declare-styleable>
+                <declare-styleable name="PinterestLikeAdapterView" >
+                    <attr
+                        name="plaColumnNumber"
+                        format="integer" />
+                    <attr
+                        name="plaLandscapeColumnNumber"
+                        format="integer" />
+                    <attr
+                        name="plaColumnPaddingLeft"
+                        format="dimension" />
+                    <attr
+                        name="plaColumnPaddingRight"
+                        format="dimension" />
+                </declare-styleable>
+
+                <attr
+                    name="listViewStyle"
+                    format="reference" />
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/ptr_default_style.xml"
+                qualifiers="" >
+
+                <style name="ptr_header" >
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:padding">
+5dp
+                    </item>
+                    <item name="android:gravity">
+center_vertical
+                    </item>
+                </style>
+
+                <style
+                    name="ptr_spinner"
+                    parent="@android:style/Widget.ProgressBar.Small" >
+                    <item name="android:layout_width">
+wrap_content
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:layout_centerVertical">
+true
+                    </item>
+                    <item name="android:indeterminate">
+true
+                    </item>
+                    <item name="android:layout_marginLeft">
+25dp
+                    </item>
+                </style>
+
+                <style name="ptr_headerContainer" >
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+0px
+                    </item>
+                    <item name="android:gravity">
+bottom
+                    </item>
+                </style>
+
+                <style
+                    name="ptr_last_updated"
+                    parent="ptr_text" >
+                    <item name="android:textStyle">
+normal
+                    </item>
+                    <item name="android:visibility">
+gone
+                    </item>
+                    <item name="android:layout_weight">
+1
+                    </item>
+                    <item name="android:textAppearance">
+?android:attr/textAppearanceSmall
+                    </item>
+                    <item name="android:layout_below">
+@+id/ptr_id_text
+                    </item>
+                </style>
+
+                <style name="ptr_text" >
+                    <item name="android:layout_width">
+wrap_content
+                    </item>
+                    <item name="android:layout_height">
+match_parent
+                    </item>
+                    <item name="android:gravity">
+center
+                    </item>
+                    <item name="android:layout_weight">
+1
+                    </item>
+                    <item name="android:textAppearance">
+?android:attr/textAppearanceMedium
+                    </item>
+                    <item name="android:textStyle">
+bold
+                    </item>
+                    <item name="android:textColor">
+@android:color/black
+                    </item>
+                </style>
+
+                <style name="ptr_textwrapper" >
+                    <item name="android:layout_width">
+wrap_content
+                    </item>
+                    <item name="android:layout_height">
+match_parent
+                    </item>
+                    <item name="android:layout_centerInParent">
+true
+                    </item>
+                    <item name="android:orientation">
+vertical
+                    </item>
+                    <item name="android:gravity">
+center_horizontal
+                    </item>
+                </style>
+
+                <style name="ptr_arrow" >
+                    <item name="android:layout_width">
+wrap_content
+                    </item>
+                    <item name="android:layout_height">
+wrap_content
+                    </item>
+                    <item name="android:layout_centerVertical">
+true
+                    </item>
+                    <item name="android:src">
+@drawable/ic_launcher
+                    </item>
+                    <item name="android:layout_marginLeft">
+25dp
+                    </item>
+                </style>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/strings.xml"
+                qualifiers="" >
+                <string name="action_settings" >Settings
+                </string>
+                <string name="config_properties_file" >config.json
+                </string>
+                <string name="xlistview_header_hint_normal" >下拉刷新
+                </string>
+                <string name="title_activity_qq_login" >QQOAuthLoginActivity
+                </string>
+                <string name="title_activity_index" >IndexActivity
+                </string>
+                <string name="title_stars" >搜货
+                </string>
+                <string name="title_activity_setting" >SettingActivity
+                </string>
+                <string name="tab_3" >潮流
+                </string>
+                <string name="tab_2" >精选
+                </string>
+                <string name="xlistview_header_hint_ready" >松开刷新数据
+                </string>
+                <string name="tab_1" >最新
+                </string>
+                <string name="title_activity_taobao_login" >TaobaoOAuthLoginActivity
+                </string>
+                <string name="title_activity_base" >BaseActivity
+                </string>
+                <string name="title_activity_my" >MyActivity
+                </string>
+                <string name="xlistview_footer_hint_ready" >松开载入更多
+                </string>
+                <string name="title_cart" >购物车
+                </string>
+                <string name="title_category" >分类
+                </string>
+                <string name="xlistview_header_last_time" >最后更新：
+                </string>
+                <string name="title_activity_search" >SearchActivity
+                </string>
+                <string name="my_tb" >我的淘宝
+                </string>
+                <string name="title_activity_weibo_login" >WeiboOAuthLoginActivity
+                </string>
+                <string name="title_image_upload_main" >PicMainActivity
+                </string>
+                <string name="title_activity_home" >HomeActivity
+                </string>
+                <string name="todo" >TODO
+                </string>
+                <string name="title_my" >我的
+                </string>
+                <string name="title_activity_item_detail" >ItemDetailActivity
+                </string>
+                <string name="title_activity_confirm_order" >ConfirmOrderActivity
+                </string>
+                <string name="user_work_back" >返回
+                </string>
+                <string name="xlistview_header_hint_loading" >正在加载...
+                </string>
+                <string name="app_name" >TAE无线Demo
+                </string>
+                <string name="login_expired_relogin" >您取消的订单过多，请稍后再试
+                </string>
+                <string name="title_activity_pay_order" >PayOrderActivity
+                </string>
+                <string name="title_activity_login" >LoginActivity
+                </string>
+                <string name="title_index" >爱逛
+                </string>
+                <string name="xlistview_footer_hint_normal" >查看更多
+                </string>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/styles.xml"
+                qualifiers="" >
+
+                <style name="home_tab_bottom" >
+                    <item name="android:gravity">
+center
+                    </item>
+                    <item name="android:paddingTop">
+5dip
+                    </item>
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+match_parent
+                    </item>
+                    <item name="android:button">
+@null
+                    </item>
+                    <item name="android:textColor">
+@drawable/tab_textcolor
+                    </item>
+                    <item name="android:layout_weight">
+1.0
+                    </item>
+                    <item name="android:textSize">
+10sp
+                    </item>
+                    <item name="android:background">
+@drawable/home_btn_bg_s
+                    </item>
+                </style>
+
+                <style
+                    name="AppBaseTheme"
+                    parent="android:Theme.Light" >
+
+                    <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+                    -->
+                </style>
+
+                <style name="index_tab_top" >
+                    <item name="android:gravity">
+center
+                    </item>
+                    <item name="android:paddingLeft">
+16dip
+                    </item>
+                    <item name="android:paddingRight">
+16dip
+                    </item>
+                    <item name="android:layout_width">
+match_parent
+                    </item>
+                    <item name="android:layout_height">
+match_parent
+                    </item>
+                    <item name="android:button">
+@null
+                    </item>
+                    <item name="android:textColor">
+@drawable/tab_textcolor
+                    </item>
+                    <item name="android:layout_weight">
+1.0
+                    </item>
+                    <item name="android:textSize">
+12sp
+                    </item>
+                </style>
+
+                <style name="login_animation" >
+                    <item name="android:windowEnterAnimation">
+@anim/slide_in_from_bottom
+                    </item>
+                    <item name="android:windowExitAnimation">
+@anim/slide_out_to_bottom
+                    </item>
+                </style>
+
+                <style name="item_sku_animation" >
+                    <item name="android:windowEnterAnimation">
+@anim/slide_in_from_bottom
+                    </item>
+                    <item name="android:windowExitAnimation">
+@anim/slide_out_to_bottom
+                    </item>
+                </style>
+
+                <style
+                    name="AppTheme"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_common_strings.xml"
+                qualifiers="" >
+                <string name="umeng_common_action_continue" >Continue
+                </string>
+                <string name="umeng_common_patch_finish" >Patch finished,click to install it.
+                </string>
+                <string name="umeng_common_network_break_alert" >Please make sure you are connected to internet, download failed
+                </string>
+                <string name="umeng_common_info_interrupt" >dowload interrupted.
+                </string>
+                <string name="umeng_common_action_pause" >Pause
+                </string>
+                <string name="umeng_common_download_notification_prefix" >Downloading: 
+                </string>
+                <string name="umeng_common_download_finish" >Download finished,click to install it.
+                </string>
+                <string name="umeng_common_download_failed" >Download Failed! 
+                </string>
+                <string name="umeng_common_silent_download_finish" >New version is ready,click to install it.
+                </string>
+                <string name="umeng_common_pause_notification_prefix" >Pause: 
+                </string>
+                <string name="umeng_common_action_info_exist" >The app is already in downloading list.
+                </string>
+                <string name="umeng_common_icon" >icon
+                </string>
+                <string name="umeng_common_action_cancel" >Cancel
+                </string>
+                <string name="umeng_common_start_download_notification" >Download start.
+                </string>
+                <string name="umeng_common_start_patch_notification" >Patch start.
+                </string>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_fb_strings.xml"
+                qualifiers="" >
+                <string name="umeng_fb_notification_ticker_text" >Got new reply
+                </string>
+                <string name="umeng_fb_contact_info" >Contact Info
+                </string>
+
+                <color name="umeng_fb_color_btn_normal" >#333333
+                </color>
+
+                <string name="umeng_fb_contact_title" >Contact
+                </string>
+                <string name="umeng_fb_send" >Send
+                </string>
+                <string name="umeng_fb_back" >Back
+                </string>
+                <string name="umeng_fb_reply_content_default" >Your precious feedback are appriciated.
+                </string>
+                <string name="umeng_fb_notification_content_formatter_single_msg" >New reply: %s
+                </string>
+                <string name="umeng_fb_powered_by" >Powered by
+                </string>
+                <string name="umeng_fb_title" >Feedback
+                </string>
+                <string name="umeng_fb_reply_date_default" >2013-3-12 13:24:00
+                </string>
+
+                <color name="umeng_fb_color_btn_pressed" >#1495F7
+                </color>
+
+                <string name="umeng_fb_notification_content_formatter_multiple_msg" >You received %d new replies from the app developer.
+                </string>
+                <string name="umeng_fb_contact_update_at" >Updated at 
+                </string>
+                <string name="umeng_fb_contact_info_hint" >Email, msn, gtalk, or whatever we can find you.
+                </string>
+                <string name="umeng_fb_reply_content_hint" >I want to tell
+                </string>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values/umeng_update_string.xml"
+                qualifiers="" >
+                <string name="UMIgnore" >Ingore this
+                </string>
+                <string name="UMUpdateTitle" >New version found
+                </string>
+                <string name="UMUpdateCheck" >2.4.2.20140520
+                </string>
+                <string name="UMAppUpdate" >App updating
+                </string>
+                <string name="UMDialog_InstallAPK" >The lastest version has been downloaded, install now ?
+                </string>
+                <string name="UMTargetSize" >Target size: 
+                </string>
+                <string name="UMUpdateContent" >Update Content
+                </string>
+                <string name="UMBreak_Network" >Please make sure you are connected to internet,update failed
+                </string>
+                <string name="UMNotNow" >Not now
+                </string>
+                <string name="UMToast_IsUpdating" >Updating....
+                </string>
+                <string name="UMUpdateSize" >Update size: 
+                </string>
+                <string name="UMNewVersion" >Latest version: 
+                </string>
+                <string name="UMGprsCondition" >(Warning: Not WIFI Condition)
+                </string>
+                <string name="UMUpdateNow" >Update now
+                </string>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values-v11/alipay_styles.xml"
+                qualifiers="v11" >
+
+                <style
+                    name="MspAppTranslucentBaseTheme"
+                    parent="android:Theme.Light.NoTitleBar" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+
+                <style
+                    name="MspAppBaseTheme"
+                    parent="android:Theme.Light.NoTitleBar" >
+
+                    <!-- API 11 theme customizations can go here. -->
+                </style>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values-zh/umeng_common_strings.xml"
+                qualifiers="zh" >
+                <string name="umeng_common_action_continue" >继续
+                </string>
+                <string name="umeng_common_network_break_alert" >请连接网络后再尝试！
+                </string>
+                <string name="umeng_common_patch_finish" >更新完成，请点击安装
+                </string>
+                <string name="umeng_common_download_failed" >下载失败
+                </string>
+                <string name="umeng_common_silent_download_finish" >新版本已经准备好，请点击安装
+                </string>
+                <string name="umeng_common_pause_notification_prefix" >暂停: 
+                </string>
+                <string name="umeng_common_download_finish" >下载完成，请点击安装
+                </string>
+                <string name="umeng_common_download_notification_prefix" >正在下载: 
+                </string>
+                <string name="umeng_common_start_download_notification" >正在下载应用
+                </string>
+                <string name="umeng_common_start_patch_notification" >正在更新安装包
+                </string>
+                <string name="umeng_common_action_info_exist" >正在下载中.
+                </string>
+                <string name="umeng_common_action_pause" >暂停
+                </string>
+                <string name="umeng_common_action_cancel" >取消
+                </string>
+                <string name="umeng_common_info_interrupt" >下载出错啦，请检查网络后继续。
+                </string>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values-zh/umeng_fb_strings.xml"
+                qualifiers="zh" >
+                <string name="umeng_fb_contact_update_at" >更新于 
+                </string>
+                <string name="umeng_fb_reply_content_default" >你好， 我是产品经理，欢迎您反馈使用产品的感受和建议
+                </string>
+                <string name="umeng_fb_send" >发送
+                </string>
+                <string name="umeng_fb_reply_content_hint" >我想说
+                </string>
+                <string name="umeng_fb_back" >返回
+                </string>
+                <string name="umeng_fb_notification_content_formatter_multiple_msg" >收到来自开发者的 %d 条回复。
+                </string>
+                <string name="umeng_fb_reply_date_default" >2013年3月12日 13:24:00
+                </string>
+                <string name="umeng_fb_contact_title" >填写联系信息
+                </string>
+                <string name="umeng_fb_contact_info_hint" >QQ, 电话等我们能联系您的联系方式
+                </string>
+                <string name="umeng_fb_notification_content_formatter_single_msg" >新回复: %s
+                </string>
+                <string name="umeng_fb_contact_info" >联系方式
+                </string>
+                <string name="umeng_fb_notification_ticker_text" >有新的回复
+                </string>
+                <string name="umeng_fb_title" >用户反馈
+                </string>
+            </file>
+            <file
+                path="/Users/huamulou/work/gits/mandroid1/src/main/res/values-zh/umeng_update_string.xml"
+                qualifiers="zh" >
+                <string name="UMNotNow" >以后再说
+                </string>
+                <string name="UMUpdateTitle" >发现新版本
+                </string>
+                <string name="UMIgnore" >忽略该版
+                </string>
+                <string name="UMDialog_InstallAPK" >最新版本已下载，是否安装？
+                </string>
+                <string name="UMTargetSize" >新版本大小:
+                </string>
+                <string name="UMUpdateNow" >立即更新
+                </string>
+                <string name="UMNewVersion" >最新版本: 
+                </string>
+                <string name="UMUpdateContent" >更新内容
+                </string>
+                <string name="UMToast_IsUpdating" >正在更新中....
+                </string>
+                <string name="UMBreak_Network" >未联网
+                </string>
+                <string name="UMUpdateSize" >仅需要下载:
+                </string>
+                <string name="UMAppUpdate" >应用更新
+                </string>
+                <string name="UMGprsCondition" >（提示：非WIFI环境）
+                </string>
+            </file>
+        </source>
+        <source path="/Users/huamulou/work/gits/mandroid1/build/generated/res/rs/release" />
+        <source path="/Users/huamulou/work/gits/mandroid1/build/generated/res/generated/release" />
+    </dataSet>
+    <dataSet config="release" >
+        <source path="/Users/huamulou/work/gits/mandroid1/src/release/res" />
+    </dataSet>
+
+</merger>

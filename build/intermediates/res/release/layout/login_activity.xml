@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/default_pic_color">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46.669983dip"
+            android:background="@drawable/title_bg">
+        <!-- 添加RelativeLayout 以增大用户点击返回的区域 -->
+        <RelativeLayout android:id="@+id/login_top_back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="20dip"
+                        android:paddingTop="10dip"
+                        android:paddingBottom="10dip">
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/back_btn"/>
+        </RelativeLayout>
+        <TextView
+                android:id="@+id/personal_header_txt"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="登 录"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                />
+    </RelativeLayout>
+
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="请选择登陆方式"
+            />
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp">
+
+        <RelativeLayout
+                android:id="@+id/login_taobao_layout"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/login_btn_round_bg">
+            <ImageButton
+                    android:id="@+id/login_taobao_btn"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/taobao_logo"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/login_weibo_layout"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_btn_round_bg">
+            <ImageButton
+                    android:id="@+id/login_weibo_btn"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/weibo_logo"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="QQ账号"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:id="@+id/login_qq_layout"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:background="@drawable/login_btn_round_bg">
+            <ImageButton
+                    android:id="@+id/login_qq_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/qq_logo"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="QQ账号"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp">
+
+        <TextView android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:gravity="center_horizontal"
+                  android:text="淘宝登陆"/>
+
+        <TextView android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:gravity="center_horizontal"
+                  android:text="微博登陆"/>
+
+        <TextView android:layout_width="90dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:gravity="center_horizontal"
+                  android:text="QQ登陆"/>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/layout/login_activity.xml -->

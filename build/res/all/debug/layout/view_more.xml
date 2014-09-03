@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/view_more_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ProgressBar
+            android:id="@+id/view_more_progressbar"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/view_more_hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="10dp"
+            android:text="@string/xlistview_footer_hint_normal" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/layout/view_more.xml -->

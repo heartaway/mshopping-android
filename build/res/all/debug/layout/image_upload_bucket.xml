@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46.669983dip"
+        android:background="@drawable/title_bg"
+        android:id="@+id/relativeLayout"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/images_back_layout_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingLeft="10dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/personal_header_txt"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="相册"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:horizontalSpacing="20dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="20dp" >
+    </GridView>
+
+</LinearLayout><!-- From: file:/Users/huamulou/work/gits/mandroid1/src/main/res/layout/image_upload_bucket.xml -->
