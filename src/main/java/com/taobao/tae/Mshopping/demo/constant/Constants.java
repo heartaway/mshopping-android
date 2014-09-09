@@ -7,9 +7,9 @@ public class Constants {
     /**
      * 淘宝开放平台的APP_KEY
      */
-    public final static String TAOBAO_APP_KEY = "21804361";
+    public final static String TAOBAO_APP_KEY = "xxxxx";
 
-    public final static String TAOBAO_APP_SECRET = "575f102ebb124dffe091139daedf8e7d";
+    public final static String TAOBAO_APP_SECRET = "xxxxx";
 
 
     /**
